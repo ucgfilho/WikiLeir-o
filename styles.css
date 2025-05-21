@@ -1,0 +1,323 @@
+:root {
+  --cor-primaria-escura: #121122;
+  --cor-destaque-escura: #262448;
+  --cor-primaria-clara: #3a375e;
+  --cor-acento: #c7ff00;
+  --texto-claro: #ffffff;
+  --texto-escuro: #121122;
+  --fundo-card: #ffffff;
+  --sucesso: #4caf50;
+  --alerta: #ff9800;
+  --erro: #f44336;
+  --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transicao: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cor-primaria-escura);
+  color: var(--texto-claro);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER ---------------------------------------------------------------------------------------------------------------------------*/
+header {
+  width: 100%;
+  background-color: var(--cor-primaria-escura);
+  box-shadow: var(--sombra);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.container-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.container-logo img {
+  transition: var(--transicao);
+}
+
+.container-logo img:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  padding: 0.8rem 1.2rem;
+  color: var(--texto-claro);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: var(--transicao);
+  position: relative;
+}
+
+nav a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor-acento);
+  transition: var(--transicao);
+}
+
+nav a:hover:after {
+  width: 100%;
+}
+
+nav a.ativo {
+  background-color: var(--cor-destaque-escura);
+}
+
+/* CONTEÚDO PRINCIPAL ---------------------------------------------------------------------------------------------------------------------------*/
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.titulo-pagina {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--texto-claro);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.titulo-pagina::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--cor-acento);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.texto-boas-vindas {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+}
+
+.jogadores {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  margin-bottom: 2rem;
+  transition: var(--transicao);
+}
+
+.jogadores:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* PÁGINA DO TIME ---------------------------------------------------------------------------------------------------------------------------*/
+.cabecalho-time {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo-time {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.info-time {
+  flex: 1;
+}
+
+.nome-time {
+  font-size: 2.5rem;
+  color: var(--texto-claro);
+  margin-bottom: 0.5rem;
+}
+
+.detalhes-time {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.secao-time {
+  background-color: var(--cor-destaque-escura);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+}
+
+.titulo-secao {
+  color: var(--cor-acento);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.lista-trofeus {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-trofeu {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.secao-idolo {
+  background-color: var(--cor-primaria-clara);
+}
+
+/* TABELA ---------------------------------------------------------------------------------------------------------------------------*/
+.container-tabela {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: var(--sombra);
+  background-color: var(--fundo-card);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--fundo-card);
+  color: var(--texto-escuro);
+}
+
+thead tr {
+  background-color: var(--cor-primaria-escura);
+  color: var(--texto-claro);
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+tbody tr {
+  transition: var(--transicao);
+}
+
+td img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.link-time {
+  color: var(--cor-primaria-escura);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transicao);
+}
+
+.link-time:hover {
+  color: var(--cor-acento);
+}
+
+/* FOOTER ---------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  width: 100%;
+  background-color: var(--cor-destaque-escura);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer p {
+  color: var(--texto-claro);
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE CELULAR ---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:600px) {
+  .detalhes-time {
+    grid-template-columns: 1fr;
+  }
+
+  .cabecalho-time {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-cabecalho {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* RESPONSIVIDADE TABLET ---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:900px) {
+  .detalhes-time {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cabecalho-time {
+    gap: 1rem;
+  }
+
+  .nome-time {
+    font-size: 2rem;
+  }
+}
