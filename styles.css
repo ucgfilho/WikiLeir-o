@@ -112,6 +112,10 @@ main {
   margin: 2rem auto;
 }
 
+.video-background {
+  text-align: center;
+}
+
 .titulo-pagina {
   text-align: center;
   margin: 2rem 0;
