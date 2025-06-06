@@ -1,0 +1,81 @@
+.cabecalho-time {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logo-time {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.info-time {
+    flex: 1;
+}
+
+.nome-time {
+    font-size: 2.5rem;
+    color: var(--texto-claro);
+    margin-bottom: 0.5rem;
+}
+
+.detalhes-time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.secao-time {
+    background-color: var(--cor-destaque-escura);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+.titulo-secao {
+    color: var(--cor-acento);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.lista-trofeus {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item-trofeu {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+.secao-idolo {
+    background-color: var(--cor-primaria-clara);
+}
+
+.secao-time ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.secao-time ul li {
+    margin-bottom: 0.5rem;
+}
+
+.secao-time ul li::before {
+    content: " - ";
+    color: var(--cor-acento);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.secao-time h3 {
+    color: var(--texto-claro);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}

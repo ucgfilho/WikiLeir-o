@@ -1,0 +1,95 @@
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.video-background {
+    text-align: center;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--texto-claro);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.titulo-pagina::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-acento);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.texto-boas-vindas {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    font-size: 1.2rem;
+}
+
+.jogadores {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+    margin-bottom: 2rem;
+}
+
+.jogadores:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main.container.home-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.main.container.home-page .titulo-pagina {
+    grid-column: 1 / -1;
+}
+
+.main.container.home-page .texto-boas-vindas {
+    grid-column: 1 / -1;
+    max-width: 800px;
+}
+
+.main.container.home-page .jogadores {
+    grid-column: 1 / -1;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .main.container.home-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "welcome-text welcome-text"
+            "image image";
+    }
+
+    .main.container.home-page .titulo-pagina {
+        grid-area: title;
+    }
+
+    .main.container.home-page .texto-boas-vindas:nth-of-type(1) { 
+        grid-area: welcome-text;
+    }
+
+    .main.container.home-page .texto-boas-vindas:nth-of-type(2) { 
+        grid-area: welcome-text;
+    }
+
+    .main.container.home-page .jogadores {
+        grid-area: image;
+    }
+}

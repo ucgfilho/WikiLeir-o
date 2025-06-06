@@ -11,7 +11,6 @@
   --erro: #f44336;
   --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transicao: all 0.3s ease;
-  /* Keeping this variable, but not using it for removed animations */
 }
 
 * {
@@ -63,14 +62,6 @@ header {
   align-items: center;
 }
 
-.container-logo img {
-  /* transition removed */
-}
-
-.container-logo img:hover {
-  /* transform removed */
-}
-
 nav {
   display: flex;
   gap: 1rem;
@@ -82,7 +73,6 @@ nav a {
   text-decoration: none;
   border-radius: 4px;
   font-weight: 500;
-  /* transition removed */
   position: relative;
 }
 
@@ -94,13 +84,10 @@ nav a:after {
   width: 0;
   height: 2px;
   background-color: var(--cor-acento);
-  /* transition removed */
 }
 
 nav a:hover:after {
-  /* width animation removed */
   width: 100%;
-  /* keeping the final state for hover effect */
 }
 
 nav a.ativo {
@@ -150,14 +137,61 @@ main {
   border-radius: 8px;
   box-shadow: var(--sombra);
   margin-bottom: 2rem;
-  /* transition removed */
 }
 
 .jogadores:hover {
-  /* transform and box-shadow animations removed */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  /* keeping the final state for hover effect */
 }
+
+.main.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.main.container .titulo-pagina {
+  grid-column: 1 / -1;
+}
+
+.main.container .texto-boas-vindas {
+  grid-column: 1 / -1;
+  max-width: 800px;
+}
+
+.main.container .jogadores {
+  grid-column: 1 / -1;
+  max-width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .main.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "welcome-text welcome-text"
+      "image image";
+  }
+
+  .main.container .titulo-pagina {
+    grid-area: title;
+  }
+
+  .main.container .texto-boas-vindas:nth-of-type(1) {
+    grid-area: welcome-text;
+  }
+
+  .main.container .texto-boas-vindas:nth-of-type(2) {
+    grid-area: welcome-text;
+  }
+
+  .main.container .jogadores {
+    grid-area: image;
+  }
+}
+
 
 /* PÁGINA DO TIME ---------------------------------------------------------------------------------------------------------------------------*/
 .cabecalho-time {
@@ -258,10 +292,6 @@ tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-tbody tr {
-  /* transition removed */
-}
-
 td img {
   vertical-align: middle;
   margin-right: 10px;
@@ -271,7 +301,6 @@ td img {
   color: var(--cor-primaria-escura);
   text-decoration: none;
   font-weight: 500;
-  /* transition removed */
 }
 
 .link-time:hover {

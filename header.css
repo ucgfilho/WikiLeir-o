@@ -1,0 +1,56 @@
+/* header.css */
+header {
+    width: 100%;
+    background-color: var(--cor-primaria-escura);
+    box-shadow: var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+.container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    padding: 0.8rem 1.2rem;
+    color: var(--texto-claro);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-acento);
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+nav a.ativo {
+    background-color: var(--cor-destaque-escura);
+}

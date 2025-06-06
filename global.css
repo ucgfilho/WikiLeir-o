@@ -1,0 +1,32 @@
+:root {
+    --cor-primaria-escura: #121122;
+    --cor-destaque-escura: #262448;
+    --cor-primaria-clara: #3a375e;
+    --cor-acento: #c7ff00;
+    --texto-claro: #ffffff;
+    --texto-escuro: #121122;
+    --fundo-card: #ffffff;
+    --sucesso: #4caf50;
+    --alerta: #ff9800;
+    --erro: #f44336;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transicao: all 0.3s ease;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--cor-primaria-escura);
+    color: var(--texto-claro);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

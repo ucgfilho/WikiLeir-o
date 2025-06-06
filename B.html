@@ -5,7 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Série B - WikiLeirão</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -33,6 +39,9 @@
                     <tr>
                         <th>Time</th>
                         <th>Primeira participação</th>
+                        <th>Estádio</th>
+                        <th>Capacidade</th>
+                        <th>Mascote</th>
                         <th>Ídolo</th>
                         <th>Títulos nacionais</th>
                     </tr>
@@ -43,7 +52,12 @@
                                     src="https://amazonasfc.com.br/wp-content/uploads/2023/04/logo-amazonasfc.png"
                                     width="30"> Amazonas FC</a></td>
                         <td>2024</td>
-                        <td>Matheus Serafim</td>
+                        <td>Arena da Amazônia</td>
+                        <td>44.300</td>
+                        <td>Onça-pintada</td>
+                        <td
+                            data-info="Meia argentino que foi destaque na campanha do título da Série C em 2023, sendo referência técnica e liderança do elenco.">
+                            Diego Torres</td>
                         <td>1 Série C</td>
                     </tr>
                     <tr>
@@ -51,15 +65,25 @@
                                     src="https://logodetimes.com/times/america-mineiro/logo-america-mineiro-256.png"
                                     width="30"> América-MG</a></td>
                         <td>1962</td>
-                        <td>Fred</td>
-                        <td>1 Série B, 1 Série C</td>
+                        <td>Independência</td>
+                        <td>23.018</td>
+                        <td>Coelho</td>
+                        <td
+                            data-info="Atacante que brilhou em duas passagens pelo clube (2004-2005 e 2022), sendo artilheiro e líder da equipe que conquistou acesso à Série A em 2021.">
+                            Fred</td>
+                        <td>2 Série B, 1 Série C</td>
                     </tr>
                     <tr>
                         <td><a href="times/athletic.html" class="link-time"><img
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Athletic_Club_%28Minas_Gerais%29.svg/1200px-Athletic_Club_%28Minas_Gerais%29.svg.png"
                                     width="30"> Athletic Club</a></td>
                         <td>2025</td>
-                        <td>Jajá</td>
+                        <td>Joaquim Henrique Nogueira (Almeidão)</td>
+                        <td>5.000</td>
+                        <td>Touro</td>
+                        <td
+                            data-info="Atacante que se tornou ídolo na campanha do acesso à Série B em 2023, sendo o principal artilheiro do time na Série C.">
+                            Jajá</td>
                         <td>1 Série C</td>
                     </tr>
                     <tr>
@@ -67,7 +91,12 @@
                                     src="https://logodetimes.com/times/atletico-goianiense/logo-atletico-goianiense-256.png"
                                     width="30"> Atlético-GO</a></td>
                         <td>1970</td>
-                        <td>Walter</td>
+                        <td>Antônio Accioly</td>
+                        <td>12.500</td>
+                        <td>Dragão</td>
+                        <td
+                            data-info="Maior artilheiro da história do clube, com mais de 200 gols, símbolo dos anos 80 e 90.">
+                            Walter</td>
                         <td>1 Série B, 1 Série C</td>
                     </tr>
                     <tr>
@@ -75,7 +104,12 @@
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Athletico_Paranaense_%28Logo_2019%29.svg/1200px-Athletico_Paranaense_%28Logo_2019%29.svg.png"
                                     width="30"> Athletico-PR</a></td>
                         <td>1960</td>
-                        <td>Kléber Pereira</td>
+                        <td>Ligga Arena</td>
+                        <td>42.372</td>
+                        <td>Furacão</td>
+                        <td
+                            data-info="Maior artilheiro da história do clube, ídolo dos anos 90 e símbolo do time no título brasileiro de 2001.">
+                            Kléber Pereira</td>
                         <td>1 Copa do Brasil, 1 Série A, 1 Série B</td>
                     </tr>
                     <tr>
@@ -83,7 +117,11 @@
                                     src="https://logodetimes.com/times/avai/logo-avai-256.png" width="30"> Avaí FC</a>
                         </td>
                         <td>1973</td>
-                        <td>Roberto</td>
+                        <td>Ressacada</td>
+                        <td>17.800</td>
+                        <td>Leão</td>
+                        <td data-info="Maior artilheiro da história do clube, com 126 gols, ídolo dos anos 70 e 80.">
+                            Roberto</td>
                         <td>1 Série B, 1 Série C</td>
                     </tr>
                     <tr>
@@ -91,22 +129,37 @@
                                     src="https://logodetimes.com/times/botafogo-sp/logo-botafogo-sp-256.png" width="30">
                                 Botafogo-SP</a></td>
                         <td>1971</td>
-                        <td>Dener</td>
-                        <td>1 Série B</td>
+                        <td>Santa Cruz</td>
+                        <td>29.292</td>
+                        <td>Pantera</td>
+                        <td
+                            data-info="Considerado um dos maiores talentos do futebol brasileiro, revelado no Botafogo-SP antes de brilhar em grandes clubes e na seleção.">
+                            Dener</td>
+                        <td>1 Série D</td>
                     </tr>
                     <tr>
                         <td><a href="times/chapecoense.html" class="link-time"><img
                                     src="https://logodetimes.com/times/chapecoense/logo-chapecoense-256.png" width="30">
                                 Chapecoense</a></td>
                         <td>1978</td>
-                        <td>Nivaldo</td>
+                        <td>Arena Condá</td>
+                        <td>20.089</td>
+                        <td>Índio Condá</td>
+                        <td
+                            data-info="Goleiro com maior número de jogos na história do clube, presente em momentos importantes e símbolo de resiliência.">
+                            Nivaldo</td>
                         <td>1 Série B, 1 Série C</td>
                     </tr>
                     <tr>
                         <td><a href="times/crb.html" class="link-time"><img
                                     src="https://logodetimes.com/times/crb/logo-crb-256.png" width="30"> CRB</a></td>
                         <td>1973</td>
-                        <td>Roberto Cavalo</td>
+                        <td>Rei Pelé</td>
+                        <td>17.600</td>
+                        <td>Galo</td>
+                        <td
+                            data-info="Volante raçudo e líder, fundamental na conquista do Campeonato Brasileiro Série C em 2011.">
+                            Roberto Cavalo</td>
                         <td>1 Série C</td>
                     </tr>
                     <tr>
@@ -114,7 +167,12 @@
                                     src="https://upload.wikimedia.org/wikipedia/commons/6/6a/EscudoCriciumaEC.svg"
                                     width="30"> Criciúma EC</a></td>
                         <td>1987</td>
-                        <td>Roberto Cavenaghi</td>
+                        <td>Heriberto Hülse</td>
+                        <td>19.225</td>
+                        <td>Tigre</td>
+                        <td
+                            data-info="Meia com passagens marcantes e muitos gols pelo clube, sendo um dos jogadores mais identificados com a torcida.">
+                            Paulo Baier</td>
                         <td>1 Copa do Brasil, 1 Série B</td>
                     </tr>
                     <tr>
@@ -122,15 +180,25 @@
                                     src="https://logodetimes.com/times/coritiba/logo-coritiba-256.png" width="30">
                                 Coritiba</a></td>
                         <td>1960</td>
-                        <td>Duílio</td>
-                        <td>1 Brasileirão, 1 Série B</td>
+                        <td>Couto Pereira</td>
+                        <td>40.502</td>
+                        <td>Vovô Coxa</td>
+                        <td
+                            data-info="O 'Flecha Loira', maior ídolo da história do clube, com mais jogos e uma carreira dedicada ao Coritiba.">
+                            Dirceu Krüger</td>
+                        <td>1 Brasileirão, 2 Série B</td>
                     </tr>
                     <tr>
                         <td><a href="times/cuiaba.html" class="link-time"><img
                                     src="https://logodetimes.com/times/cuiaba/logo-cuiaba-256.png" width="30">
                                 Cuiabá</a></td>
                         <td>2021</td>
-                        <td>Jenison</td>
+                        <td>Arena Pantanal</td>
+                        <td>44.097</td>
+                        <td>Dourado</td>
+                        <td
+                            data-info="Goleiro com passagens marcantes e identificação com a torcida, presente em títulos importantes.">
+                            Fernando Henrique</td>
                         <td>1 Série C</td>
                     </tr>
                     <tr>
@@ -138,15 +206,25 @@
                                     src="https://logodetimes.com/times/ferroviaria/logo-ferroviaria-256.png" width="30">
                                 Ferroviária</a></td>
                         <td>1995</td>
-                        <td>Careca</td>
-                        <td>1 Série C</td>
+                        <td>Arena da Fonte Luminosa</td>
+                        <td>21.449</td>
+                        <td>Locomotiva</td>
+                        <td
+                            data-info="Atacante artilheiro que marcou época com seus gols e identificação com a torcida grená.">
+                            Bazani</td>
+                        <td>1 Série D</td>
                     </tr>
                     <tr>
                         <td><a href="times/goias.html" class="link-time"><img
                                     src="https://www.goiasec.com.br/wp-content/uploads/2021/03/ESCUDO-OFICIAL-PANTONE-3537C.png"
                                     width="30"> Goiás</a></td>
                         <td>1973</td>
-                        <td>Harlei</td>
+                        <td>Hailé Pinheiro (Serrinha)</td>
+                        <td>14.450</td>
+                        <td>Periquito</td>
+                        <td
+                            data-info="Goleiro com o maior número de jogos na história do clube, ícone de longevidade e dedicação.">
+                            Harlei</td>
                         <td>2 Série B</td>
                     </tr>
                     <tr>
@@ -154,30 +232,49 @@
                                     src="https://upload.wikimedia.org/wikipedia/pt/9/9e/Gr%C3%AAmio_Esportivo_Novorizontino_logo.png"
                                     width="30"> Novorizontino</a></td>
                         <td>2017</td>
-                        <td>Claudinei Oliveira</td>
-                        <td>-</td>
+                        <td>Doutor Jorge Ismael de Biasi</td>
+                        <td>16.000</td>
+                        <td>Tigre</td>
+                        <td
+                            data-info="Atacante com passagens importantes, artilheiro e peça chave em conquistas do clube.">
+                            Wágner</td>
+                        <td>1 Série D</td>
                     </tr>
                     <tr>
                         <td><a href="times/operario.html" class="link-time"><img
                                     src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/18187.png"
                                     width="30"> Operário-PR</a></td>
                         <td>1981</td>
-                        <td>Zé Carlos</td>
-                        <td>1 Série C</td>
+                        <td>Germano Krüger</td>
+                        <td>10.632</td>
+                        <td>Fantasma</td>
+                        <td data-info="Atacante com muitos gols e destaque em conquistas estaduais e nacionais.">Marcelo
+                            Resende</td>
+                        <td>1 Série C, 1 Série D</td>
                     </tr>
                     <tr>
                         <td><a href="times/paysandu.html" class="link-time"><img
                                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijkF4Y2X0ZQcc8pt7X37QeHc7oauNNW8V8PVPvV4DaIkg2f70Ifb4OMqU5VDB-7HSOuXhVnAh3sWWY_gyJbusidBiPZdtJRxDWtfegCI2BvkFBnLimcviQKuzoyZSOKJAzeNfpiAfznYfC/s1600/PAYSSANDU+SPORT+CLUBE.png"
                                     width="30"> Paysandu</a></td>
                         <td>1973</td>
-                        <td>Mário Jardel</td>
-                        <td>2 Série C</td>
+                        <td>Curuzu</td>
+                        <td>16.200</td>
+                        <td>Papão da Curuzu</td>
+                        <td
+                            data-info="Um dos maiores artilheiros da história do Paysandu, com muitos gols e liderança em campo.">
+                            Bené</td>
+                        <td>2 Série B, 1 Série C</td>
                     </tr>
                     <tr>
                         <td><a href="times/remo.html" class="link-time"><img
                                     src="https://logodetimes.com/times/remo/logo-remo-256.png" width="30"> Remo</a></td>
                         <td>1972</td>
-                        <td>Paulinho</td>
+                        <td>Evandro Almeida (Baenão)</td>
+                        <td>13.792</td>
+                        <td>Leão</td>
+                        <td
+                            data-info="Um dos maiores artilheiros da história do Remo, ídolo com muitos gols e passagens marcantes.">
+                            Quarentinha</td>
                         <td>1 Série C</td>
                     </tr>
                     <tr>
@@ -185,16 +282,26 @@
                                     src="https://logodetimes.com/wp-content/uploads/vila-nova.png" width="30"> Vila
                                 Nova</a></td>
                         <td>1975</td>
-                        <td>Túlio Maravilha</td>
-                        <td>1 Série B, 1 Série C</td>
+                        <td>Onésio Brasileiro Alvarenga (OBA)</td>
+                        <td>11.788</td>
+                        <td>Tigre</td>
+                        <td
+                            data-info="Atacante com passagem marcante e muitos gols pelo clube, especialmente na campanha da Série C.">
+                            Túlio Maravilha</td>
+                        <td>1 Série B, 3 Série C</td>
                     </tr>
                     <tr>
                         <td><a href="times/volta-redonda.html" class="link-time"><img
                                     src="https://logodetimes.com/times/volta-redonda/logo-volta-redonda-256.png"
                                     width="30"> Volta Redonda</a></td>
                         <td>1999</td>
-                        <td>Juninho</td>
-                        <td>1 Série C</td>
+                        <td>Raulino de Oliveira</td>
+                        <td>20.255</td>
+                        <td>Aço</td>
+                        <td
+                            data-info="Atacante com grande identificação e muitos gols, fundamental em conquistas do clube.">
+                            Juninho</td>
+                        <td>1 Série D</td>
                     </tr>
                 </tbody>
             </table>

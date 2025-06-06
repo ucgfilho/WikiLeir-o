@@ -1,0 +1,37 @@
+/* RESPONSIVIDADE CELULAR ---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:600px) {
+  .detalhes-time {
+    grid-template-columns: 1fr;
+  }
+
+  .cabecalho-time {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-cabecalho {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* RESPONSIVIDADE TABLET ---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:900px) {
+  .detalhes-time {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cabecalho-time {
+    gap: 1rem;
+  }
+
+  .nome-time {
+    font-size: 2rem;
+  }
+}
