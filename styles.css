@@ -11,6 +11,7 @@
   --erro: #f44336;
   --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transicao: all 0.3s ease;
+  /* Keeping this variable, but not using it for removed animations */
 }
 
 * {
@@ -63,11 +64,11 @@ header {
 }
 
 .container-logo img {
-  transition: var(--transicao);
+  /* transition removed */
 }
 
 .container-logo img:hover {
-  transform: scale(1.05);
+  /* transform removed */
 }
 
 nav {
@@ -81,7 +82,7 @@ nav a {
   text-decoration: none;
   border-radius: 4px;
   font-weight: 500;
-  transition: var(--transicao);
+  /* transition removed */
   position: relative;
 }
 
@@ -93,11 +94,13 @@ nav a:after {
   width: 0;
   height: 2px;
   background-color: var(--cor-acento);
-  transition: var(--transicao);
+  /* transition removed */
 }
 
 nav a:hover:after {
+  /* width animation removed */
   width: 100%;
+  /* keeping the final state for hover effect */
 }
 
 nav a.ativo {
@@ -147,12 +150,13 @@ main {
   border-radius: 8px;
   box-shadow: var(--sombra);
   margin-bottom: 2rem;
-  transition: var(--transicao);
+  /* transition removed */
 }
 
 .jogadores:hover {
-  transform: scale(1.01);
+  /* transform and box-shadow animations removed */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* keeping the final state for hover effect */
 }
 
 /* PÁGINA DO TIME ---------------------------------------------------------------------------------------------------------------------------*/
@@ -255,7 +259,7 @@ tbody tr:hover {
 }
 
 tbody tr {
-  transition: var(--transicao);
+  /* transition removed */
 }
 
 td img {
@@ -267,7 +271,7 @@ td img {
   color: var(--cor-primaria-escura);
   text-decoration: none;
   font-weight: 500;
-  transition: var(--transicao);
+  /* transition removed */
 }
 
 .link-time:hover {
