@@ -1,0 +1,96 @@
+/* CSS Grid Layout System */
+.grid-container {
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* Home page grid */
+.home-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "welcome"
+        "title"
+        "description"
+        "image";
+    align-items: center;
+    justify-items: center;
+}
+
+.home-grid .texto-boas-vindas:first-of-type {
+    grid-area: welcome;
+}
+
+.home-grid .titulo-pagina {
+    grid-area: title;
+}
+
+.home-grid .texto-boas-vindas:nth-of-type(2) {
+    grid-area: description;
+}
+
+.home-grid .jogadores {
+    grid-area: image;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Club details grid */
+.detalhes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Table responsive grid */
+.table-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Cards grid for future features */
+.cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "welcome welcome"
+            "title title"
+            "description image";
+        gap: 2rem;
+    }
+    
+    .detalhes-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "welcome welcome"
+            "title title"
+            "description image";
+    }
+    
+    .detalhes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-container {
+        gap: 2rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}

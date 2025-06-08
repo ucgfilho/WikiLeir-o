@@ -5,13 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Série B - WikiLeirão</title>
+    <meta name="description" content="Conheça todos os times da Série B do Brasileirão. História, títulos, estádios e curiosidades dos clubes da segunda divisão." />
+    
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/table.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -20,7 +26,7 @@
         <div class="container-cabecalho container">
             <div class="container-logo">
                 <a href="WikiLeirão.html">
-                    <img src="img/logo.png" alt="WikiLeirão Logo" width="100px" />
+                    <img src="img/logo.png" alt="WikiLeirão Logo" width="100" height="auto" />
                 </a>
             </div>
             <nav>
@@ -31,9 +37,9 @@
     </header>
 
     <main class="container">
-        <h1 class="titulo-pagina">Série B</h1>
+        <h1 class="titulo-pagina fade-in">Série B</h1>
 
-        <div class="container-tabela">
+        <div class="container-tabela fade-in">
             <table>
                 <thead>
                     <tr>
@@ -47,10 +53,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/amazonas.html" class="-time"><img
                                     src="https://amazonasfc.com.br/wp-content/uploads/2023/04/logo-amazonasfc.png"
-                                    width="30"> Amazonas FC</a></td>
+                                    width="30" alt="Amazonas FC" loading="lazy"> Amazonas FC</a></td>
                         <td>2024</td>
                         <td>Arena da Amazônia</td>
                         <td>44.300</td>
@@ -60,10 +66,10 @@
                             Diego Torres</td>
                         <td>1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/america-mg.html" class="-time"><img
                                     src="https://logodetimes.com/times/america-mineiro/logo-america-mineiro-256.png"
-                                    width="30"> América-MG</a></td>
+                                    width="30" alt="América-MG" loading="lazy"> América-MG</a></td>
                         <td>1962</td>
                         <td>Independência</td>
                         <td>23.018</td>
@@ -73,10 +79,10 @@
                             Fred</td>
                         <td>2 Série B, 1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/athletic.html" class="-time"><img
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Athletic_Club_%28Minas_Gerais%29.svg/1200px-Athletic_Club_%28Minas_Gerais%29.svg.png"
-                                    width="30"> Athletic Club</a></td>
+                                    width="30" alt="Athletic Club" loading="lazy"> Athletic Club</a></td>
                         <td>2025</td>
                         <td>Joaquim Henrique Nogueira (Almeidão)</td>
                         <td>5.000</td>
@@ -86,10 +92,10 @@
                             Jajá</td>
                         <td>1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/atletico-go.html" class="-time"><img
                                     src="https://logodetimes.com/times/atletico-goianiense/logo-atletico-goianiense-256.png"
-                                    width="30"> Atlético-GO</a></td>
+                                    width="30" alt="Atlético-GO" loading="lazy"> Atlético-GO</a></td>
                         <td>1970</td>
                         <td>Antônio Accioly</td>
                         <td>12.500</td>
@@ -99,10 +105,10 @@
                             Walter</td>
                         <td>1 Série B, 1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/athletico-pr.html" class="-time"><img
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Athletico_Paranaense_%28Logo_2019%29.svg/1200px-Athletico_Paranaense_%28Logo_2019%29.svg.png"
-                                    width="30"> Athletico-PR</a></td>
+                                    width="30" alt="Athletico-PR" loading="lazy"> Athletico-PR</a></td>
                         <td>1960</td>
                         <td>Ligga Arena</td>
                         <td>42.372</td>
@@ -112,9 +118,9 @@
                             Kléber Pereira</td>
                         <td>1 Copa do Brasil, 1 Série A, 1 Série B</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/avai.html" class="-time"><img
-                                    src="https://logodetimes.com/times/avai/logo-avai-256.png" width="30"> Avaí FC</a>
+                                    src="https://logodetimes.com/times/avai/logo-avai-256.png" width="30" alt="Avaí FC" loading="lazy"> Avaí FC</a>
                         </td>
                         <td>1973</td>
                         <td>Ressacada</td>
@@ -124,9 +130,9 @@
                             Roberto</td>
                         <td>1 Série B, 1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/botafogo-sp.html" class="-time"><img
-                                    src="https://logodetimes.com/times/botafogo-sp/logo-botafogo-sp-256.png" width="30">
+                                    src="https://logodetimes.com/times/botafogo-sp/logo-botafogo-sp-256.png" width="30" alt="Botafogo-SP" loading="lazy">
                                 Botafogo-SP</a></td>
                         <td>1971</td>
                         <td>Santa Cruz</td>
@@ -137,9 +143,9 @@
                             Dener</td>
                         <td>1 Série D</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/chapecoense.html" class="-time"><img
-                                    src="https://logodetimes.com/times/chapecoense/logo-chapecoense-256.png" width="30">
+                                    src="https://logodetimes.com/times/chapecoense/logo-chapecoense-256.png" width="30" alt="Chapecoense" loading="lazy">
                                 Chapecoense</a></td>
                         <td>1978</td>
                         <td>Arena Condá</td>
@@ -150,9 +156,9 @@
                             Nivaldo</td>
                         <td>1 Série B, 1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/crb.html" class="-time"><img
-                                    src="https://logodetimes.com/times/crb/logo-crb-256.png" width="30"> CRB</a></td>
+                                    src="https://logodetimes.com/times/crb/logo-crb-256.png" width="30" alt="CRB" loading="lazy"> CRB</a></td>
                         <td>1973</td>
                         <td>Rei Pelé</td>
                         <td>17.600</td>
@@ -162,10 +168,10 @@
                             Roberto Cavalo</td>
                         <td>1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/criciuma.html" class="-time"><img
                                     src="https://upload.wikimedia.org/wikipedia/commons/6/6a/EscudoCriciumaEC.svg"
-                                    width="30"> Criciúma EC</a></td>
+                                    width="30" alt="Criciúma EC" loading="lazy"> Criciúma EC</a></td>
                         <td>1987</td>
                         <td>Heriberto Hülse</td>
                         <td>19.225</td>
@@ -175,9 +181,9 @@
                             Paulo Baier</td>
                         <td>1 Copa do Brasil, 1 Série B</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/coritiba.html" class="-time"><img
-                                    src="https://logodetimes.com/times/coritiba/logo-coritiba-256.png" width="30">
+                                    src="https://logodetimes.com/times/coritiba/logo-coritiba-256.png" width="30" alt="Coritiba" loading="lazy">
                                 Coritiba</a></td>
                         <td>1960</td>
                         <td>Couto Pereira</td>
@@ -188,9 +194,9 @@
                             Dirceu Krüger</td>
                         <td>1 Brasileirão, 2 Série B</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/cuiaba.html" class="-time"><img
-                                    src="https://logodetimes.com/times/cuiaba/logo-cuiaba-256.png" width="30">
+                                    src="https://logodetimes.com/times/cuiaba/logo-cuiaba-256.png" width="30" alt="Cuiabá" loading="lazy">
                                 Cuiabá</a></td>
                         <td>2021</td>
                         <td>Arena Pantanal</td>
@@ -201,9 +207,9 @@
                             Fernando Henrique</td>
                         <td>1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/ferroviaria.html" class="-time"><img
-                                    src="https://logodetimes.com/times/ferroviaria/logo-ferroviaria-256.png" width="30">
+                                    src="https://logodetimes.com/times/ferroviaria/logo-ferroviaria-256.png" width="30" alt="Ferroviária" loading="lazy">
                                 Ferroviária</a></td>
                         <td>1995</td>
                         <td>Arena da Fonte Luminosa</td>
@@ -214,10 +220,10 @@
                             Bazani</td>
                         <td>1 Série D</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/goias.html" class="-time"><img
                                     src="https://www.goiasec.com.br/wp-content/uploads/2021/03/ESCUDO-OFICIAL-PANTONE-3537C.png"
-                                    width="30"> Goiás</a></td>
+                                    width="30" alt="Goiás" loading="lazy"> Goiás</a></td>
                         <td>1973</td>
                         <td>Hailé Pinheiro (Serrinha)</td>
                         <td>14.450</td>
@@ -227,10 +233,10 @@
                             Harlei</td>
                         <td>2 Série B</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/novorizontino.html" class="-time"><img
                                     src="https://upload.wikimedia.org/wikipedia/pt/9/9e/Gr%C3%AAmio_Esportivo_Novorizontino_logo.png"
-                                    width="30"> Novorizontino</a></td>
+                                    width="30" alt="Novorizontino" loading="lazy"> Novorizontino</a></td>
                         <td>2017</td>
                         <td>Doutor Jorge Ismael de Biasi</td>
                         <td>16.000</td>
@@ -240,10 +246,10 @@
                             Wágner</td>
                         <td>1 Série D</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/operario.html" class="-time"><img
                                     src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/18187.png"
-                                    width="30"> Operário-PR</a></td>
+                                    width="30" alt="Operário-PR" loading="lazy"> Operário-PR</a></td>
                         <td>1981</td>
                         <td>Germano Krüger</td>
                         <td>10.632</td>
@@ -252,10 +258,10 @@
                             Resende</td>
                         <td>1 Série C, 1 Série D</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/paysandu.html" class="-time"><img
                                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijkF4Y2X0ZQcc8pt7X37QeHc7oauNNW8V8PVPvV4DaIkg2f70Ifb4OMqU5VDB-7HSOuXhVnAh3sWWY_gyJbusidBiPZdtJRxDWtfegCI2BvkFBnLimcviQKuzoyZSOKJAzeNfpiAfznYfC/s1600/PAYSSANDU+SPORT+CLUBE.png"
-                                    width="30"> Paysandu</a></td>
+                                    width="30" alt="Paysandu" loading="lazy"> Paysandu</a></td>
                         <td>1973</td>
                         <td>Curuzu</td>
                         <td>16.200</td>
@@ -265,9 +271,9 @@
                             Bené</td>
                         <td>2 Série B, 1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/remo.html" class="-time"><img
-                                    src="https://logodetimes.com/times/remo/logo-remo-256.png" width="30"> Remo</a></td>
+                                    src="https://logodetimes.com/times/remo/logo-remo-256.png" width="30" alt="Remo" loading="lazy"> Remo</a></td>
                         <td>1972</td>
                         <td>Evandro Almeida (Baenão)</td>
                         <td>13.792</td>
@@ -277,9 +283,9 @@
                             Quarentinha</td>
                         <td>1 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/vila-nova.html" class="-time"><img
-                                    src="https://logodetimes.com/wp-content/uploads/vila-nova.png" width="30"> Vila
+                                    src="https://logodetimes.com/wp-content/uploads/vila-nova.png" width="30" alt="Vila Nova" loading="lazy"> Vila
                                 Nova</a></td>
                         <td>1975</td>
                         <td>Onésio Brasileiro Alvarenga (OBA)</td>
@@ -290,10 +296,10 @@
                             Túlio Maravilha</td>
                         <td>1 Série B, 3 Série C</td>
                     </tr>
-                    <tr>
+                    <tr class="stagger-item">
                         <td><a href="times/Série B/volta-redonda.html" class="-time"><img
                                     src="https://logodetimes.com/times/volta-redonda/logo-volta-redonda-256.png"
-                                    width="30"> Volta Redonda</a></td>
+                                    width="30" alt="Volta Redonda" loading="lazy"> Volta Redonda</a></td>
                         <td>1999</td>
                         <td>Raulino de Oliveira</td>
                         <td>20.255</td>
@@ -313,6 +319,22 @@
             <p>&copy; 2025 WikiLeirão - Todos os direitos reservados</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        // Ativar animações stagger para a tabela
+        document.addEventListener('DOMContentLoaded', () => {
+            const tbody = document.querySelector('tbody');
+            if (tbody) {
+                tbody.classList.add('stagger-container');
+                setTimeout(() => {
+                    tbody.classList.add('animate');
+                }, 300);
+            }
+        });
+    </script>
 </body>
 
 </html>
