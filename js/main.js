@@ -247,6 +247,36 @@ class WikiLeirao {
         container.style.display = 'block';
     }
 
+<<<<<<< HEAD
+=======
+    // Sistema de tema
+    setupTheme() {
+        const themeToggle = document.createElement('button');
+        themeToggle.className = 'theme-toggle';
+        themeToggle.innerHTML = '🌙';
+        themeToggle.setAttribute('aria-label', 'Alternar tema');
+
+        const header = document.querySelector('.container-cabecalho');
+        if (header) {
+            header.appendChild(themeToggle);
+        }
+
+        // Verificar tema salvo
+        const savedTheme = localStorage.getItem('wikileirao-theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggle.innerHTML = '☀️';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-theme');
+            themeToggle.innerHTML = isDark ? '☀️' : '🌙';
+            localStorage.setItem('wikileirao-theme', isDark ? 'dark' : 'light');
+        });
+    }
+
+>>>>>>> 3ff97f2032a451a86a52b47ce185e24f82db2d54
     // Lazy Loading para imagens
     setupLazyLoading() {
         const images = document.querySelectorAll('img[data-src]');
