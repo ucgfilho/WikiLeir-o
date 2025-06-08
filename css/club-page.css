@@ -71,16 +71,7 @@
 }
 
 .titulo-secao::before {
-    content: '🏆';
     font-size: 1.2rem;
-}
-
-.secao-time:nth-child(even) .titulo-secao::before {
-    content: '⭐';
-}
-
-.secao-idolo .titulo-secao::before {
-    content: '👑';
 }
 
 .lista-trofeus {
