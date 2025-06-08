@@ -132,11 +132,7 @@
 }
 
 .secao-time ul li::before {
-<<<<<<< HEAD
     content: "-";
-=======
-    content: "⚽";
->>>>>>> 3ff97f2032a451a86a52b47ce185e24f82db2d54
     position: absolute;
     left: 0;
     color: var(--cor-acento);
