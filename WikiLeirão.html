@@ -4,10 +4,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WikiLeirão - A Enciclopédia do Brasileirão</title>
-    <meta name="description" content="A enciclopédia definitiva do Brasileirão! Explore a história, títulos e curiosidades dos maiores clubes do futebol brasileiro." />
-    <meta name="keywords" content="brasileirão, futebol, times, série a, série b, história, títulos" />
+    <title>WikiLeirão - A Enciclopédia Definitiva do Brasileirão | Times, História e Títulos</title>
+    <meta name="description" content="Descubra tudo sobre os times do Brasileirão! História completa, títulos, estádios, ídolos e curiosidades dos clubes das Séries A e B. A maior enciclopédia do futebol brasileiro." />
+    <meta name="keywords" content="brasileirão, futebol brasileiro, série a, série b, times brasil, história futebol, títulos brasileirão, estádios brasil, ídolos futebol, campeonato brasileiro" />
+    <meta name="author" content="WikiLeirão" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="pt-BR" />
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wikileirao.com/" />
+    <meta property="og:title" content="WikiLeirão - A Enciclopédia Definitiva do Brasileirão" />
+    <meta property="og:description" content="Descubra tudo sobre os times do Brasileirão! História completa, títulos, estádios, ídolos e curiosidades dos clubes das Séries A e B." />
+    <meta property="og:image" content="img/jogadores.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="WikiLeirão" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wikileirao.com/" />
+    <meta property="twitter:title" content="WikiLeirão - A Enciclopédia Definitiva do Brasileirão" />
+    <meta property="twitter:description" content="Descubra tudo sobre os times do Brasileirão! História completa, títulos, estádios, ídolos e curiosidades dos clubes das Séries A e B." />
+    <meta property="twitter:image" content="img/jogadores.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wikileirao.com/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="apple-touch-icon" href="img/logo.png" />
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -21,62 +46,81 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- Preload critical resources -->
     <link rel="preload" href="img/logo.png" as="image">
     <link rel="preload" href="img/jogadores.png" as="image">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "WikiLeirão",
+        "description": "A enciclopédia definitiva do Brasileirão com informações completas sobre times, história, títulos e curiosidades do futebol brasileiro.",
+        "url": "https://wikileirao.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://wikileirao.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "WikiLeirão",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://wikileirao.com/img/logo.png"
+            }
+        }
+    }
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container-cabecalho container">
             <div class="container-logo">
-                <a href="WikiLeirão.html">
-                    <img src="img/logo.png" alt="WikiLeirão Logo" width="100" height="auto" />
+                <a href="WikiLeirão.html" aria-label="Página inicial do WikiLeirão">
+                    <img src="img/logo.png" alt="WikiLeirão - Logo da enciclopédia do futebol brasileiro" width="100" height="auto" />
                 </a>
             </div>
-            <nav>
-                <a href="A.html">Série A</a>
-                <a href="B.html">Série B</a>
+            <nav role="navigation" aria-label="Menu principal">
+                <a href="A.html" aria-label="Times da Série A do Brasileirão">Série A</a>
+                <a href="B.html" aria-label="Times da Série B do Brasileirão">Série B</a>
             </nav>
         </div>
     </header>
 
-    <main class="container grid-container home-grid">
+    <main class="container grid-container home-grid" role="main">
         <div class="texto-boas-vindas fade-in">Seja bem-vindo ao</div>
         <h1 class="titulo-pagina fade-in">WikiLeirão</h1>
         <div class="texto-boas-vindas fade-in">
-            A sua enciclopédia definitiva do Brasileirão! Explore a paixão, a história e as
+            A sua <strong>enciclopédia definitiva do Brasileirão</strong>! Explore a paixão, a história e as
             curiosidades dos maiores clubes do futebol brasileiro.
             <br><br>
-            No WikiLeirão, mergulhe no universo de cada time das Séries A e B. Descubra os
+            No WikiLeirão, mergulhe no universo de cada time das <strong>Séries A e B</strong>. Descubra os
             detalhes da fundação, a grandiosidade dos estádios, os mascotes que inspiram a torcida, e os apelidos que
-            marcam cada gigante do esporte. Conheça os títulos nacionais, regionais e estaduais que moldaram a
-            trajetória de glória, e relembre os maiores ídolos que deixaram sua marca nos corações dos torcedores.
+            marcam cada gigante do esporte. Conheça os <strong>títulos nacionais, regionais e estaduais</strong> que moldaram a
+            trajetória de glória, e relembre os <strong>maiores ídolos</strong> que deixaram sua marca nos corações dos torcedores.
             <br><br>
             Curiosidades exclusivas e uma imersão completa aguardam você. O jogo nunca para,
             e a história está sendo escrita a cada clique!
         </div>
 
-        <img class="jogadores fade-in float" src="img/jogadores.png" alt="Poster do WikiLeirão" loading="lazy" />
+        <img class="jogadores fade-in float" src="img/jogadores.png" alt="Ilustração de jogadores de futebol representando os times do Brasileirão" loading="lazy" />
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
-            <p>&copy; 2025 WikiLeirão - Todos os direitos reservados</p>
+            <p>&copy; 2025 WikiLeirão - Todos os direitos reservados | A maior enciclopédia do futebol brasileiro</p>
         </div>
     </footer>
 
-<<<<<<< HEAD
-=======
     <!-- JavaScript -->
->>>>>>> 3ff97f2032a451a86a52b47ce185e24f82db2d54
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
 </body>

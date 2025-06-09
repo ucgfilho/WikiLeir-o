@@ -8,9 +8,10 @@ class WikiLeirao {
         this.setupEventListeners();
         this.setupAnimations();
         this.setupTooltips();
-        this.setupSearch();
+        this.setupAdvancedSearch();
         this.setupTheme();
         this.setupLazyLoading();
+        this.setupSEOEnhancements();
     }
 
     // Event Listeners
@@ -49,6 +50,7 @@ class WikiLeirao {
         menuButton.className = 'menu-toggle';
         menuButton.innerHTML = '☰';
         menuButton.setAttribute('aria-label', 'Toggle menu');
+        menuButton.setAttribute('aria-expanded', 'false');
 
         const header = document.querySelector('.container-cabecalho');
         if (header) {
@@ -57,9 +59,11 @@ class WikiLeirao {
 
         // Toggle menu
         menuButton.addEventListener('click', () => {
+            const isOpen = nav.classList.contains('nav-open');
             nav.classList.toggle('nav-open');
             menuButton.classList.toggle('active');
             menuButton.innerHTML = nav.classList.contains('nav-open') ? '✕' : '☰';
+            menuButton.setAttribute('aria-expanded', !isOpen);
         });
 
         // Fechar menu ao clicar em link
@@ -68,6 +72,7 @@ class WikiLeirao {
                 nav.classList.remove('nav-open');
                 menuButton.classList.remove('active');
                 menuButton.innerHTML = '☰';
+                menuButton.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -149,6 +154,7 @@ class WikiLeirao {
             const tooltip = document.createElement('div');
             tooltip.className = 'tooltip';
             tooltip.textContent = element.dataset.info;
+            tooltip.setAttribute('role', 'tooltip');
             document.body.appendChild(tooltip);
 
             element.addEventListener('mouseenter', (e) => {
@@ -163,6 +169,16 @@ class WikiLeirao {
             element.addEventListener('mouseleave', () => {
                 tooltip.style.display = 'none';
             });
+
+            // Acessibilidade para teclado
+            element.addEventListener('focus', (e) => {
+                tooltip.style.display = 'block';
+                this.positionTooltip(e, tooltip);
+            });
+
+            element.addEventListener('blur', () => {
+                tooltip.style.display = 'none';
+            });
         });
     }
 
@@ -174,16 +190,21 @@ class WikiLeirao {
         tooltip.style.top = y + 'px';
     }
 
-    // Sistema de busca
-    setupSearch() {
+    // Sistema de busca avançado
+    setupAdvancedSearch() {
         const searchContainer = document.createElement('div');
         searchContainer.className = 'search-container';
         searchContainer.innerHTML = `
-            <input type="text" id="search-input" placeholder="Buscar time..." />
-            <div id="search-results" class="search-results"></div>
+            <input type="text" 
+                   id="search-input" 
+                   placeholder="Buscar time..." 
+                   autocomplete="off"
+                   aria-label="Buscar times do Brasileirão"
+                   role="searchbox" />
+            <div id="search-results" class="search-results" role="listbox" aria-label="Resultados da busca"></div>
         `;
 
-        const header = document.querySelector('header .container');
+        const header = document.querySelector('header .container-cabecalho');
         if (header) {
             header.appendChild(searchContainer);
         }
@@ -191,9 +212,19 @@ class WikiLeirao {
         const searchInput = document.getElementById('search-input');
         const searchResults = document.getElementById('search-results');
 
-        if (searchInput) {
+        if (searchInput && window.teamsDatabase) {
+            let searchTimeout;
+            
             searchInput.addEventListener('input', (e) => {
-                this.performSearch(e.target.value, searchResults);
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    this.performAdvancedSearch(e.target.value, searchResults);
+                }, 150); // Debounce para melhor performance
+            });
+
+            // Navegação por teclado
+            searchInput.addEventListener('keydown', (e) => {
+                this.handleSearchKeyNavigation(e, searchResults);
             });
 
             // Fechar resultados ao clicar fora
@@ -202,49 +233,187 @@ class WikiLeirao {
                     searchResults.style.display = 'none';
                 }
             });
+
+            // Fechar com ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    searchResults.style.display = 'none';
+                    searchInput.blur();
+                }
+            });
         }
     }
 
-    performSearch(query, resultsContainer) {
+    performAdvancedSearch(query, resultsContainer) {
         if (query.length < 2) {
             resultsContainer.style.display = 'none';
             return;
         }
 
-        // Lista de times (seria melhor vir de uma API ou JSON)
-        const teams = this.getTeamsList();
-        const filteredTeams = teams.filter(team => 
-            team.name.toLowerCase().includes(query.toLowerCase()) ||
-            team.nickname.toLowerCase().includes(query.toLowerCase())
-        );
+        const normalizedQuery = this.normalizeString(query);
+        const results = [];
 
-        this.displaySearchResults(filteredTeams, resultsContainer);
+        // Busca nos dados dos times
+        window.teamsDatabase.forEach(team => {
+            const score = this.calculateSearchScore(team, normalizedQuery);
+            if (score > 0) {
+                results.push({ team, score });
+            }
+        });
+
+        // Ordenar por relevância
+        results.sort((a, b) => b.score - a.score);
+
+        // Limitar a 8 resultados
+        const topResults = results.slice(0, 8);
+
+        this.displaySearchResults(topResults, resultsContainer, query);
     }
 
-    getTeamsList() {
-        // Lista simplificada dos times - em produção viria de uma API
-        return [
-            { name: 'Flamengo', nickname: 'Mengão', url: 'times/Série A/flamengo.html' },
-            { name: 'Corinthians', nickname: 'Timão', url: 'times/Série A/corinthians.html' },
-            { name: 'Palmeiras', nickname: 'Verdão', url: 'times/Série A/palmeiras.html' },
-            { name: 'São Paulo', nickname: 'Tricolor', url: 'times/Série A/sao-paulo.html' },
-            { name: 'Santos', nickname: 'Peixe', url: 'times/Série A/santos.html' },
-            // Adicionar mais times conforme necessário
-        ];
+    calculateSearchScore(team, query) {
+        let score = 0;
+        const queryWords = query.split(' ').filter(word => word.length > 1);
+
+        queryWords.forEach(word => {
+            // Nome exato (maior peso)
+            if (this.normalizeString(team.name).includes(word)) {
+                score += 100;
+            }
+
+            // Nome completo
+            if (this.normalizeString(team.fullName).includes(word)) {
+                score += 80;
+            }
+
+            // Apelidos
+            team.nickname.forEach(nick => {
+                if (this.normalizeString(nick).includes(word)) {
+                    score += 70;
+                }
+            });
+
+            // Cidade
+            if (this.normalizeString(team.city).includes(word)) {
+                score += 50;
+            }
+
+            // Estado
+            if (this.normalizeString(team.state).includes(word)) {
+                score += 40;
+            }
+
+            // Mascote
+            if (this.normalizeString(team.mascot).includes(word)) {
+                score += 60;
+            }
+
+            // Keywords
+            team.keywords.forEach(keyword => {
+                if (keyword.includes(word)) {
+                    score += 30;
+                }
+            });
+
+            // Estádio
+            if (this.normalizeString(team.stadium).includes(word)) {
+                score += 25;
+            }
+        });
+
+        return score;
     }
 
-    displaySearchResults(teams, container) {
-        if (teams.length === 0) {
-            container.innerHTML = '<div class="no-results">Nenhum time encontrado</div>';
+    normalizeString(str) {
+        return str.toLowerCase()
+                  .normalize('NFD')
+                  .replace(/[\u0300-\u036f]/g, '') // Remove acentos
+                  .replace(/[^a-z0-9\s]/g, '') // Remove caracteres especiais
+                  .trim();
+    }
+
+    displaySearchResults(results, container, originalQuery) {
+        if (results.length === 0) {
+            container.innerHTML = `
+                <div class="no-results" role="option">
+                    <strong>Nenhum time encontrado</strong>
+                    <span>Tente buscar por: nome do time, apelido, cidade ou estado</span>
+                </div>
+            `;
         } else {
-            container.innerHTML = teams.map(team => `
-                <a href="${team.url}" class="search-result-item">
-                    <strong>${team.name}</strong>
-                    <span>${team.nickname}</span>
-                </a>
-            `).join('');
+            container.innerHTML = results.map((result, index) => {
+                const { team } = result;
+                const highlightedName = this.highlightSearchTerm(team.name, originalQuery);
+                const highlightedNickname = team.nickname.length > 0 ? 
+                    this.highlightSearchTerm(team.nickname[0], originalQuery) : '';
+                
+                return `
+                    <a href="${team.url}" 
+                       class="search-result-item" 
+                       role="option"
+                       tabindex="0"
+                       data-index="${index}"
+                       aria-label="Ir para página do ${team.name}">
+                        <div class="search-result-main">
+                            <strong>${highlightedName}</strong>
+                            ${highlightedNickname ? `<span class="nickname">${highlightedNickname}</span>` : ''}
+                        </div>
+                        <div class="search-result-details">
+                            <span class="city">${team.city} - ${team.state}</span>
+                            <span class="serie">Série ${team.serie}</span>
+                        </div>
+                    </a>
+                `;
+            }).join('');
         }
         container.style.display = 'block';
+    }
+
+    highlightSearchTerm(text, searchTerm) {
+        if (!searchTerm || searchTerm.length < 2) return text;
+        
+        const regex = new RegExp(`(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+        return text.replace(regex, '<mark>$1</mark>');
+    }
+
+    handleSearchKeyNavigation(e, resultsContainer) {
+        const results = resultsContainer.querySelectorAll('.search-result-item');
+        if (results.length === 0) return;
+
+        let currentIndex = -1;
+        const currentSelected = resultsContainer.querySelector('.search-result-item.selected');
+        if (currentSelected) {
+            currentIndex = parseInt(currentSelected.dataset.index);
+        }
+
+        switch (e.key) {
+            case 'ArrowDown':
+                e.preventDefault();
+                currentIndex = Math.min(currentIndex + 1, results.length - 1);
+                this.selectSearchResult(results, currentIndex);
+                break;
+            case 'ArrowUp':
+                e.preventDefault();
+                currentIndex = Math.max(currentIndex - 1, -1);
+                this.selectSearchResult(results, currentIndex);
+                break;
+            case 'Enter':
+                e.preventDefault();
+                if (currentIndex >= 0 && results[currentIndex]) {
+                    results[currentIndex].click();
+                }
+                break;
+        }
+    }
+
+    selectSearchResult(results, index) {
+        // Remove seleção anterior
+        results.forEach(result => result.classList.remove('selected'));
+        
+        // Adiciona nova seleção
+        if (index >= 0 && results[index]) {
+            results[index].classList.add('selected');
+            results[index].scrollIntoView({ block: 'nearest' });
+        }
     }
 
     // Lazy Loading para imagens
@@ -289,6 +458,9 @@ class WikiLeirao {
                     this.sortTable(table, index);
                 });
                 header.style.cursor = 'pointer';
+                header.setAttribute('tabindex', '0');
+                header.setAttribute('role', 'button');
+                header.setAttribute('aria-label', `Ordenar por ${header.textContent}`);
             });
         });
     }
@@ -309,12 +481,97 @@ class WikiLeirao {
                 return aNum - bNum;
             }
             
-            return aText.localeCompare(bText);
+            return aText.localeCompare(bText, 'pt-BR');
         });
 
         // Remover e readicionar linhas ordenadas
         rows.forEach(row => row.remove());
         sortedRows.forEach(row => tbody.appendChild(row));
+    }
+
+    // Melhorias de SEO
+    setupSEOEnhancements() {
+        // Adicionar breadcrumbs dinamicamente
+        this.addBreadcrumbs();
+        
+        // Melhorar meta descriptions dinamicamente
+        this.enhanceMetaDescriptions();
+        
+        // Adicionar dados estruturados para times
+        this.addStructuredData();
+    }
+
+    addBreadcrumbs() {
+        const currentPage = window.location.pathname;
+        const breadcrumbContainer = document.createElement('nav');
+        breadcrumbContainer.setAttribute('aria-label', 'Breadcrumb');
+        breadcrumbContainer.className = 'breadcrumb';
+        
+        let breadcrumbHTML = '<ol>';
+        breadcrumbHTML += '<li><a href="WikiLeirão.html">WikiLeirão</a></li>';
+        
+        if (currentPage.includes('A.html')) {
+            breadcrumbHTML += '<li aria-current="page">Série A</li>';
+        } else if (currentPage.includes('B.html')) {
+            breadcrumbHTML += '<li aria-current="page">Série B</li>';
+        } else if (currentPage.includes('times/')) {
+            const serie = currentPage.includes('Série A') ? 'A' : 'B';
+            breadcrumbHTML += `<li><a href="${serie}.html">Série ${serie}</a></li>`;
+            const teamName = document.querySelector('h1')?.textContent || 'Time';
+            breadcrumbHTML += `<li aria-current="page">${teamName}</li>`;
+        }
+        
+        breadcrumbHTML += '</ol>';
+        breadcrumbContainer.innerHTML = breadcrumbHTML;
+        
+        const main = document.querySelector('main');
+        if (main && !currentPage.includes('WikiLeirão.html')) {
+            main.insertBefore(breadcrumbContainer, main.firstChild);
+        }
+    }
+
+    enhanceMetaDescriptions() {
+        // Adicionar meta description específica se não existir
+        if (!document.querySelector('meta[name="description"]')) {
+            const meta = document.createElement('meta');
+            meta.name = 'description';
+            
+            const currentPage = window.location.pathname;
+            if (currentPage.includes('times/')) {
+                const teamName = document.querySelector('h1')?.textContent || '';
+                meta.content = `Conheça a história completa do ${teamName}: títulos, estádio, ídolos, curiosidades e muito mais no WikiLeirão.`;
+            }
+            
+            document.head.appendChild(meta);
+        }
+    }
+
+    addStructuredData() {
+        const currentPage = window.location.pathname;
+        
+        if (currentPage.includes('times/')) {
+            const teamName = document.querySelector('h1')?.textContent || '';
+            const founded = document.querySelector('.info-time p')?.textContent?.match(/\d{4}/)?.[0] || '';
+            
+            const structuredData = {
+                "@context": "https://schema.org",
+                "@type": "SportsTeam",
+                "name": teamName,
+                "sport": "Futebol",
+                "foundingDate": founded,
+                "url": window.location.href
+            };
+            
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(structuredData);
+            document.head.appendChild(script);
+        }
+    }
+
+    // Theme toggle (placeholder para futuras implementações)
+    setupTheme() {
+        // Implementação futura para modo escuro/claro
     }
 }
 
@@ -378,9 +635,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const perfMonitor = new PerformanceMonitor();
     perfMonitor.startTimer('WikiLeirao Init');
     
-    new WikiLeirao();
-    
-    perfMonitor.endTimer('WikiLeirao Init');
+    // Carregar base de dados dos times primeiro
+    const script = document.createElement('script');
+    script.src = 'js/teams-database.js';
+    script.onload = () => {
+        new WikiLeirao();
+        perfMonitor.endTimer('WikiLeirao Init');
+    };
+    document.head.appendChild(script);
 });
 
 // Service Worker para cache (se suportado)

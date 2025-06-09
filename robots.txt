@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://wikileirao.com/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1
+
+# Permitir acesso a recursos importantes
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /times/
+
+# Bloquear arquivos desnecessários
+Disallow: /*.json$
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Informações adicionais
+# Host: wikileirao.com
