@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/landing.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/components.css" />
@@ -66,32 +66,136 @@
             <nav role="navigation" aria-label="Menu principal">
                 <a href="A.html" aria-label="Times da Série A do Brasileirão">Série A</a>
                 <a href="B.html" aria-label="Times da Série B do Brasileirão">Série B</a>
+                <a href="idolos/index.html" aria-label="Maiores ídolos do futebol brasileiro">Ídolos</a>
+                <a href="estadios/index.html" aria-label="Estádios do futebol brasileiro">Estádios</a>
             </nav>
         </div>
     </header>
 
-    <main class="container grid-container home-grid" role="main">
-        <div class="texto-boas-vindas fade-in">Seja bem-vindo ao</div>
-        <h1 class="titulo-pagina fade-in">WikiLeirão</h1>
-        <div class="texto-boas-vindas fade-in">
-            A sua <strong>enciclopédia definitiva do Brasileirão</strong>! Explore a paixão, a história e as
-            curiosidades dos maiores clubes do futebol brasileiro.
-            <br><br>
-            No WikiLeirão, mergulhe no universo de cada time das <strong>Séries A e B</strong>. Descubra os
-            detalhes da fundação, a grandiosidade dos estádios, os mascotes que inspiram a torcida, e os apelidos que
-            marcam cada gigante do esporte. Conheça os <strong>títulos nacionais, regionais e estaduais</strong> que moldaram a
-            trajetória de glória, e relembre os <strong>maiores ídolos</strong> que deixaram sua marca nos corações dos torcedores.
-            <br><br>
-            Curiosidades exclusivas e uma imersão completa aguardam você. O jogo nunca para,
-            e a história está sendo escrita a cada clique!
-        </div>
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text fade-in">
+                        <span class="hero-subtitle">Seja bem-vindo ao</span>
+                        <h1 class="hero-title">WikiLeirão</h1>
+                        <p class="hero-description">
+                            A sua <strong>enciclopédia definitiva do Brasileirão</strong>! Explore a paixão, a história e as
+                            curiosidades dos maiores clubes do futebol brasileiro.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="A.html" class="btn btn-primary">Explorar Série A</a>
+                            <a href="B.html" class="btn btn-secondary">Explorar Série B</a>
+                        </div>
+                    </div>
+                    <div class="hero-image fade-in">
+                        <img src="img/jogadores.png" alt="Ilustração de jogadores de futebol representando os times do Brasileirão" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <img class="jogadores fade-in float" src="img/jogadores.png" alt="Ilustração de jogadores de futebol representando os times do Brasileirão" loading="lazy" />
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Descubra o Universo do Brasileirão</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in stagger-item">
+                        <div class="feature-icon">⚽</div>
+                        <h3>Times Completos</h3>
+                        <p>Informações detalhadas sobre todos os 42 times das Séries A e B, com história, títulos e curiosidades.</p>
+                        <a href="A.html" class="feature-link">Ver Times →</a>
+                    </div>
+                    <div class="feature-card fade-in stagger-item">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Títulos e Conquistas</h3>
+                        <p>Acompanhe todos os títulos nacionais, regionais e estaduais de cada clube brasileiro.</p>
+                        <a href="A.html" class="feature-link">Ver Títulos →</a>
+                    </div>
+                    <div class="feature-card fade-in stagger-item">
+                        <div class="feature-icon">👑</div>
+                        <h3>Maiores Ídolos</h3>
+                        <p>Conheça os jogadores que marcaram época e se tornaram lendas em seus clubes.</p>
+                        <a href="idolos/index.html" class="feature-link">Ver Ídolos →</a>
+                    </div>
+                    <div class="feature-card fade-in stagger-item">
+                        <div class="feature-icon">🏟️</div>
+                        <h3>Estádios Icônicos</h3>
+                        <p>Explore os templos do futebol brasileiro, suas capacidades e histórias marcantes.</p>
+                        <a href="estadios/index.html" class="feature-link">Ver Estádios →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in stagger-item">
+                        <div class="stat-number" data-count="42">0</div>
+                        <div class="stat-label">Times Catalogados</div>
+                    </div>
+                    <div class="stat-item fade-in stagger-item">
+                        <div class="stat-number" data-count="20">0</div>
+                        <div class="stat-label">Times Série A</div>
+                    </div>
+                    <div class="stat-item fade-in stagger-item">
+                        <div class="stat-number" data-count="22">0</div>
+                        <div class="stat-label">Times Série B</div>
+                    </div>
+                    <div class="stat-item fade-in stagger-item">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-label">Anos de História</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Mergulhe na História do Futebol Brasileiro</h2>
+                    <p>Descubra curiosidades exclusivas, relembre grandes momentos e conheça os detalhes que fazem de cada clube uma paixão nacional.</p>
+                    <div class="cta-buttons">
+                        <a href="A.html" class="btn btn-primary">Começar Exploração</a>
+                        <a href="idolos/index.html" class="btn btn-outline">Ver Ídolos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer role="contentinfo">
         <div class="container">
-            <p>&copy; 2025 WikiLeirão - Todos os direitos reservados | A maior enciclopédia do futebol brasileiro</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WikiLeirão</h3>
+                    <p>A maior enciclopédia do futebol brasileiro</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="A.html">Série A</a></li>
+                        <li><a href="B.html">Série B</a></li>
+                        <li><a href="idolos/index.html">Ídolos</a></li>
+                        <li><a href="estadios/index.html">Estádios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#privacidade">Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WikiLeirão - Todos os direitos reservados</p>
+            </div>
         </div>
     </footer>
 
