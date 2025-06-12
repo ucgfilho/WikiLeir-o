@@ -258,7 +258,6 @@
 }
 
 .capacidade::before {
-    content: '🏟️';
     margin-right: 0.3rem;
 }
 
