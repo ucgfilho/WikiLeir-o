@@ -1,0 +1,215 @@
+/* Ídolos Page Styles */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    color: var(--texto-claro);
+    opacity: 0.9;
+}
+
+.idolos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.serie-section {
+    background: var(--cor-destaque-escura);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+.serie-title {
+    color: var(--cor-acento);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.serie-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--cor-acento);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.idolos-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.idolo-card {
+    background: var(--fundo-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.idolo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.idolo-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.idolo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.idolo-card:hover .idolo-image img {
+    transform: scale(1.05);
+}
+
+.idolo-info {
+    padding: 1.5rem;
+}
+
+.idolo-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--texto-escuro);
+    margin-bottom: 0.5rem;
+}
+
+.idolo-clube {
+    display: inline-block;
+    background: var(--cor-primaria-escura);
+    color: var(--texto-claro);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.idolo-descricao {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.idolo-link {
+    color: var(--cor-primaria-escura);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.idolo-link:hover {
+    color: var(--cor-acento);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 1rem 0;
+    }
+
+    .page-description {
+        font-size: 1rem;
+        margin: 1rem auto 0;
+    }
+
+    .serie-section {
+        padding: 1.5rem;
+    }
+
+    .serie-title {
+        font-size: 1.5rem;
+    }
+
+    .idolos-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .idolo-image {
+        height: 200px;
+    }
+
+    .idolo-info {
+        padding: 1rem;
+    }
+
+    .idolo-info h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .idolos-grid {
+        gap: 2rem;
+    }
+
+    .serie-section {
+        padding: 1rem;
+    }
+
+    .idolo-image {
+        height: 180px;
+    }
+}
+
+/* Animation Enhancements */
+.idolo-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.idolo-card:nth-child(1) { animation-delay: 0.1s; }
+.idolo-card:nth-child(2) { animation-delay: 0.2s; }
+.idolo-card:nth-child(3) { animation-delay: 0.3s; }
+.idolo-card:nth-child(4) { animation-delay: 0.4s; }
+.idolo-card:nth-child(5) { animation-delay: 0.5s; }
+.idolo-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading states */
+.idolo-image {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+}
+
+.idolo-image img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.idolo-image img.loaded {
+    opacity: 1;
+}
