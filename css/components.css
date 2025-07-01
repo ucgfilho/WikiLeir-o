@@ -355,7 +355,6 @@ th:hover {
 }
 
 th::after {
-    content: '↕️';
     position: absolute;
     right: 8px;
     opacity: 0.5;
