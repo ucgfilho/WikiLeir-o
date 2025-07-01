@@ -1,272 +1,37 @@
-/* RESPONSIVIDADE MOBILE FIRST ---------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVIDADE CELULAR ---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:600px) {
+  .detalhes-time {
+    grid-template-columns: 1fr;
+  }
 
-/* Base styles (mobile first) */
-.container {
-    padding: 0 1rem;
-}
-
-.container-tabela {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-table {
-    min-width: 600px;
-}
-
-.cabecalho-time {
+  .cabecalho-time {
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
-}
+  }
 
-.logo-time {
-    width: 80px;
-    height: 80px;
-}
-
-.nome-time {
-    font-size: 1.8rem;
-}
-
-.detalhes-time {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-.container-cabecalho {
+  .container-cabecalho {
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
-}
+  }
 
-nav {
+  nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
+  }
 }
 
-nav a {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-}
+/* RESPONSIVIDADE TABLET ---------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:900px) {
+  .detalhes-time {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 
-.titulo-pagina {
+  .cabecalho-time {
+    gap: 1rem;
+  }
+
+  .nome-time {
     font-size: 2rem;
-}
-
-.texto-boas-vindas {
-    font-size: 1rem;
-    margin: 1rem 0;
-}
-
-/* Melhorias para tabelas em mobile */
-.container-tabela {
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-td, th {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-}
-
-td img {
-    width: 24px;
-    height: 24px;
-}
-
-/* TABLET ---------------------------------------------------------------------------------------------------------------------------*/
-@media (min-width: 768px) {
-    .container {
-        padding: 0 1.5rem;
-    }
-
-    .cabecalho-time {
-        flex-direction: row;
-        text-align: left;
-        gap: 1.5rem;
-    }
-
-    .logo-time {
-        width: 100px;
-        height: 100px;
-    }
-
-    .nome-time {
-        font-size: 2.2rem;
-    }
-
-    .detalhes-time {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
-
-    .container-cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1.5rem;
-    }
-
-    nav {
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    nav a {
-        padding: 0.8rem 1.2rem;
-        font-size: 1rem;
-    }
-
-    .titulo-pagina {
-        font-size: 2.3rem;
-    }
-
-    .texto-boas-vindas {
-        font-size: 1.1rem;
-    }
-
-    td, th {
-        padding: 12px 15px;
-        font-size: 1rem;
-    }
-
-    td img {
-        width: 30px;
-        height: 30px;
-    }
-
-    table {
-        min-width: auto;
-    }
-}
-
-/* DESKTOP ---------------------------------------------------------------------------------------------------------------------------*/
-@media (min-width: 1024px) {
-    .container {
-        padding: 0 2rem;
-    }
-
-    .cabecalho-time {
-        gap: 2rem;
-    }
-
-    .logo-time {
-        width: 120px;
-        height: 120px;
-    }
-
-    .nome-time {
-        font-size: 2.5rem;
-    }
-
-    .detalhes-time {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-
-    .titulo-pagina {
-        font-size: 2.5rem;
-    }
-
-    .texto-boas-vindas {
-        font-size: 1.2rem;
-    }
-
-    nav a:hover {
-        transform: translateY(-2px);
-        transition: var(--transicao);
-    }
-}
-
-/* LARGE DESKTOP ---------------------------------------------------------------------------------------------------------------------------*/
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-        padding: 0 2rem;
-    }
-
-    .detalhes-time {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    }
-}
-
-/* EXTRA LARGE SCREENS ---------------------------------------------------------------------------------------------------------------------------*/
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1400px;
-    }
-}
-
-/* LANDSCAPE ORIENTATION ---------------------------------------------------------------------------------------------------------------------------*/
-@media (orientation: landscape) and (max-height: 600px) {
-    .cabecalho-time {
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .logo-time {
-        width: 60px;
-        height: 60px;
-    }
-
-    .nome-time {
-        font-size: 1.5rem;
-    }
-}
-
-/* HIGH DPI DISPLAYS ---------------------------------------------------------------------------------------------------------------------------*/
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .logo-time,
-    td img {
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
-    }
-}
-
-/* REDUCED MOTION ---------------------------------------------------------------------------------------------------------------------------*/
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* DARK MODE SUPPORT ---------------------------------------------------------------------------------------------------------------------------*/
-@media (prefers-color-scheme: dark) {
-    :root {
-        --cor-primaria-escura: #0a0a0f;
-        --cor-destaque-escura: #1a1a2e;
-        --cor-primaria-clara: #2a2a4e;
-        --fundo-card: #ffffff;
-        --texto-claro: #ffffff;
-        --sombra: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-}
-
-/* PRINT STYLES ---------------------------------------------------------------------------------------------------------------------------*/
-@media print {
-    header,
-    footer,
-    nav {
-        display: none;
-    }
-
-    body {
-        background: white;
-        color: black;
-    }
-
-    .container {
-        max-width: none;
-        padding: 0;
-    }
-
-    .detalhes-time {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  }
 }

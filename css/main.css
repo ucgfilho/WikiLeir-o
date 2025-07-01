@@ -33,97 +33,63 @@ main {
     text-align: center;
     margin: 1rem 0 2rem;
     font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .jogadores {
     width: 100%;
-    max-width: 600px;
-    height: auto;
     border-radius: 8px;
     box-shadow: var(--sombra);
-    margin: 2rem auto;
-    display: block;
-    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .jogadores:hover {
-    transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Grid layout for home page */
-.home-page {
+.main.container.home-page {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     align-items: center;
     justify-items: center;
-    padding: 2rem 0;
 }
 
-/* Responsive adjustments */
+.main.container.home-page .titulo-pagina {
+    grid-column: 1 / -1;
+}
+
+.main.container.home-page .texto-boas-vindas {
+    grid-column: 1 / -1;
+    max-width: 800px;
+}
+
+.main.container.home-page .jogadores {
+    grid-column: 1 / -1;
+    max-width: 100%;
+}
+
 @media (min-width: 768px) {
-    .home-page {
+    .main.container.home-page {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "welcome welcome"
             "title title"
-            "description image";
-        gap: 2rem;
-        align-items: start;
+            "welcome-text welcome-text"
+            "image image";
     }
 
-    .home-page .texto-boas-vindas:first-of-type {
-        grid-area: welcome;
-    }
-
-    .home-page .titulo-pagina {
+    .main.container.home-page .titulo-pagina {
         grid-area: title;
     }
 
-    .home-page .texto-boas-vindas:nth-of-type(2) {
-        grid-area: description;
-        text-align: left;
-        margin-right: 2rem;
+    .main.container.home-page .texto-boas-vindas:nth-of-type(1) { 
+        grid-area: welcome-text;
     }
 
-    .home-page .jogadores {
+    .main.container.home-page .texto-boas-vindas:nth-of-type(2) { 
+        grid-area: welcome-text;
+    }
+
+    .main.container.home-page .jogadores {
         grid-area: image;
-        margin: 0;
     }
-}
-
-@media (min-width: 1024px) {
-    .titulo-pagina {
-        font-size: 3rem;
-    }
-
-    .texto-boas-vindas {
-        font-size: 1.3rem;
-    }
-}
-
-/* Loading states */
-.loading-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-.loading-content.loaded {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Enhanced hover effects */
-.texto-boas-vindas {
-    transition: color 0.3s ease;
-}
-
-.texto-boas-vindas:hover {
-    color: var(--cor-acento);
 }
