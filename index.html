@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WikiLeirão - A enciclopédia completa do futebol brasileiro. Times, estádios, ídolos e muito mais.">
+    <meta name="keywords" content="futebol brasileiro, brasileirão, série a, série b, clubes">
+    <meta name="author" content="WikiLeirão">
+    
+    <title>WikiLeirão - A Enciclopédia do Brasileirão</title>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="WikiLeirão" class="logo__image">
+                        <span class="logo__text">WikiLeirão</span>
+                    </a>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="serie-a.html" class="nav__link">Série A</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="serie-b.html" class="nav__link">Série B</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="estadios.html" class="nav__link">Estádios</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="idolos.html" class="nav__link">Ídolos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__actions">
+                    <button class="search-toggle" id="searchToggle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5 5.806 2 10.5 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="menu-toggle" id="menuToggle">
+                        <span class="menu-toggle__line"></span>
+                        <span class="menu-toggle__line"></span>
+                        <span class="menu-toggle__line"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="search-bar" id="searchBar">
+                <div class="search-bar__container">
+                    <input type="text" class="search-bar__input" placeholder="Buscar times, estádios, ídolos..." id="searchInput">
+                    <button class="search-bar__submit">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5 5.806 2 10.5 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <span class="hero__subtitle">Seja bem-vindo ao</span>
+                        <h1 class="hero__title">WikiLeirão</h1>
+                        <p class="hero__description">
+                            A sua enciclopédia definitiva do Brasileirão! Explore a paixão, a história e as curiosidades dos maiores clubes do futebol brasileiro.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="serie-a.html" class="btn btn--primary">Explorar Série A</a>
+                            <a href="serie-b.html" class="btn btn--secondary">Explorar Série B</a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="assets/images/jogadores.png" alt="Jogadores brasileiros" class="hero__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section__title">O que você encontra no WikiLeirão</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L13.09 8.26L19 9L13.09 9.74L12 16L10.91 9.74L5 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Times</h3>
+                        <p class="feature-card__description">
+                            Informações completas sobre todos os clubes das Séries A e B, incluindo história, títulos e curiosidades.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 21H21M5 21V7L12 3L19 7V21M9 9V13M15 9V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Estádios</h3>
+                        <p class="feature-card__description">
+                            Explore os templos do futebol brasileiro, suas capacidades, histórias e momentos marcantes.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Ídolos</h3>
+                        <p class="feature-card__description">
+                            Conheça as lendas que marcaram época e eternizaram seus nomes na história do futebol.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-access">
+            <div class="container">
+                <h2 class="section__title">Acesso Rápido</h2>
+                <div class="quick-access__grid">
+                    <a href="serie-a.html" class="quick-card">
+                        <div class="quick-card__content">
+                            <h3 class="quick-card__title">Série A</h3>
+                            <p class="quick-card__description">21 clubes da elite do futebol brasileiro</p>
+                            <span class="quick-card__arrow">→</span>
+                        </div>
+                    </a>
+                    
+                    <a href="serie-b.html" class="quick-card">
+                        <div class="quick-card__content">
+                            <h3 class="quick-card__title">Série B</h3>
+                            <p class="quick-card__description">20 clubes na busca pelo acesso</p>
+                            <span class="quick-card__arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="WikiLeirão" class="logo__image">
+                        <span class="logo__text">WikiLeirão</span>
+                    </div>
+                    <p class="footer__description">
+                        A enciclopédia definitiva do futebol brasileiro.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Competições</h4>
+                        <ul class="footer__list">
+                            <li><a href="serie-a.html" class="footer__link">Série A</a></li>
+                            <li><a href="serie-b.html" class="footer__link">Série B</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Conteúdo</h4>
+                        <ul class="footer__list">
+                            <li><a href="estadios.html" class="footer__link">Estádios</a></li>
+                            <li><a href="idolos.html" class="footer__link">Ídolos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 WikiLeirão - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
