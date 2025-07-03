@@ -34,100 +34,6 @@ class SerieBPage {
         }
     }
 
-    // Busca avançada específica para Série B
-    setupAdvancedSearch() {
-        const searchContainer = document.createElement('div');
-        searchContainer.className = 'advanced-search-container';
-        searchContainer.innerHTML = `
-            <div class="search-header">
-                <h3>Explorar Times da Série B</h3>
-                <p>Descubra os times que lutam pelo acesso à elite do futebol brasileiro</p>
-            </div>
-            <div class="search-controls">
-                <div class="search-input-group">
-                    <input type="text" 
-                           id="team-search-b" 
-                           placeholder="Buscar por nome, cidade, apelido..." 
-                           autocomplete="off" />
-                    <button id="search-btn" class="search-button">🔍</button>
-                </div>
-                <div class="filter-group">
-                    <select id="region-filter-b">
-                        <option value="">Todas as regiões</option>
-                        <option value="Norte">Norte</option>
-                        <option value="Nordeste">Nordeste</option>
-                        <option value="Centro-Oeste">Centro-Oeste</option>
-                        <option value="Sudeste">Sudeste</option>
-                        <option value="Sul">Sul</option>
-                    </select>
-                    <select id="foundation-filter">
-                        <option value="">Qualquer época</option>
-                        <option value="old">Antes de 1950</option>
-                        <option value="classic">1950-1980</option>
-                        <option value="modern">Após 1980</option>
-                    </select>
-                    <button id="clear-all-filters">Limpar Filtros</button>
-                </div>
-            </div>
-            <div class="quick-filters">
-                <span class="filter-label">Filtros rápidos:</span>
-                <button class="quick-filter" data-filter="traditional">Tradicionais</button>
-                <button class="quick-filter" data-filter="recent">Recém-chegados</button>
-                <button class="quick-filter" data-filter="capitals">Capitais</button>
-                <button class="quick-filter" data-filter="interior">Interior</button>
-            </div>
-        `;
-
-        const main = document.querySelector('main');
-        const title = main.querySelector('.titulo-pagina');
-        title.insertAdjacentElement('afterend', searchContainer);
-
-        this.setupSearchEventListeners();
-    }
-
-    setupSearchEventListeners() {
-        const searchInput = document.getElementById('team-search-b');
-        const regionFilter = document.getElementById('region-filter-b');
-        const foundationFilter = document.getElementById('foundation-filter');
-        const clearButton = document.getElementById('clear-all-filters');
-        const quickFilters = document.querySelectorAll('.quick-filter');
-
-        searchInput.addEventListener('input', Utils.debounce(() => {
-            this.filterTeams();
-        }, 300));
-
-        regionFilter.addEventListener('change', () => {
-            this.filterTeams();
-            this.highlightRegion(regionFilter.value);
-        });
-
-        foundationFilter.addEventListener('change', () => {
-            this.filterTeams();
-        });
-
-        clearButton.addEventListener('click', () => {
-            searchInput.value = '';
-            regionFilter.value = '';
-            foundationFilter.value = '';
-            quickFilters.forEach(btn => btn.classList.remove('active'));
-            this.filterTeams();
-            this.clearRegionHighlight();
-        });
-
-        quickFilters.forEach(button => {
-            button.addEventListener('click', () => {
-                quickFilters.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                this.applyQuickFilter(button.dataset.filter);
-            });
-        });
-    }
-
-    // Filtros regionais específicos
-    setupRegionalFilters() {
-        this.createRegionalStats();
-    }
-
     createRegionalStats() {
         const statsContainer = document.createElement('div');
         statsContainer.className = 'regional-stats';
@@ -135,15 +41,15 @@ class SerieBPage {
             <h4>Distribuição Regional</h4>
             <div class="region-cards">
                 ${Object.entries(this.regions).map(([region, states]) => {
-                    const count = this.teams.filter(team => states.includes(team.state)).length;
-                    return `
+            const count = this.teams.filter(team => states.includes(team.state)).length;
+            return `
                         <div class="region-card" data-region="${region}">
                             <div class="region-name">${region}</div>
                             <div class="region-count">${count} times</div>
                             <div class="region-percentage">${((count / this.teams.length) * 100).toFixed(1)}%</div>
                         </div>
                     `;
-                }).join('')}
+        }).join('')}
             </div>
         `;
 
@@ -172,14 +78,14 @@ class SerieBPage {
 
         this.filteredTeams = this.teams.filter(team => {
             // Busca por texto
-            const matchesSearch = !searchTerm || 
+            const matchesSearch = !searchTerm ||
                 team.name.toLowerCase().includes(searchTerm) ||
                 team.city.toLowerCase().includes(searchTerm) ||
                 team.nickname.some(nick => nick.toLowerCase().includes(searchTerm)) ||
                 team.keywords.some(keyword => keyword.includes(searchTerm));
 
             // Filtro regional
-            const matchesRegion = !regionFilter || 
+            const matchesRegion = !regionFilter ||
                 this.regions[regionFilter].includes(team.state);
 
             // Filtro por época de fundação
@@ -219,13 +125,13 @@ class SerieBPage {
                 filteredTeams = this.teams.filter(team => team.founded && team.founded > 2000);
                 break;
             case 'capitals':
-                const capitals = ['Porto Alegre', 'Florianópolis', 'Curitiba', 'São Paulo', 'Rio de Janeiro', 
-                                'Belo Horizonte', 'Salvador', 'Recife', 'Fortaleza', 'Belém', 'Manaus', 'Goiânia'];
+                const capitals = ['Porto Alegre', 'Florianópolis', 'Curitiba', 'São Paulo', 'Rio de Janeiro',
+                    'Belo Horizonte', 'Salvador', 'Recife', 'Fortaleza', 'Belém', 'Manaus', 'Goiânia'];
                 filteredTeams = this.teams.filter(team => capitals.includes(team.city));
                 break;
             case 'interior':
-                const capitals2 = ['Porto Alegre', 'Florianópolis', 'Curitiba', 'São Paulo', 'Rio de Janeiro', 
-                                 'Belo Horizonte', 'Salvador', 'Recife', 'Fortaleza', 'Belém', 'Manaus', 'Goiânia'];
+                const capitals2 = ['Porto Alegre', 'Florianópolis', 'Curitiba', 'São Paulo', 'Rio de Janeiro',
+                    'Belo Horizonte', 'Salvador', 'Recife', 'Fortaleza', 'Belém', 'Manaus', 'Goiânia'];
                 filteredTeams = this.teams.filter(team => !capitals2.includes(team.city));
                 break;
         }
@@ -269,7 +175,7 @@ class SerieBPage {
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.className = 'comparison-checkbox';
-            
+
             const cell = document.createElement('td');
             cell.appendChild(checkbox);
             row.insertBefore(cell, row.firstChild);
@@ -290,7 +196,7 @@ class SerieBPage {
         document.querySelectorAll('.comparison-checkbox').forEach(checkbox => {
             checkbox.closest('td').remove();
         });
-        
+
         const headerCheckbox = document.querySelector('thead th:first-child');
         if (headerCheckbox && headerCheckbox.innerHTML === '⚖️') {
             headerCheckbox.remove();
@@ -307,12 +213,12 @@ class SerieBPage {
         rows.forEach((row, index) => {
             row.style.opacity = '0';
             row.style.transform = 'translateY(20px)';
-            
+
             setTimeout(() => {
                 row.style.transition = 'all 0.5s ease-out';
                 row.style.opacity = '1';
                 row.style.transform = 'translateY(0)';
-                
+
                 // Efeito especial para os primeiros 4 (zona de acesso)
                 if (index < 4) {
                     row.classList.add('access-zone');
@@ -393,7 +299,7 @@ class SerieBPage {
     printTable() {
         const printWindow = window.open('', '_blank');
         const tableHTML = document.querySelector('.container-tabela').outerHTML;
-        
+
         printWindow.document.write(`
             <html>
                 <head>
@@ -411,7 +317,7 @@ class SerieBPage {
                 </body>
             </html>
         `);
-        
+
         printWindow.document.close();
         printWindow.print();
     }
@@ -419,7 +325,7 @@ class SerieBPage {
     shareResults() {
         const url = window.location.href;
         const text = `Confira os times da Série B no WikiLeirão: ${this.filteredTeams.length} times encontrados`;
-        
+
         if (navigator.share) {
             navigator.share({
                 title: 'Times da Série B - WikiLeirão',
@@ -515,7 +421,7 @@ class SerieBPage {
 
         setTimeout(() => {
             const rows = tbody.querySelectorAll('tr');
-            
+
             this.filteredTeams.forEach((team, index) => {
                 const row = rows[index];
                 if (row) {
@@ -543,7 +449,7 @@ class SerieBPage {
             row.addEventListener('mouseenter', () => {
                 row.classList.add('highlighted');
             });
-            
+
             row.addEventListener('mouseleave', () => {
                 row.classList.remove('highlighted');
             });
