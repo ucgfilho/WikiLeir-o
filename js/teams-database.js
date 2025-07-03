@@ -1,4 +1,3 @@
-// Base de dados completa dos times para busca
 const teamsDatabase = [
     // Série A
     {
