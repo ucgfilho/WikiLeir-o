@@ -4,8 +4,6 @@ class HomePage {
     }
 
     init() {
-        console.log("HomePage inicializada sem animações.");
-        // A página funcionará sem JS adicional para animações.
         this.setupCounter();
     }
 
