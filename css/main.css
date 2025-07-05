@@ -47,11 +47,9 @@ main {
     box-shadow: var(--sombra);
     margin: 2rem auto;
     display: block;
-    transition: transform 0.3s ease;
 }
 
 .jogadores:hover {
-    transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -105,23 +103,6 @@ main {
     .texto-boas-vindas {
         font-size: 1.3rem;
     }
-}
-
-/* Loading states */
-.loading-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-.loading-content.loaded {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Enhanced hover effects */
-.texto-boas-vindas {
-    transition: color 0.3s ease;
 }
 
 .texto-boas-vindas:hover {

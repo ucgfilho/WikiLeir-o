@@ -1,4 +1,3 @@
-/* header.css */
 header {
     width: 100%;
     background-color: var(--cor-primaria-escura);
@@ -37,18 +36,8 @@ nav a {
     position: relative;
 }
 
-nav a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--cor-acento);
-}
-
-nav a:hover:after {
-    width: 100%;
+nav a:hover {
+    background-color: var(--cor-destaque-escura);
 }
 
 nav a.ativo {
