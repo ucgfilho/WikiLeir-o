@@ -21,8 +21,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
-  /* Base para unidades rem */
+  font-size: clamp(12px, 3vw, 16px);
 }
 
 body {
@@ -39,7 +38,6 @@ body {
 
 main {
   flex: 1;
-  /* Garante que o main ocupe o espaço disponível */
   width: 100%;
 }
 
@@ -47,8 +45,7 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 clamp(1rem, 5vw, 2rem);
-  /* Espaçamento lateral fluido */
+  padding: 0 clamp(0.5rem, 2vw, 2rem);
 }
 
 img {
@@ -69,7 +66,7 @@ a:hover {
 
 /* Scrollbar customizada para um visual mais integrado */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: clamp(6px, 1.5vw, 10px);
 }
 
 ::-webkit-scrollbar-track {

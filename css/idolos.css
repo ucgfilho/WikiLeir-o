@@ -1,36 +1,37 @@
 .page-header {
     text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem 0;
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(1rem, 3vw, 2rem) 0;
 }
 
 .page-description {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
     line-height: 1.6;
     max-width: 800px;
-    margin: 1.5rem auto 0;
+    margin: clamp(0.75rem, 2vw, 1.5rem) auto 0;
     color: var(--texto-claro);
     opacity: 0.9;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
 }
 
 .idolos-grid {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: clamp(1.5rem, 4vw, 3rem);
 }
 
 .serie-section {
     background: var(--cor-destaque-escura);
-    padding: 2rem;
+    padding: clamp(1rem, 3vw, 2rem);
     border-radius: 12px;
     box-shadow: var(--sombra);
 }
 
 .serie-title {
     color: var(--cor-acento);
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
     text-align: center;
     position: relative;
 }
@@ -38,17 +39,17 @@
 .serie-title::after {
     content: '';
     display: block;
-    width: 60px;
-    height: 3px;
+    width: clamp(30px, 8vw, 60px);
+    height: clamp(2px, 0.6vw, 3px);
     background: var(--cor-acento);
-    margin: 0.5rem auto 0;
+    margin: clamp(0.25rem, 1vw, 0.5rem) auto 0;
     border-radius: 2px;
 }
 
 .idolos-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 60vw, 320px), 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
 }
 
 .idolo-card {
@@ -57,18 +58,19 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transicao);
 }
 
 .idolo-card:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 .idolo-image {
     position: relative;
-    height: 250px;
+    height: clamp(180px, 40vw, 250px);
     overflow: hidden;
     background: #f0f0f0;
-    /* Cor de fundo para o placeholder */
 }
 
 .idolo-image img {
@@ -84,32 +86,32 @@
 }
 
 .idolo-info {
-    padding: 1.5rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
 }
 
 .idolo-info h3 {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
     font-weight: 600;
     color: var(--texto-escuro);
-    margin-bottom: 0.5rem;
+    margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
 }
 
 .idolo-clube {
     display: inline-block;
     background: var(--cor-primaria-escura);
     color: var(--texto-claro);
-    padding: 0.3rem 0.8rem;
+    padding: clamp(0.2rem, 0.8vw, 0.3rem) clamp(0.6rem, 2vw, 0.8rem);
     border-radius: 15px;
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem, 2.2vw, 0.8rem);
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
 }
 
 .idolo-descricao {
     color: #666;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    margin-bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
 }
 
 .idolo-link {
@@ -118,7 +120,9 @@
     font-weight: 600;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: clamp(0.25rem, 1vw, 0.5rem);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    transition: var(--transicao);
 }
 
 .idolo-link:hover {
@@ -128,50 +132,203 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .page-header {
-        padding: 1rem 0;
+        padding: clamp(0.75rem, 2.5vw, 1rem) 0;
     }
 
     .page-description {
-        font-size: 1rem;
-        margin: 1rem auto 0;
+        font-size: clamp(0.9rem, 2.8vw, 1rem);
+        margin: clamp(0.5rem, 2vw, 1rem) auto 0;
     }
 
     .serie-section {
-        padding: 1.5rem;
+        padding: clamp(0.75rem, 2.5vw, 1.5rem);
     }
 
     .serie-title {
-        font-size: 1.5rem;
+        font-size: clamp(1.3rem, 3.5vw, 1.5rem);
     }
 
     .idolos-cards {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: clamp(0.75rem, 2.5vw, 1.5rem);
     }
 
     .idolo-image {
-        height: 200px;
+        height: clamp(160px, 35vw, 200px);
     }
 
     .idolo-info {
-        padding: 1rem;
+        padding: clamp(0.75rem, 2.5vw, 1rem);
     }
 
     .idolo-info h3 {
-        font-size: 1.3rem;
+        font-size: clamp(1.1rem, 3vw, 1.3rem);
     }
 }
 
 @media (max-width: 480px) {
     .idolos-grid {
-        gap: 2rem;
+        gap: clamp(1rem, 3vw, 2rem);
     }
 
     .serie-section {
-        padding: 1rem;
+        padding: clamp(0.5rem, 2vw, 1rem);
     }
 
     .idolo-image {
-        height: 180px;
+        height: clamp(140px, 30vw, 180px);
+    }
+}
+
+/* Para telas ultra pequenas */
+@media (max-width: 320px) {
+    .page-header {
+        margin-bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+        padding: clamp(0.5rem, 2vw, 0.75rem) 0;
+    }
+
+    .page-description {
+        font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+        margin: clamp(0.4rem, 1.5vw, 0.75rem) auto 0;
+        line-height: 1.5;
+    }
+
+    .idolos-grid {
+        gap: clamp(0.75rem, 2.5vw, 1.5rem);
+    }
+
+    .serie-section {
+        padding: clamp(0.5rem, 2vw, 0.75rem);
+        border-radius: 8px;
+    }
+
+    .serie-title {
+        font-size: clamp(1.1rem, 3vw, 1.3rem);
+        margin-bottom: clamp(0.75rem, 2.5vw, 1rem);
+    }
+
+    .serie-title::after {
+        width: clamp(20px, 5vw, 30px);
+        height: clamp(1px, 0.4vw, 2px);
+    }
+
+    .idolos-cards {
+        gap: clamp(0.5rem, 2vw, 0.75rem);
+    }
+
+    .idolo-card {
+        border-radius: 8px;
+    }
+
+    .idolo-image {
+        height: clamp(120px, 25vw, 160px);
+    }
+
+    .idolo-info {
+        padding: clamp(0.5rem, 2vw, 0.75rem);
+    }
+
+    .idolo-info h3 {
+        font-size: clamp(1rem, 2.8vw, 1.1rem);
+        margin-bottom: clamp(0.2rem, 0.8vw, 0.25rem);
+    }
+
+    .idolo-clube {
+        padding: clamp(0.15rem, 0.6vw, 0.2rem) clamp(0.4rem, 1.5vw, 0.6rem);
+        font-size: clamp(0.6rem, 2vw, 0.7rem);
+        margin-bottom: clamp(0.4rem, 1.5vw, 0.5rem);
+        border-radius: 10px;
+    }
+
+    .idolo-descricao {
+        font-size: clamp(0.7rem, 2.2vw, 0.8rem);
+        margin-bottom: clamp(0.5rem, 2vw, 0.75rem);
+        line-height: 1.5;
+    }
+
+    .idolo-link {
+        font-size: clamp(0.7rem, 2.2vw, 0.8rem);
+        gap: clamp(0.15rem, 0.6vw, 0.25rem);
+    }
+}
+
+/* Para telas extremamente pequenas (53px) */
+@media (max-width: 100px) {
+    .page-header {
+        margin-bottom: clamp(0.3rem, 1.5vw, 0.75rem);
+        padding: clamp(0.2rem, 1vw, 0.5rem) 0;
+    }
+
+    .page-description {
+        font-size: clamp(0.5rem, 1.8vw, 0.8rem);
+        margin: clamp(0.2rem, 1vw, 0.4rem) auto 0;
+        line-height: 1.4;
+    }
+
+    .idolos-grid {
+        gap: clamp(0.3rem, 1.5vw, 0.75rem);
+    }
+
+    .serie-section {
+        padding: clamp(0.2rem, 1vw, 0.5rem);
+        border-radius: 4px;
+    }
+
+    .serie-title {
+        font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+        margin-bottom: clamp(0.3rem, 1.5vw, 0.75rem);
+    }
+
+    .serie-title::after {
+        width: clamp(15px, 3vw, 20px);
+        height: clamp(0.5px, 0.2vw, 1px);
+        margin: clamp(0.1rem, 0.5vw, 0.25rem) auto 0;
+    }
+
+    .idolos-cards {
+        gap: clamp(0.2rem, 1vw, 0.5rem);
+        grid-template-columns: 1fr;
+    }
+
+    .idolo-card {
+        border-radius: 4px;
+    }
+
+    .idolo-image {
+        height: clamp(80px, 20vw, 120px);
+    }
+
+    .idolo-info {
+        padding: clamp(0.2rem, 1vw, 0.5rem);
+    }
+
+    .idolo-info h3 {
+        font-size: clamp(0.7rem, 2.2vw, 1rem);
+        margin-bottom: clamp(0.1rem, 0.5vw, 0.2rem);
+        line-height: 1.2;
+    }
+
+    .idolo-clube {
+        padding: clamp(0.1rem, 0.4vw, 0.15rem) clamp(0.2rem, 1vw, 0.4rem);
+        font-size: clamp(0.4rem, 1.5vw, 0.6rem);
+        margin-bottom: clamp(0.2rem, 1vw, 0.4rem);
+        border-radius: 6px;
+    }
+
+    .idolo-descricao {
+        font-size: clamp(0.5rem, 1.8vw, 0.7rem);
+        margin-bottom: clamp(0.2rem, 1vw, 0.5rem);
+        line-height: 1.4;
+    }
+
+    .idolo-link {
+        font-size: clamp(0.5rem, 1.8vw, 0.7rem);
+        gap: clamp(0.05rem, 0.3vw, 0.15rem);
+    }
+
+    /* Simplificar hover effects para telas muito pequenas */
+    .idolo-card:hover {
+        transform: none;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
 }

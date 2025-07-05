@@ -2,7 +2,7 @@ main {
     flex: 1;
     width: 100%;
     max-width: 1100px;
-    margin: 2rem auto;
+    margin: clamp(1rem, 3vw, 2rem) auto;
 }
 
 .video-background {
@@ -11,32 +11,34 @@ main {
 
 .titulo-pagina {
     text-align: center;
-    margin: 2rem 0;
-    font-size: 2.5rem;
+    margin: clamp(1rem, 3vw, 2rem) 0;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
     font-weight: 600;
     color: var(--texto-claro);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
+    line-height: 1.2;
 }
 
 .titulo-pagina::after {
     content: '';
     display: block;
-    width: 60px;
-    height: 4px;
+    width: clamp(30px, 8vw, 60px);
+    height: clamp(2px, 0.8vw, 4px);
     background-color: var(--cor-acento);
-    margin: 0.5rem auto 0;
+    margin: clamp(0.25rem, 1vw, 0.5rem) auto 0;
     border-radius: 2px;
 }
 
 .texto-boas-vindas {
     text-align: center;
-    margin: 1rem 0 2rem;
-    font-size: 1.2rem;
+    margin: clamp(0.5rem, 2vw, 1rem) 0 clamp(1rem, 3vw, 2rem);
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
     line-height: 1.6;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
 }
 
 .jogadores {
@@ -45,7 +47,7 @@ main {
     height: auto;
     border-radius: 8px;
     box-shadow: var(--sombra);
-    margin: 2rem auto;
+    margin: clamp(1rem, 3vw, 2rem) auto;
     display: block;
 }
 
@@ -57,10 +59,10 @@ main {
 .home-page {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
     align-items: center;
     justify-items: center;
-    padding: 2rem 0;
+    padding: clamp(1rem, 3vw, 2rem) 0;
 }
 
 /* Responsive adjustments */
@@ -71,7 +73,7 @@ main {
             "welcome welcome"
             "title title"
             "description image";
-        gap: 2rem;
+        gap: clamp(1rem, 3vw, 2rem);
         align-items: start;
     }
 
@@ -86,7 +88,7 @@ main {
     .home-page .texto-boas-vindas:nth-of-type(2) {
         grid-area: description;
         text-align: left;
-        margin-right: 2rem;
+        margin-right: clamp(1rem, 3vw, 2rem);
     }
 
     .home-page .jogadores {
@@ -97,14 +99,63 @@ main {
 
 @media (min-width: 1024px) {
     .titulo-pagina {
-        font-size: 3rem;
+        font-size: clamp(2rem, 5vw, 3rem);
     }
 
     .texto-boas-vindas {
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
     }
 }
 
 .texto-boas-vindas:hover {
     color: var(--cor-acento);
+}
+
+/* Para telas ultra pequenas */
+@media (max-width: 320px) {
+    main {
+        margin: clamp(0.5rem, 2vw, 1rem) auto;
+    }
+
+    .titulo-pagina {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        margin: clamp(0.5rem, 2vw, 1rem) 0;
+    }
+
+    .texto-boas-vindas {
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        margin: clamp(0.25rem, 1vw, 0.5rem) 0 clamp(0.5rem, 2vw, 1rem);
+    }
+}
+
+/* Para telas extremamente pequenas (53px) */
+@media (max-width: 100px) {
+    main {
+        margin: clamp(0.2rem, 1vw, 0.5rem) auto;
+    }
+
+    .titulo-pagina {
+        font-size: clamp(0.8rem, 3vw, 1.2rem);
+        margin: clamp(0.2rem, 1vw, 0.5rem) 0;
+    }
+
+    .titulo-pagina::after {
+        width: clamp(15px, 4vw, 30px);
+        height: clamp(1px, 0.4vw, 2px);
+    }
+
+    .texto-boas-vindas {
+        font-size: clamp(0.6rem, 2vw, 0.8rem);
+        margin: clamp(0.1rem, 0.5vw, 0.25rem) 0 clamp(0.2rem, 1vw, 0.5rem);
+        line-height: 1.4;
+    }
+
+    .jogadores {
+        margin: clamp(0.5rem, 2vw, 1rem) auto;
+    }
+
+    .home-page {
+        gap: clamp(0.25rem, 1vw, 0.75rem);
+        padding: clamp(0.5rem, 2vw, 1rem) 0;
+    }
 }
