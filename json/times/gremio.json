@@ -1,0 +1,61 @@
+{
+    "id": "gremio",
+    "name": "Grêmio",
+    "fullName": "Grêmio Foot-Ball Porto Alegrense",
+    "nickname": "Imortal Tricolor / Tricolor Gaúcho",
+    "founded": "15 de setembro de 1903",
+    "stadium": "Arena do Grêmio (55.662 lugares)",
+    "mascot": "Mosqueteiro",
+    "logoUrl": "https://logodetimes.com/times/gremio/logo-gremio-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (2x)",
+                "years": "1981, 1996"
+            },
+            {
+                "name": "Copa do Brasil (5x)",
+                "years": "1989, 1994, 1997, 2001, 2016"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série B (1x)",
+                "years": "2005"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Libertadores da América (3x)",
+                "years": "1983, 1995, 2017"
+            },
+            {
+                "name": "Mundial Interclubes (1x)",
+                "years": "1983"
+            },
+            {
+                "name": "Recopa Sul-Americana (2x)",
+                "years": "1996, 2018"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Gaúcho (43x)",
+                "years": "1921, 1922, 1926, 1931, 1932, 1946, 1949, 1956, 1957, 1958, 1959, 1960, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1977, 1979, 1985, 1986, 1987, 1988, 1989, 1993, 1995, 1996, 1999, 2001, 2006, 2007, 2010, 2018, 2019, 2020, 2021, 2022, 2023, 2024"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Renato Portaluppi",
+            "description": "O 'Rei de Copas', jogador e treinador lendário, ídolo máximo do clube com a conquista do Mundial de 1983 como atleta e da Libertadores de 2017 como técnico."
+        },
+        {
+            "name": "Danrlei",
+            "description": "Goleiro com grande identificação com a torcida, símbolo de raça e dedicação nos anos 90."
+        }
+    ],
+    "curiosities": [
+        "É um dos clubes com mais títulos da Copa do Brasil (5).",
+        "Possui uma das maiores rivalidades do futebol mundial com o Internacional, no 'Gre-Nal'.",
+        "A Arena do Grêmio é uma das mais modernas do Brasil."
+    ]
+}

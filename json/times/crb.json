@@ -1,0 +1,40 @@
+{
+    "id": "crb",
+    "name": "CRB",
+    "fullName": "Clube de Regatas Brasil",
+    "nickname": "Galo de Campina",
+    "founded": "20 de setembro de 1912",
+    "stadium": "Rei Pelé (17.600 lugares)",
+    "mascot": "Galo",
+    "logoUrl": "https://logodetimes.com/times/crb/logo-crb-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série C (1x)",
+                "years": "2011"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Alagoano (33x)",
+                "years": "1927, 1930, 1937, 1938, 1939, 1940, 1951, 1958, 1961, 1963, 1964, 1969, 1970, 1972, 1973, 1976, 1977, 1979, 1980, 1981, 1983, 1986, 1987, 1992, 1993, 1995, 1996, 1999, 2002, 2012, 2013, 2015, 2016, 2017, 2020, 2022, 2023"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Joãozinho Paulista",
+            "description": "Meia habilidoso e goleador, ídolo nas décadas de 80 e 90, com diversas conquistas estaduais."
+        },
+        {
+            "name": "Roberto Cavalo",
+            "description": "Volante raçudo e líder, fundamental na conquista do Campeonato Brasileiro Série C em 2011."
+        }
+    ],
+    "curiosities": [
+        "É um dos clubes mais tradicionais do estado de Alagoas.",
+        "O clássico contra o CSA é conhecido como 'Clássico das Multidões'.",
+        "O CRB possui uma das maiores torcidas do Nordeste."
+    ]
+}

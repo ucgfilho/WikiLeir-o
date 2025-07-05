@@ -1,0 +1,62 @@
+{
+    "id": "santos",
+    "name": "Santos",
+    "fullName": "Santos Futebol Clube",
+    "nickname": "Peixe / Alvinegro Praiano",
+    "founded": "14 de abril de 1912",
+    "stadium": "Vila Belmiro (16.068 lugares)",
+    "mascot": "Baleia",
+    "logoUrl": "https://logodetimes.com/times/santos/logo-santos-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (8x)",
+                "years": "1961, 1962, 1963, 1964, 1965 (Taça Brasil), 1968 (Torneio Roberto Gomes Pedrosa), 2002, 2004"
+            },
+            {
+                "name": "Copa do Brasil (1x)",
+                "years": "2010"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Libertadores da América (3x)",
+                "years": "1962, 1963, 2011"
+            },
+            {
+                "name": "Mundial Interclubes (2x)",
+                "years": "1962, 1963"
+            },
+            {
+                "name": "Recopa Sul-Americana (1x)",
+                "years": "2012"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Paulista (22x)",
+                "years": "1935, 1955, 1956, 1958, 1960, 1961, 1962, 1964, 1965, 1967, 1968, 1969, 1973, 1978, 1984, 1986, 2007, 2010, 2011, 2012, 2015, 2016"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Pelé",
+            "description": "O 'Rei do Futebol', considerado o maior jogador de todos os tempos, com uma carreira brilhante e muitos títulos pelo Santos."
+        },
+        {
+            "name": "Neymar",
+            "description": "Um dos grandes nomes do futebol brasileiro, revelado pelo Santos, com dribles e gols espetaculares."
+        },
+        {
+            "name": "Pepe",
+            "description": "O 'Canhão da Vila', ponta-esquerda com chutes potentes e muitos gols pelo Santos."
+        }
+    ],
+    "curiosities": [
+        "É o clube que mais vezes conquistou a Taça Brasil/Campeonato Brasileiro.",
+        "A Vila Belmiro é um dos estádios mais tradicionais do futebol brasileiro.",
+        "O Santos é conhecido por sua rica história de revelação de grandes talentos.",
+        "O time dos anos 60, liderado por Pelé, é considerado uma das maiores equipes de todos os tempos."
+    ]
+}

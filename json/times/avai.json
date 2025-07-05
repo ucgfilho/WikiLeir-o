@@ -1,0 +1,48 @@
+{
+    "id": "avai",
+    "name": "Avaí FC",
+    "fullName": "Avaí Futebol Clube",
+    "nickname": "Leão da Ilha / Time da Raça",
+    "founded": "1º de setembro de 1923",
+    "stadium": "Ressacada (17.800 lugares)",
+    "mascot": "Leão",
+    "logoUrl": "https://logodetimes.com/times/avai/logo-avai-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Série B (1x)",
+                "years": "1998"
+            },
+            {
+                "name": "Série C (1x)",
+                "years": "1997"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Catarinense (18x)",
+                "years": "Último: 2019"
+            },
+            {
+                "name": "Copa Santa Catarina (1x)",
+                "years": "2009"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Roberto",
+            "description": "Maior artilheiro da história do clube, com 126 gols, ídolo dos anos 70 e 80."
+        },
+        {
+            "name": "Cleber Santana",
+            "description": "Meia que se destacou no time antes de ir para o Atlético de Madrid, falecido no acidente da Chapecoense."
+        }
+    ],
+    "curiosities": [
+        "Maior campeão catarinense ao lado do Figueirense (18 títulos).",
+        "Primeiro clube catarinense a disputar a Série A do Brasileirão (1974).",
+        "Mantém forte rivalidade com Figueirense (Clássico da Capital)."
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": "ceara",
+    "name": "Ceará",
+    "fullName": "Ceará Sporting Club",
+    "nickname": "Vozão / Alvinegro Cearense",
+    "founded": "2 de junho de 1914",
+    "stadium": "Castelão (63.903 lugares)",
+    "mascot": "Vozão",
+    "logoUrl": "https://logodetimes.com/times/ceara/logo-ceara-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Copa do Nordeste (1x)",
+                "years": "2015"
+            },
+            {
+                "name": "Série C (1x)",
+                "years": "1994"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Cearense (46x)",
+                "years": "Recordista"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Walter",
+            "description": "Maior artilheiro da história do clube, com mais de 200 gols, ídolo dos anos 70 e 80."
+        },
+        {
+            "name": "Michel",
+            "description": "Goleiro que se tornou ídolo nas recentes campanhas do clube no cenário nacional."
+        }
+    ],
+    "curiosities": [
+        "Maior campeão cearense (46 títulos).",
+        "Primeiro clube cearense a disputar a Série A (1969).",
+        "Mantém forte rivalidade com Fortaleza (Clássico-Rei)."
+    ]
+}

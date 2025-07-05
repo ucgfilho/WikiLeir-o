@@ -1,0 +1,49 @@
+{
+    "id": "garrincha",
+    "name": "Garrincha",
+    "fullName": "Manuel Francisco dos Santos - Garrincha",
+    "nickname": "Anjo das Pernas Tortas, Alegria do Povo",
+    "birthDate": "28 de outubro de 1933",
+    "club": "Botafogo",
+    "position": "Ponta-direita",
+    "imageUrl": "https://geraldomayrink.com.br/wp-content/uploads/2020/11/garrincha_Destaque.jpg",
+    "sections": [
+        {
+            "title": "Carreira no Botafogo",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> 1953–1965",
+                "<strong>Jogos:</strong> 614 partidas",
+                "<strong>Gols:</strong> 245 gols",
+                "<strong>Destaque:</strong> Considerado o maior jogador da história do clube e um dos maiores dribladores de todos os tempos."
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo Botafogo",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Campeonato Carioca (3x)",
+                    "years": "1957, 1961, 1962"
+                },
+                {
+                    "name": "Torneio Rio-São Paulo (2x)",
+                    "years": "1962, 1964"
+                }
+            ]
+        },
+        {
+            "title": "Seleção Brasileira",
+            "type": "list",
+            "items": [
+                "<strong>Copas do Mundo:</strong> 2 Títulos (1958, 1962)",
+                "<strong>Fato notável:</strong> Com Pelé e Garrincha em campo, a Seleção Brasileira nunca perdeu."
+            ]
+        },
+        {
+            "title": "Legado e Gênio",
+            "type": "custom",
+            "html": "<h3>O Drible Imprevisível</h3><p>Garrincha possuía uma perna 6 cm mais curta que a outra, mas transformou o que seria uma limitação em sua maior arma. Seus dribles eram desconcertantes e imprevisíveis.</p><h3>Herói da Copa de 1962</h3><p>Com Pelé lesionado, Garrincha assumiu o protagonismo e liderou o Brasil ao bicampeonato mundial no Chile.</p>"
+        }
+    ]
+}

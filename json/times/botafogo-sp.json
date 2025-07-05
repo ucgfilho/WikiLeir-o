@@ -1,0 +1,44 @@
+{
+    "id": "botafogo-sp",
+    "name": "Botafogo-SP",
+    "fullName": "Botafogo Futebol Clube",
+    "nickname": "Pantera da Mogiana",
+    "founded": "27 de novembro de 1918",
+    "stadium": "Santa Cruz (29.292 lugares)",
+    "mascot": "Pantera",
+    "logoUrl": "https://logodetimes.com/times/botafogo-sp/logo-botafogo-sp-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série D (1x)",
+                "years": "2015"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Paulista - Série A2 (3x)",
+                "years": "1956, 2000, 2013"
+            },
+            {
+                "name": "Taça Cidade de São Paulo (1x)",
+                "years": "1977"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Sócrates",
+            "description": "Um dos maiores nomes da história do futebol brasileiro, revelado pelo Botafogo-SP, onde iniciou sua brilhante carreira."
+        },
+        {
+            "name": "Dener",
+            "description": "Considerado um dos maiores talentos do futebol brasileiro, revelado no Botafogo-SP antes de brilhar em grandes clubes e na seleção."
+        }
+    ],
+    "curiosities": [
+        "É um dos clubes mais tradicionais do interior de São Paulo.",
+        "O clássico contra o Comercial é conhecido como 'Come-Fogo'.",
+        "O Botafogo-SP é conhecido por ter revelado grandes talentos para o futebol nacional e internacional."
+    ]
+}

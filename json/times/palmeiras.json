@@ -1,0 +1,62 @@
+{
+    "id": "palmeiras",
+    "name": "Palmeiras",
+    "fullName": "Sociedade Esportiva Palmeiras",
+    "nickname": "Verdão / Alviverde Imponente",
+    "founded": "26 de agosto de 1914",
+    "stadium": "Allianz Parque (43.713 lugares)",
+    "mascot": "Periquito / Porco",
+    "logoUrl": "https://logodetimes.com/times/palmeiras/logo-palmeiras-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (12x)",
+                "years": "1960 (Taça Brasil), 1967 (Torneio Roberto Gomes Pedrosa), 1967 (Taça Brasil), 1969 (Torneio Roberto Gomes Pedrosa), 1972, 1973, 1993, 1994, 2016, 2018, 2022, 2023"
+            },
+            {
+                "name": "Copa do Brasil (4x)",
+                "years": "1998, 2012, 2015, 2020"
+            },
+            {
+                "name": "Supercopa do Brasil (1x)",
+                "years": "2023"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série B (2x)",
+                "years": "2003, 2013"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Libertadores da América (3x)",
+                "years": "1999, 2020, 2021"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Paulista (26x)",
+                "years": "1920, 1926, 1927, 1932, 1933, 1934, 1936, 1938, 1940, 1942, 1947, 1950, 1959, 1963, 1966, 1972, 1974, 1976, 1993, 1994, 1996, 2008, 2020, 2022, 2023, 2024"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Ademir da Guia",
+            "description": "O 'Divino', maior ídolo da história do clube, com sua elegância e inteligência em campo."
+        },
+        {
+            "name": "Marcos",
+            "description": "O 'São Marcos', goleiro lendário e herói da Libertadores de 1999."
+        },
+        {
+            "name": "Dudu",
+            "description": "O 'Baixinho', ponta rápido e habilidoso, fundamental nas conquistas da era moderna."
+        }
+    ],
+    "curiosities": [
+        "É o clube com o maior número de títulos de Campeonato Brasileiro (12).",
+        "O Allianz Parque é um dos estádios mais modernos e multiuso do Brasil.",
+        "A rivalidade com o Corinthians é uma das maiores do futebol brasileiro.",
+        "O Palmeiras não tem mundial."
+    ]
+}

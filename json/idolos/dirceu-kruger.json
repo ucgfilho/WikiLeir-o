@@ -1,0 +1,41 @@
+{
+    "id": "dirceu-kruger",
+    "name": "Dirceu Krüger",
+    "fullName": "Dirceu Krüger",
+    "nickname": "Flecha Loira",
+    "birthDate": "11 de abril de 1945",
+    "club": "Coritiba",
+    "position": "Meio-campista",
+    "imageUrl": "https://s2-ge.glbimg.com/WngtKPifrQc5EsX-J0WfuvTXVpM=/0x0:623x470/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/u/5/fsipsCSMatcnW5KYQMLg/196xkruger-1-.jpg",
+    "sections": [
+        {
+            "title": "Carreira no Coritiba (como jogador)",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> 1966–1975",
+                "<strong>Jogos:</strong> 252 partidas",
+                "<strong>Gols:</strong> 58 gols",
+                "<strong>Destaque:</strong> Símbolo de raça e amor à camisa, liderando o time em uma era de ouro no futebol paranaense."
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo Coritiba",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Campeonato Paranaense (7x)",
+                    "years": "1968, 1969, 1971, 1972, 1973, 1974, 1975"
+                },
+                {
+                    "name": "Torneio do Povo (1x)",
+                    "years": "1973"
+                }
+            ]
+        },
+        {
+            "title": "Uma Vida Dedicada ao Coxa",
+            "type": "custom",
+            "html": "<h3>Além das Quatro Linhas</h3><p>Após se aposentar como jogador, Krüger continuou sua história no Coritiba, atuando como auxiliar-técnico, técnico e dirigente. Esteve presente no maior título da história do clube, o Campeonato Brasileiro de 1985, como auxiliar.</p><h3>Legado</h3><ul><li>Considerado o maior ídolo da história do Coritiba.</li><li>Estátua em sua homenagem no Estádio Couto Pereira.</li></ul>"
+        }
+    ]
+}

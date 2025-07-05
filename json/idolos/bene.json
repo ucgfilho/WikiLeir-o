@@ -1,0 +1,36 @@
+{
+    "id": "bene",
+    "name": "Bené",
+    "fullName": "Benedito José de Moraes - Bené",
+    "nickname": "O Canhão da Curuzu",
+    "birthDate": "13 de junho de 1948",
+    "club": "Paysandu",
+    "position": "Atacante",
+    "imageUrl": "https://www2.paysandu.com.br/data/noticia/grande/WhatsApp-Image-2024-08-05-at-13(3).jpeg",
+    "sections": [
+        {
+            "title": "Carreira no Paysandu",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> Décadas de 1960 e 1970",
+                "<strong>Gols:</strong> 249 gols (maior artilheiro da história do clube)",
+                "<strong>Destaque:</strong> Potência no chute e faro de gol, tornou-se uma lenda do futebol paraense."
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo Paysandu",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Campeonato Paraense (6x)",
+                    "years": "1965, 1966, 1967, 1969, 1971, 1972"
+                }
+            ]
+        },
+        {
+            "title": "Legado e Recordes",
+            "type": "custom",
+            "html": "<h3>O Maior Artilheiro</h3><p>Bené é o dono da marca mais importante para um atacante: o recorde de gols. Com 249 tentos, ele se eternizou como o maior goleador da história do Paysandu Sport Club, um feito que o coloca no panteão dos maiores ídolos do Papão da Curuzu.</p>"
+        }
+    ]
+}

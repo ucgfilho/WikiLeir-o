@@ -1,0 +1,44 @@
+{
+    "id": "goias",
+    "name": "Goiás",
+    "fullName": "Goiás Esporte Clube",
+    "nickname": "Esmeraldino / Verdão",
+    "founded": "6 de abril de 1943",
+    "stadium": "Hailé Pinheiro (Serrinha) (14.450 lugares)",
+    "mascot": "Periquito",
+    "logoUrl": "https://www.goiasec.com.br/wp-content/uploads/2021/03/ESCUDO-OFICIAL-PANTONE-3537C.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série B (2x)",
+                "years": "1999, 2012"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Copa Centro-Oeste (3x)",
+                "years": "2000, 2001, 2002"
+            },
+            {
+                "name": "Campeonato Goiano (28x)",
+                "years": "1966, 1971, 1972, 1975, 1976, 1981, 1983, 1986, 1987, 1989, 1990, 1991, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2002, 2003, 2006, 2009, 2012, 2013, 2015, 2016, 2017, 2018"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Harlei",
+            "description": "Goleiro com o maior número de jogos na história do clube, ícone de longevidade e dedicação."
+        },
+        {
+            "name": "Dill",
+            "description": "Atacante goleador, com passagens marcantes e decisivas pelo Esmeraldino."
+        }
+    ],
+    "curiosities": [
+        "É o clube com o maior número de títulos estaduais em Goiás.",
+        "O clássico contra o Vila Nova é conhecido como 'Clássico Goiano'.",
+        "A Serrinha, seu estádio, é um caldeirão para a torcida esmeraldina."
+    ]
+}

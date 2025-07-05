@@ -1,0 +1,44 @@
+{
+    "id": "zico",
+    "name": "Zico",
+    "fullName": "Arthur Antunes Coimbra - Zico",
+    "nickname": "Galinho de Quintino",
+    "birthDate": "3 de março de 1953",
+    "club": "Flamengo",
+    "position": "Meio-campista",
+    "imageUrl": "https://img.cmswebsg.com.br/diariodigitalcapixaba.com.br/image?src=https://diariodigitalcapixaba.com.br/images/noticias/1109/28082020071407_A_Vida_De_.jpg&w=800&h=600&output=webp",
+    "sections": [
+        {
+            "title": "Carreira no Flamengo",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> 1971–1983 e 1985–1989",
+                "<strong>Jogos:</strong> 730 partidas",
+                "<strong>Gols:</strong> 508 gols (maior artilheiro da história do clube)"
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo Flamengo",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Copa Libertadores (1x)",
+                    "years": "1981"
+                },
+                {
+                    "name": "Mundial Interclubes (1x)",
+                    "years": "1981"
+                },
+                {
+                    "name": "Campeonato Brasileiro (4x)",
+                    "years": "1980, 1982, 1983, 1987"
+                }
+            ]
+        },
+        {
+            "title": "Legado e Recordes",
+            "type": "custom",
+            "html": "<h3>Recordes Históricos</h3><ul><li>Maior artilheiro da história do Flamengo (508 gols).</li><li>Maior artilheiro da história do Maracanã (333 gols).</li><li>Considerado um dos maiores batedores de falta da história.</li></ul><h3>Reconhecimentos</h3><ul><li>Estátua em sua homenagem na Gávea e no Maracanã.</li></ul>"
+        }
+    ]
+}

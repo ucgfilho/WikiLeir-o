@@ -1,0 +1,49 @@
+{
+    "id": "athletic",
+    "name": "Athletic Club",
+    "fullName": "Athletic Club",
+    "nickname": "O Mais Querido / Clube da Raça",
+    "founded": "2 de maio de 1909",
+    "stadium": "Joaquim Henrique Nogueira (Almeidão) (5.000 lugares)",
+    "mascot": "Touro",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Athletic_Club_%28Minas_Gerais%29.svg/1200px-Athletic_Club_%28Minas_Gerais%29.svg.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Série C (1x)",
+                "years": "2023"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Mineiro (1x)",
+                "years": "1915"
+            },
+            {
+                "name": "Campeonato Mineiro - 2ª Divisão (1x)",
+                "years": "2020"
+            },
+            {
+                "name": "Copa Minas Gerais (1x)",
+                "years": "2000"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Jajá",
+            "description": "Atacante que se tornou ídolo na campanha do acesso à Série B em 2023, sendo o principal artilheiro do time na Série C."
+        },
+        {
+            "name": "Rafael Paty",
+            "description": "Meia que se destacou nas campanhas recentes do clube, tornando-se um símbolo da retomada do Athletic no cenário nacional."
+        }
+    ],
+    "curiosities": [
+        "Clube mais antigo de Minas Gerais ainda em atividade.",
+        "Primeiro campeão mineiro da história (1915).",
+        "Retornou ao cenário nacional em 2024 após 114 anos de fundação.",
+        "Único clube mineiro a vencer a Série C."
+    ]
+}

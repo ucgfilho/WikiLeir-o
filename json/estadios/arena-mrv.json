@@ -1,0 +1,31 @@
+{
+    "id": "arena-mrv",
+    "name": "Arena MRV",
+    "fullName": "Arena MRV",
+    "nickname": "Caldeirão do Galo",
+    "inauguration": "27 de agosto de 2023",
+    "capacity": "46.000 lugares",
+    "location": "Belo Horizonte - MG",
+    "imageUrl": "https://i.superesportes.com.br/Q3mYlqyPK0McpETCmQ-WezHPOhI=/smart/imgsapp.mg.superesportes.com.br/app/noticia_126420360808/2023/01/25/3986626/arena-mrv_1_75359.jpg",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>A Arena MRV é a realização do sonho da casa própria para o Clube Atlético Mineiro. O projeto, impulsionado pela torcida, resultou no estádio mais moderno e tecnológico do Brasil em sua inauguração.</p>"
+        },
+        {
+            "title": "Características Técnicas",
+            "type": "list",
+            "items": [
+                "<strong>Capacidade oficial:</strong> 46.000 lugares",
+                "<strong>Tecnologia:</strong> 100% de cobertura Wi-Fi, iluminação esportiva Full LED.",
+                "<strong>Gramado:</strong> Natural (Bermuda Celebration)"
+            ]
+        },
+        {
+            "title": "Sustentabilidade e Inovação",
+            "type": "custom",
+            "html": "<h3>Tecnologia a serviço do torcedor</h3><p>A Arena MRV foi projetada para ser uma das mais conectadas do mundo, com uma rede Wi-Fi de alta capacidade e um superaplicativo que integra compra de ingressos, alimentos e estacionamento.</p>"
+        }
+    ]
+}

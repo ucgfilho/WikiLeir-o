@@ -1,0 +1,49 @@
+{
+    "id": "america-mg",
+    "name": "América-MG",
+    "fullName": "América Futebol Clube",
+    "nickname": "Coelho / O Mais Querido",
+    "founded": "30 de abril de 1912",
+    "stadium": "Independência (23.018 lugares)",
+    "mascot": "Coelho",
+    "logoUrl": "https://logodetimes.com/times/america-mineiro/logo-america-mineiro-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Série B (2x)",
+                "years": "1997, 2017"
+            },
+            {
+                "name": "Série C (1x)",
+                "years": "2009"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Mineiro (1x)",
+                "years": "2016"
+            },
+            {
+                "name": "Copa dos Campeões Mineiros (1x)",
+                "years": "2021"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Fred",
+            "description": "Atacante que brilhou em duas passagens pelo clube (2004-2005 e 2022), sendo artilheiro e líder da equipe que conquistou acesso à Série A em 2021."
+        },
+        {
+            "name": "Guilherme",
+            "description": "Goleiro recordista de jogos na era moderna (389 partidas), capitão do título mineiro de 2016."
+        }
+    ],
+    "curiosities": [
+        "Terceiro maior clube de Minas Gerais em títulos.",
+        "Primeiro clube mineiro a disputar a Libertadores (2000).",
+        "Revelou jogadores como Taffarel, Fred e Danilo.",
+        "Apelidado de 'O Mais Querido' por sua torcida apaixonada."
+    ]
+}

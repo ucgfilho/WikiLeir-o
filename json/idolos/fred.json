@@ -1,0 +1,41 @@
+{
+    "id": "fred",
+    "name": "Fred",
+    "fullName": "Frederico Chaves Guedes - Fred",
+    "nickname": "Don Fredon",
+    "birthDate": "3 de outubro de 1983",
+    "club": "América-MG",
+    "position": "Atacante",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSihbZ1mBOJB3HtiGoIzQj1djp8UquTd4xmFQ&s",
+    "sections": [
+        {
+            "title": "Carreira no América-MG",
+            "type": "list",
+            "items": [
+                "<strong>Períodos:</strong> 2003–2004 e 2018",
+                "<strong>Jogos:</strong> 72 partidas",
+                "<strong>Gols:</strong> 48 gols",
+                "<strong>Destaque:</strong> Clube que o revelou e onde marcou um dos gols mais rápidos da história do futebol."
+            ]
+        },
+        {
+            "title": "Momentos Marcantes no Coelho",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Revelação para o Brasil",
+                    "years": "Suas atuações em 2004 o levaram a ser contratado pelo Cruzeiro e, posteriormente, para a Europa."
+                },
+                {
+                    "name": "O Gol do Meio de Campo",
+                    "years": "Em 2003, marcou um gol em 3,17 segundos após a saída de bola, um recorde mundial na época."
+                }
+            ]
+        },
+        {
+            "title": "Legado no América-MG",
+            "type": "custom",
+            "html": "<h3>Gratidão e Identificação</h3><p>Embora tenha se tornado um grande ídolo em outros clubes, a história de Fred no futebol brasileiro começa no América-MG. Sua trajetória é motivo de orgulho para a torcida, que o viu nascer para o esporte e retornar como um astro consagrado.</p>"
+        }
+    ]
+}

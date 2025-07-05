@@ -1,0 +1,26 @@
+{
+    "id": "neo-quimica-arena",
+    "name": "Neo Química Arena",
+    "fullName": "Neo Química Arena",
+    "nickname": "Itaquerão, Casa do Povo",
+    "inauguration": "10 de maio de 2014",
+    "capacity": "47.605 lugares",
+    "location": "São Paulo - SP",
+    "imageUrl": "https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2025/06/Flamengo-x-Corinthians-na-Neo-Quimica-Arena-scaled-aspect-ratio-512-320.jpg",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>A Neo Química Arena, popularmente conhecida como Itaquerão, foi construída para ser a sede de São Paulo na Copa do Mundo de 2014, realizando o antigo sonho do Corinthians de ter um estádio moderno e próprio.</p>"
+        },
+        {
+            "title": "Características Técnicas",
+            "type": "list",
+            "items": [
+                "<strong>Capacidade atual:</strong> 47.605 lugares (expansível)",
+                "<strong>Tecnologia:</strong> Possui um dos maiores painéis de LED do mundo em sua fachada leste.",
+                "<strong>Gramado:</strong> Híbrido (90% natural, 10% sintético)"
+            ]
+        }
+    ]
+}

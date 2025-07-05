@@ -1,0 +1,22 @@
+{
+    "id": "couto-pereira",
+    "name": "Couto Pereira",
+    "fullName": "Estádio Major Antônio Couto Pereira",
+    "nickname": "Alto da Glória",
+    "inauguration": "20 de novembro de 1932",
+    "capacity": "40.502 lugares",
+    "location": "Curitiba - PR",
+    "imageUrl": "https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2024/10/couto_pereira-aspect-ratio-512-320.jpg",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>O Estádio Couto Pereira é a casa do Coritiba Foot Ball Club. Inaugurado em 1932, é um dos estádios mais icônicos e tradicionais da região Sul do Brasil.</p>"
+        },
+        {
+            "title": "Momentos Históricos",
+            "type": "custom",
+            "html": "<h3>Campeonato Brasileiro de 1985</h3><p>Embora a final tenha sido no Maracanã, a campanha que levou o Coritiba ao seu único título brasileiro teve o Couto Pereira como sua principal fortaleza.</p><h3>Visita do Papa João Paulo II (1980)</h3><p>Um dos momentos mais marcantes da história do estádio foi a visita do Papa João Paulo II, que reuniu uma multidão estimada em 70 mil pessoas.</p>"
+        }
+    ]
+}

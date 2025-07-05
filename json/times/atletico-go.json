@@ -1,0 +1,48 @@
+{
+    "id": "atletico-go",
+    "name": "Atlético-GO",
+    "fullName": "Atlético Clube Goianiense",
+    "nickname": "Dragão / Alvinegro",
+    "founded": "2 de abril de 1937",
+    "stadium": "Antônio Accioly (12.500 lugares)",
+    "mascot": "Dragão",
+    "logoUrl": "https://logodetimes.com/times/atletico-goianiense/logo-atletico-goianiense-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Série B (1x)",
+                "years": "2016"
+            },
+            {
+                "name": "Série C (1x)",
+                "years": "1990"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Goiano (15x)",
+                "years": "Último: 2023"
+            },
+            {
+                "name": "Copa Goiás (1x)",
+                "years": "2018"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Walter",
+            "description": "Maior artilheiro da história do clube, com mais de 200 gols, símbolo dos anos 80 e 90."
+        },
+        {
+            "name": "Janderson",
+            "description": "Ídolo recente, foi peça fundamental no acesso à Série A em 2020 e no vice-campeonato da Copa Verde."
+        }
+    ],
+    "curiosities": [
+        "Segundo maior campeão goiano (15 títulos).",
+        "Primeiro clube goiano a disputar a Libertadores (2011).",
+        "Mantém forte rivalidade com Goiás (Clássico do Estado)."
+    ]
+}

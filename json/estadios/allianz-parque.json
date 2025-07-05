@@ -1,0 +1,31 @@
+{
+    "id": "allianz-parque",
+    "name": "Allianz Parque",
+    "fullName": "Allianz Parque",
+    "nickname": "Arena Palestra",
+    "inauguration": "19 de novembro de 2014",
+    "capacity": "43.713 lugares",
+    "location": "São Paulo - SP",
+    "imageUrl": "https://www.palmeiras.com.br/wp-content/uploads/2019/08/allianz-parque-1.jpg",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>O Allianz Parque foi erguido no mesmo local do histórico Estádio Palestra Itália, a antiga casa do Palmeiras. O projeto resultou em uma das arenas multiuso mais modernas do mundo, capaz de sediar partidas de futebol, mega shows e eventos corporativos.</p>"
+        },
+        {
+            "title": "Características Técnicas",
+            "type": "list",
+            "items": [
+                "<strong>Capacidade para jogos:</strong> 43.713 lugares",
+                "<strong>Capacidade para shows:</strong> Até 55.000 pessoas",
+                "<strong>Gramado:</strong> Sintético (com certificado FIFA Pro)"
+            ]
+        },
+        {
+            "title": "Momentos Históricos",
+            "type": "custom",
+            "html": "<h3>Primeiro Título: Copa do Brasil 2015</h3><p>O primeiro troféu erguido na nova casa foi o da Copa do Brasil de 2015, em uma final emocionante contra o Santos, decidida nos pênaltis.</p><h3>Libertadores 2021</h3><p>A campanha da conquista da Copa Libertadores de 2021 teve jogos memoráveis no Allianz Parque, consolidando a força do time em seu estádio.</p>"
+        }
+    ]
+}

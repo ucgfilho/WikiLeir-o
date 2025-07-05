@@ -1,0 +1,61 @@
+{
+    "id": "cruzeiro",
+    "name": "Cruzeiro",
+    "fullName": "Cruzeiro Esporte Clube",
+    "nickname": "Celeste / A Raposa",
+    "founded": "2 de janeiro de 1921",
+    "stadium": "Mineirão (61.846 lugares)",
+    "mascot": "Raposa",
+    "logoUrl": "https://logodetimes.com/times/cruzeiro/logo-cruzeiro-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (4x)",
+                "years": "1966 (Taça Brasil), 2003, 2013, 2014"
+            },
+            {
+                "name": "Copa do Brasil (6x)",
+                "years": "1993, 1996, 2000, 2003, 2017, 2018"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série B (1x)",
+                "years": "2022"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Libertadores (2x)",
+                "years": "1976, 1997"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Mineiro (40x)",
+                "years": "1926, 1928, 1929, 1930, 1932, 1938, 1939, 1940, 1943, 1944, 1945, 1956, 1959, 1960, 1961, 1965, 1967, 1968, 1969, 1972, 1973, 1974, 1975, 1977, 1984, 1987, 1990, 1992, 1994, 1996, 1997, 1998, 2003, 2004, 2006, 2008, 2009, 2011, 2014, 2018, 2019"
+            },
+            {
+                "name": "Copa Sul-Minas (2x)",
+                "years": "2001, 2002"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Tostão",
+            "description": "Um dos maiores jogadores da história do futebol brasileiro, com técnica refinada e inteligência tática."
+        },
+        {
+            "name": "Dirceu Lopes",
+            "description": "O 'Príncipe', meio-campista elegante e artilheiro, ídolo nas décadas de 60 e 70."
+        },
+        {
+            "name": "Alex",
+            "description": "Meia de classe e visão de jogo, fundamental na conquista da Tríplice Coroa em 2003."
+        }
+    ],
+    "curiosities": [
+        "É um dos clubes com mais títulos da Copa do Brasil (6).",
+        "Conquistou a Tríplice Coroa nacional em 2003 (Campeonato Mineiro, Copa do Brasil e Campeonato Brasileiro).",
+        "Possui uma grande rivalidade com o Atlético Mineiro, no clássico conhecido como 'Clássico Mineiro'."
+    ]
+}

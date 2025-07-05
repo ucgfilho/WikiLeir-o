@@ -1,0 +1,22 @@
+{
+    "id": "sao-januario",
+    "name": "São Januário",
+    "fullName": "Estádio Vasco da Gama - São Januário",
+    "nickname": "Colina Histórica, Caldeirão",
+    "inauguration": "21 de abril de 1927",
+    "capacity": "21.880 lugares",
+    "location": "Rio de Janeiro - RJ",
+    "imageUrl": "https://lncimg.lance.com.br/uploads/2024/10/sao_januario-scaled-aspect-ratio-512-320.jpg",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>São Januário é um monumento. Foi construído com recursos dos próprios torcedores do Vasco em resposta à exigência da elite carioca para que o clube tivesse um estádio próprio, numa tentativa de excluir o Vasco por aceitar jogadores negros e operários.</p>"
+        },
+        {
+            "title": "Momentos Históricos",
+            "type": "custom",
+            "html": "<h3>A Resposta Histórica (1924)</h3><p>Antes da construção, a 'Resposta Histórica', carta na qual o Vasco se recusou a dispensar seus 12 jogadores negros e de origem humilde, é o espírito que fundamenta a existência de São Januário.</p><h3>Milésimo Gol de Romário (2007)</h3><p>O ídolo vascaíno Romário marcou seu milésimo gol na carreira em São Januário, em uma partida contra o Sport.</p>"
+        }
+    ]
+}

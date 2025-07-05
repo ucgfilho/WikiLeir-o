@@ -1,0 +1,40 @@
+{
+    "id": "novorizontino",
+    "name": "Novorizontino",
+    "fullName": "Grêmio Novorizontino",
+    "nickname": "Tigre do Vale",
+    "founded": "11 de março de 2010",
+    "stadium": "Doutor Jorge Ismael de Biasi (16.000 lugares)",
+    "mascot": "Tigre",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/pt/9/9e/Gr%C3%AAmio_Esportivo_Novorizontino_logo.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série D (1x)",
+                "years": "2016"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Paulista - Série A3 (1x)",
+                "years": "2014"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Wágner",
+            "description": "Atacante com passagens importantes, artilheiro e peça chave em conquistas do clube."
+        },
+        {
+            "name": "Pereira",
+            "description": "Meio-campista com liderança e bom desempenho em campo, ídolo na fase de acessos."
+        }
+    ],
+    "curiosities": [
+        "O Novorizontino é um clube relativamente jovem, mas com uma ascensão meteórica no futebol.",
+        "O Estádio Dr. Jorge Ismael de Biasi é conhecido como 'Jorjão'.",
+        "A torcida tem crescido junto com o sucesso do clube."
+    ]
+}

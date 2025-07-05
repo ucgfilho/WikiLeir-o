@@ -1,0 +1,30 @@
+{
+    "id": "mineirao",
+    "name": "Mineirão",
+    "fullName": "Estádio Governador Magalhães Pinto - Mineirão",
+    "nickname": "Gigante da Pampulha",
+    "inauguration": "5 de setembro de 1965",
+    "capacity": "61.846 lugares",
+    "location": "Belo Horizonte - MG",
+    "imageUrl": "https://otempo.scene7.com/is/image/sempreeditora/futebol%20nacional-mineirao-pampulha-belo-horizonte-1725487196",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>Inaugurado em 1965, o Mineirão foi construído para ser o grande palco do futebol de Minas Gerais, tornando-se a casa de Atlético-MG e Cruzeiro.</p>"
+        },
+        {
+            "title": "Características Técnicas",
+            "type": "list",
+            "items": [
+                "<strong>Capacidade atual:</strong> 61.846 lugares",
+                "<strong>Recorde de público:</strong> 132.834 (Cruzeiro x Villa Nova, 1997)"
+            ]
+        },
+        {
+            "title": "Momentos Históricos",
+            "type": "custom",
+            "html": "<h3>O 7x1 na Copa de 2014</h3><p>O Mineirão entrou para a história ao sediar a semifinal da Copa de 2014 entre Brasil e Alemanha. O resultado de 7 a 1 para os alemães é um dos mais chocantes de todos os tempos.</p><h3>Finais da Libertadores</h3><p>O estádio foi palco de três títulos de Copa Libertadores para os clubes mineiros: Cruzeiro em 1976 e 1997, e Atlético-MG em 2013.</p>"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "id": "botafogo",
+    "name": "Botafogo",
+    "fullName": "Botafogo de Futebol e Regatas",
+    "nickname": "Fogão / Estrela Solitária",
+    "founded": "12 de agosto de 1904",
+    "stadium": "Nilton Santos (46.931 lugares)",
+    "mascot": "Manequinho",
+    "logoUrl": "https://logodetimes.com/times/botafogo/logo-botafogo-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (2x)",
+                "years": "1968, 1995"
+            },
+            {
+                "name": "Série B (1x)",
+                "years": "2015"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Conmebol (1x)",
+                "years": "1993"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Carioca (21x)",
+                "years": "Último: 2018"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Garrincha",
+            "description": "Considerado um dos maiores dribladores da história do futebol, ídolo máximo do clube."
+        },
+        {
+            "name": "Túlio Maravilha",
+            "description": "Um dos maiores artilheiros da história do clube, símbolo dos anos 90."
+        }
+    ],
+    "curiosities": [
+        "Revelou jogadores como Garrincha, Jairzinho e Nilton Santos.",
+        "Primeiro clube carioca campeão brasileiro (1968).",
+        "Foi o primeiro clube brasileiro a vencer o Barcelona no Camp Nou."
+    ]
+}

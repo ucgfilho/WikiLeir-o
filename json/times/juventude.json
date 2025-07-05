@@ -1,0 +1,44 @@
+{
+    "id": "juventude",
+    "name": "Juventude",
+    "fullName": "Esporte Clube Juventude",
+    "nickname": "Ju / Papo",
+    "founded": "29 de junho de 1913",
+    "stadium": "Alfredo Jaconi (19.924 lugares)",
+    "mascot": "Papagaio",
+    "logoUrl": "https://logodetimes.com/times/juventude/logo-juventude-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Copa do Brasil (1x)",
+                "years": "1999"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série B (1x)",
+                "years": "1994"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Gaúcho (1x)",
+                "years": "1998"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Márcio Costa",
+            "description": "Atacante com grande identificação com o clube, artilheiro e fundamental na conquista da Copa do Brasil de 1999."
+        },
+        {
+            "name": "Lauro",
+            "description": "Goleiro com defesas importantes e liderança, ídolo nos anos 90 e 2000."
+        }
+    ],
+    "curiosities": [
+        "O Juventude foi o primeiro clube gaúcho do interior a conquistar a Copa do Brasil.",
+        "O clássico contra o Caxias é conhecido como 'Ca-Ju'.",
+        "O clube possui uma forte ligação com a cidade de Caxias do Sul."
+    ]
+}

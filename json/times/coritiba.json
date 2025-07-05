@@ -1,0 +1,48 @@
+{
+    "id": "coritiba",
+    "name": "Coritiba",
+    "fullName": "Coritiba Foot Ball Club",
+    "nickname": "Coxa / Alviverde",
+    "founded": "12 de outubro de 1909",
+    "stadium": "Couto Pereira (40.502 lugares)",
+    "mascot": "Vovô Coxa",
+    "logoUrl": "https://logodetimes.com/times/coritiba/logo-coritiba-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (1x)",
+                "years": "1985"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série B (2x)",
+                "years": "2007, 2010"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Paranaense (39x)",
+                "years": "1916, 1927, 1930, 1931, 1933, 1935, 1939, 1941, 1942, 1946, 1947, 1951, 1952, 1954, 1956, 1957, 1959, 1960, 1968, 1969, 1971, 1972, 1973, 1974, 1975, 1976, 1978, 1979, 1986, 1989, 1999, 2003, 2004, 2008, 2010, 2011, 2012, 2013, 2017"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Dirceu Krüger",
+            "description": "O 'Flecha Loira', maior ídolo da história do clube, com mais jogos e uma carreira dedicada ao Coritiba."
+        },
+        {
+            "name": "Alex",
+            "description": "Meia de classe e visão de jogo, com passagens marcantes e títulos importantes pelo Coxa."
+        },
+        {
+            "name": "Lela",
+            "description": "Atacante veloz e habilidoso, fundamental na conquista do Campeonato Brasileiro de 1985."
+        }
+    ],
+    "curiosities": [
+        "É o clube com o maior número de títulos estaduais do Paraná.",
+        "O Couto Pereira é conhecido como o 'Alto da Glória'.",
+        "O clássico contra o Athletico Paranaense é chamado de 'Atletiba'."
+    ]
+}

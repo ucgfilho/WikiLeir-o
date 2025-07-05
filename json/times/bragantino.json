@@ -1,0 +1,40 @@
+{
+    "id": "bragantino",
+    "name": "RB Bragantino",
+    "fullName": "Red Bull Bragantino",
+    "nickname": "Braga / Massa Bruta",
+    "founded": "8 de janeiro de 1928",
+    "stadium": "Nabi Abi Chedid (17.128 lugares)",
+    "mascot": "Touro",
+    "logoUrl": "https://logodetimes.com/times/red-bull-bragantino/logo-red-bull-bragantino-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Série B (1x)",
+                "years": "2019"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Paulista (1x)",
+                "years": "1990"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Valdivia",
+            "description": "Meia que se destacou no time nos anos 90, tornando-se um símbolo do clube."
+        },
+        {
+            "name": "Claudinho",
+            "description": "Revelado no clube, foi artilheiro e melhor jogador do Brasileirão 2020."
+        }
+    ],
+    "curiosities": [
+        "Foi comprado pelo grupo Red Bull em 2019.",
+        "Primeiro clube do interior a vencer o Paulistão (1990).",
+        "Vice-campeão da Copa Sul-Americana em 2021."
+    ]
+}

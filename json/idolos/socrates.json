@@ -1,0 +1,37 @@
+{
+    "id": "socrates",
+    "name": "Sócrates",
+    "fullName": "Sócrates Brasileiro Sampaio de Souza Vieira de Oliveira",
+    "nickname": "Doutor, Magrão",
+    "birthDate": "19 de fevereiro de 1954",
+    "club": "Corinthians",
+    "position": "Meio-campista",
+    "imageUrl": "https://conteudo.imguol.com.br/c/esporte/0d/2021/02/19/socrates-comemorando-gol-pelo-corinthians-1613756247465_v2_3x4.jpg",
+    "sections": [
+        {
+            "title": "Carreira no Corinthians",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> 1978–1984",
+                "<strong>Jogos:</strong> 298 partidas",
+                "<strong>Gols:</strong> 172 gols",
+                "<strong>Destaque:</strong> Líder técnico e intelectual da equipe."
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo Corinthians",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Campeonato Paulista (3x)",
+                    "years": "1979, 1982, 1983"
+                }
+            ]
+        },
+        {
+            "title": "Legado e Influência",
+            "type": "custom",
+            "html": "<h3>Democracia Corinthiana</h3><p>Foi o principal líder do movimento inovador onde jogadores e funcionários tinham poder de voto nas decisões do clube, um marco na história política e esportiva do Brasil durante a ditadura militar.</p><h3>Estilo de Jogo</h3><ul><li>Visão de jogo privilegiada.</li><li>Toques de calcanhar geniais.</li><li>Inteligência para ditar o ritmo da partida.</li><li>Jogador e médico formado, unindo esporte e intelecto.</li></ul>"
+        }
+    ]
+}

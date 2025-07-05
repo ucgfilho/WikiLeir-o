@@ -1,0 +1,65 @@
+{
+    "id": "internacional",
+    "name": "Internacional",
+    "fullName": "Sport Club Internacional",
+    "nickname": "Colorado / Campeão de Tudo",
+    "founded": "4 de abril de 1909",
+    "stadium": "Beira-Rio (50.128 lugares)",
+    "mascot": "Saci",
+    "logoUrl": "https://logodetimes.com/times/internacional/logo-internacional-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (3x)",
+                "years": "1975, 1976, 1979"
+            },
+            {
+                "name": "Copa do Brasil (1x)",
+                "years": "1992"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Libertadores da América (2x)",
+                "years": "2006, 2010"
+            },
+            {
+                "name": "Mundial de Clubes da FIFA (1x)",
+                "years": "2006"
+            },
+            {
+                "name": "Copa Sul-Americana (1x)",
+                "years": "2008"
+            },
+            {
+                "name": "Recopa Sul-Americana (2x)",
+                "years": "2007, 2011"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Gaúcho (45x)",
+                "years": "1927, 1934, 1940, 1941, 1942, 1943, 1944, 1945, 1947, 1948, 1950, 1951, 1952, 1953, 1955, 1961, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1978, 1981, 1982, 1983, 1984, 1987, 1991, 1992, 1994, 1997, 2002, 2003, 2004, 2005, 2008, 2009, 2011, 2012, 2013, 2014, 2015, 2016"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Falcão",
+            "description": "Um dos maiores meio-campistas da história do futebol brasileiro, líder e craque nos anos 70 e 80."
+        },
+        {
+            "name": "Fernandão",
+            "description": "Líder e capitão do time Campeão Mundial em 2006, um dos maiores símbolos da história colorada."
+        },
+        {
+            "name": "D'Alessandro",
+            "description": "Meia argentino com grande identificação com o clube, multicampeão e líder técnico."
+        }
+    ],
+    "curiosities": [
+        "É o único clube do Rio Grande do Sul a ter conquistado o Mundial de Clubes da FIFA.",
+        "O Beira-Rio foi palco de jogos da Copa do Mundo de 2014.",
+        "A torcida colorada é famosa por sua paixão e por empurrar o time em todos os jogos."
+    ]
+}

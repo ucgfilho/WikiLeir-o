@@ -1,0 +1,40 @@
+{
+    "id": "mirassol",
+    "name": "Mirassol",
+    "fullName": "Mirassol Futebol Clube",
+    "nickname": "Leão da Araraquarense",
+    "founded": "10 de maio de 1924",
+    "stadium": "José Maria de Campos Maia (15.000 lugares)",
+    "mascot": "Leão",
+    "logoUrl": "https://logodetimes.com/times/mirassol/logo-mirassol-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série C (1x)",
+                "years": "2022"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Paulista - Série A2 (1x)",
+                "years": "2020"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Danielzinho",
+            "description": "Meia-atacante com grande identificação e muitos gols, fundamental nas campanhas de acesso."
+        },
+        {
+            "name": "Camilo",
+            "description": "Meia com passagens marcantes e destaque técnico em momentos importantes do clube."
+        }
+    ],
+    "curiosities": [
+        "O Mirassol tem se consolidado no cenário nacional, com acessos recentes nas séries do Campeonato Brasileiro.",
+        "O clube é conhecido por seu bom trabalho nas categorias de base.",
+        "A ascensão do Leão nos últimos anos é um reflexo de um projeto sólido."
+    ]
+}

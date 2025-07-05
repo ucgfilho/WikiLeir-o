@@ -1,0 +1,40 @@
+{
+    "id": "vila-nova",
+    "name": "Vila Nova",
+    "fullName": "Vila Nova Futebol Clube",
+    "nickname": "Tigrão / Colorado",
+    "founded": "29 de julho de 1943",
+    "stadium": "Onésio Brasileiro Alvarenga (OBA) (11.788 lugares)",
+    "mascot": "Tigre",
+    "logoUrl": "https://logodetimes.com/wp-content/uploads/vila-nova.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série C (3x)",
+                "years": "1996, 2015, 2020"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Goiano (15x)",
+                "years": "1961, 1962, 1963, 1969, 1973, 1977, 1978, 1979, 1980, 1993, 1995, 2005, 2010, 2015, 2020"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Túlio Maravilha",
+            "description": "Atacante com passagem marcante e muitos gols pelo clube, especialmente na campanha da Série C."
+        },
+        {
+            "name": "Roni",
+            "description": "Meia-atacante com técnica refinada e muitos gols, ídolo da torcida colorada."
+        }
+    ],
+    "curiosities": [
+        "É um dos clubes mais populares de Goiás.",
+        "O clássico contra o Goiás é conhecido como 'Clássico Goiano'.",
+        "O OBA é um caldeirão para a torcida, especialmente em jogos decisivos."
+    ]
+}

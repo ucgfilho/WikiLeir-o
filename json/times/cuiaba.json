@@ -1,0 +1,44 @@
+{
+    "id": "cuiaba",
+    "name": "Cuiabá",
+    "fullName": "Cuiabá Esporte Clube",
+    "nickname": "Dourado da столица (Capital)",
+    "founded": "12 de março de 2001",
+    "stadium": "Arena Pantanal (44.097 lugares)",
+    "mascot": "Dourado",
+    "logoUrl": "https://logodetimes.com/times/cuiaba/logo-cuiaba-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série C (1x)",
+                "years": "2012"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Mato-Grossense (12x)",
+                "years": "2003, 2004, 2011, 2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2023"
+            },
+            {
+                "name": "Copa Verde (1x)",
+                "years": "2015"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Fernando Henrique",
+            "description": "Goleiro com passagens marcantes e identificação com a torcida, presente em títulos importantes."
+        },
+        {
+            "name": "Élton Martins",
+            "description": "Meio-campista com boa chegada à frente e autor de gols importantes em momentos decisivos."
+        }
+    ],
+    "curiosities": [
+        "É o primeiro clube do Mato Grosso a disputar a Série A do Campeonato Brasileiro de forma contínua desde 2021.",
+        "A Arena Pantanal foi uma das sedes da Copa do Mundo de 2014.",
+        "O Cuiabá tem crescido no cenário nacional nos últimos anos, consolidando-se como uma força no Centro-Oeste."
+    ]
+}

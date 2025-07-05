@@ -1,0 +1,49 @@
+{
+    "id": "rogerio-ceni",
+    "name": "Rogério Ceni",
+    "fullName": "Rogério Mücke Ceni",
+    "nickname": "M1TO",
+    "birthDate": "22 de janeiro de 1973",
+    "club": "São Paulo",
+    "position": "Goleiro",
+    "imageUrl": "https://cdn.espn.com.br/image/wide/622_9c5b5dcf-b9a8-3ce4-bade-1ebffb9cbca0.png",
+    "sections": [
+        {
+            "title": "Carreira no São Paulo",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> 1990–2015",
+                "<strong>Jogos:</strong> 1.237 partidas (recordista mundial por um clube)",
+                "<strong>Gols:</strong> 131 gols (goleiro com mais gols na história)",
+                "<strong>Destaque:</strong> 25 anos dedicados a um único clube, símbolo de liderança."
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo São Paulo",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Copa Libertadores (2x)",
+                    "years": "1993, 2005"
+                },
+                {
+                    "name": "Mundial de Clubes (2x)",
+                    "years": "1993, 2005"
+                },
+                {
+                    "name": "Campeonato Brasileiro (3x)",
+                    "years": "2006, 2007, 2008"
+                },
+                {
+                    "name": "Copa Sul-Americana (1x)",
+                    "years": "2012"
+                }
+            ]
+        },
+        {
+            "title": "Recordes e Legado",
+            "type": "custom",
+            "html": "<h3>Recordes Mundiais</h3><ul><li>Goleiro com mais gols na história do futebol (131).</li><li>Jogador com mais partidas por um mesmo clube (1.237).</li><li>Jogador que mais vezes foi capitão de um time (982).</li></ul><h3>Legado</h3><p>Rogério Ceni redefiniu a posição de goleiro no Brasil. Além de sua segurança debaixo das traves, sua precisão em cobranças de falta e pênalti o transformaram em uma arma ofensiva única.</p>"
+        }
+    ]
+}

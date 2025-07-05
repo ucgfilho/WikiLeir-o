@@ -1,0 +1,44 @@
+{
+    "id": "operario",
+    "name": "Operário-PR",
+    "fullName": "Operário Ferroviário Esporte Clube",
+    "nickname": "Fantasma de Vila Oficinas",
+    "founded": "15 de maio de 1912",
+    "stadium": "Germano Krüger (10.632 lugares)",
+    "mascot": "Fantasma",
+    "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/18187.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série C (1x)",
+                "years": "2018"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série D (1x)",
+                "years": "2017"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Paranaense (1x)",
+                "years": "2015"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Marcelo Resende",
+            "description": "Atacante com muitos gols e destaque em conquistas estaduais e nacionais."
+        },
+        {
+            "name": "Chico",
+            "description": "Zagueiro com liderança e raça, símbolo da defesa operariana."
+        }
+    ],
+    "curiosities": [
+        "O Operário é um dos clubes mais tradicionais do interior do Paraná.",
+        "O apelido 'Fantasma' se tornou um símbolo de garra e superação.",
+        "O clube teve uma ascensão meteórica nas divisões nacionais nos últimos anos."
+    ]
+}

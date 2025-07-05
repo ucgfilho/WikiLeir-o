@@ -1,0 +1,48 @@
+{
+    "id": "paysandu",
+    "name": "Paysandu",
+    "fullName": "Paysandu Sport Club",
+    "nickname": "Papão / Bicolor",
+    "founded": "2 de fevereiro de 1914",
+    "stadium": "Curuzu (16.200 lugares)",
+    "mascot": "Papão da Curuzu",
+    "logoUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijkF4Y2X0ZQcc8pt7X37QeHc7oauNNW8V8PVPvV4DaIkg2f70Ifb4OMqU5VDB-7HSOuXhVnAh3sWWY_gyJbusidBiPZdtJRxDWtfegCI2BvkFBnLimcviQKuzoyZSOKJAzeNfpiAfznYfC/s1600/PAYSSANDU+SPORT+CLUBE.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série B (2x)",
+                "years": "1991, 2001"
+            },
+            {
+                "name": "Copa dos Campeões (1x)",
+                "years": "2002"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Copa Verde (3x)",
+                "years": "2016, 2018, 2022"
+            },
+            {
+                "name": "Campeonato Paraense (50x)",
+                "years": "1920, 1921, 1923, 1927, 1928, 1929, 1931, 1932, 1934, 1940, 1942, 1943, 1945, 1947, 1957, 1958, 1959, 1961, 1962, 1963, 1965, 1966, 1967, 1969, 1971, 1972, 1974, 1977, 1980, 1981, 1982, 1984, 1985, 1987, 1992, 1995, 1997, 1999, 2000, 2001, 2005, 2006, 2010, 2013, 2016, 2017, 2020, 2021, 2022, 2024"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Bené",
+            "description": "Um dos maiores artilheiros da história do Paysandu, com muitos gols e liderança em campo."
+        },
+        {
+            "name": "Robgol",
+            "description": "Atacante goleador, com passagens importantes e gols decisivos pelo Papão."
+        }
+    ],
+    "curiosities": [
+        "É o clube com o maior número de títulos estaduais no Pará (50).",
+        "O clássico contra o Remo é conhecido como 'Clássico Rei da Amazônia' ou 'Re-Pa'.",
+        "O Paysandu foi o primeiro clube da Região Norte a disputar a Copa Libertadores da América."
+    ]
+}

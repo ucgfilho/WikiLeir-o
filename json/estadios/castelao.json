@@ -1,0 +1,40 @@
+{
+    "id": "castelao",
+    "name": "Arena Castelão",
+    "fullName": "Estádio Governador Plácido Castelo - Arena Castelão",
+    "nickname": "Gigante da Boa Vista",
+    "inauguration": "11 de novembro de 1973",
+    "capacity": "63.903 lugares",
+    "location": "Fortaleza - CE",
+    "imageUrl": "https://www.ceara.gov.br/wp-content/uploads/2023/02/230228_GOV-VISITA-CASTELAO_CG1935_1_2.jpg",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>Inaugurado em 1973, o Castelão sempre foi o principal palco do futebol cearense. Em 2012, foi o primeiro estádio a ficar pronto para a Copa do Mundo de 2014, passando por uma profunda modernização.</p>"
+        },
+        {
+            "title": "Características Técnicas",
+            "type": "list",
+            "items": [
+                "<strong>Capacidade atual:</strong> 63.903 lugares",
+                "<strong>Recorde de público:</strong> 118.496 (Brasil x Uruguai, 1980)",
+                "<strong>Sustentabilidade:</strong> Primeiro estádio da América do Sul com certificado ambiental LEED."
+            ]
+        },
+        {
+            "title": "Grandes Eventos",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Copa do Mundo FIFA 2014",
+                    "years": "Recebeu 6 jogos, incluindo Brasil x Colômbia"
+                },
+                {
+                    "name": "Copa das Confederações 2013",
+                    "years": "Recebeu 3 jogos, incluindo Brasil x México"
+                }
+            ]
+        }
+    ]
+}

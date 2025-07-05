@@ -1,0 +1,41 @@
+{
+    "id": "ademir-da-guia",
+    "name": "Ademir da Guia",
+    "fullName": "Ademir da Guia",
+    "nickname": "O Divino",
+    "birthDate": "3 de abril de 1942",
+    "club": "Palmeiras",
+    "position": "Meio-campista",
+    "imageUrl": "https://i.ytimg.com/vi/_9e_9EcHmQA/maxresdefault.jpg",
+    "sections": [
+        {
+            "title": "Carreira no Palmeiras",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> 1961–1977",
+                "<strong>Jogos:</strong> 902 partidas (recordista do clube)",
+                "<strong>Gols:</strong> 155 gols (3º maior artilheiro)",
+                "<strong>Destaque:</strong> Símbolo e maestro das duas 'Academias de Futebol' do Palmeiras."
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo Palmeiras",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Campeonato Brasileiro (5x)",
+                    "years": "1967 (Robertão), 1967 (Taça Brasil), 1969, 1972, 1973"
+                },
+                {
+                    "name": "Campeonato Paulista (5x)",
+                    "years": "1963, 1966, 1972, 1974, 1976"
+                }
+            ]
+        },
+        {
+            "title": "Legado e Estilo",
+            "type": "custom",
+            "html": "<h3>O Maestro da Academia</h3><p>Ademir da Guia é sinônimo da era mais vitoriosa do Palmeiras. Seu futebol clássico, com passes precisos e cabeça erguida, personificou o time conhecido como Academia de Futebol.</p><h3>Reconhecimentos</h3><ul><li>Jogador com mais partidas na história do Palmeiras (902)</li><li>Busto em sua homenagem na sede do clube</li><li>Filho da lenda Domingos da Guia</li></ul>"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": "pele",
+    "name": "Pelé",
+    "fullName": "Edson Arantes do Nascimento - Pelé",
+    "nickname": "O Rei do Futebol",
+    "birthDate": "23 de outubro de 1940",
+    "club": "Santos Futebol Clube",
+    "position": "Atacante",
+    "imageUrl": "https://assets.goal.com/images/v3/bltaf5993a2bddfe395/Pel%C3%A9_1970.jpg?auto=webp&format=pjpg&width=3840&quality=60",
+    "sections": [
+        {
+            "title": "Carreira no Santos",
+            "type": "list",
+            "items": [
+                "<strong>Período:</strong> 1956-1974",
+                "<strong>Jogos:</strong> 1.363 partidas",
+                "<strong>Gols:</strong> 1.281 gols"
+            ]
+        },
+        {
+            "title": "Principais Títulos pelo Santos",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Copa Libertadores (2x)",
+                    "years": "1962, 1963"
+                },
+                {
+                    "name": "Mundial Interclubes (2x)",
+                    "years": "1962, 1963"
+                },
+                {
+                    "name": "Campeonato Brasileiro (6x)",
+                    "years": "1961, 1962, 1963, 1964, 1965, 1968"
+                }
+            ]
+        },
+        {
+            "title": "Seleção Brasileira",
+            "type": "list",
+            "items": [
+                "<strong>Copas do Mundo:</strong> 3 Títulos (1958, 1962, 1970)",
+                "<strong>Gols:</strong> 77 gols em 92 jogos oficiais."
+            ]
+        },
+        {
+            "title": "Legado e Recordes",
+            "type": "custom",
+            "html": "<h3>Recordes Históricos</h3><ul><li>Único jogador tricampeão mundial.</li><li>Mais de 1.000 gols na carreira.</li><li>Atleta do Século XX pelo COI.</li><li>Jogador do Século pela FIFA.</li></ul>"
+        }
+    ]
+}

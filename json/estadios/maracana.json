@@ -1,0 +1,40 @@
+{
+    "id": "maracana",
+    "name": "Maracanã",
+    "fullName": "Estádio Jornalista Mário Filho - Maracanã",
+    "nickname": "O Templo do Futebol",
+    "inauguration": "16 de junho de 1950",
+    "capacity": "78.838 lugares",
+    "location": "Rio de Janeiro - RJ",
+    "imageUrl": "https://itograss.com.br/media/upload/ckeditor/2025/04/08/maracana-3_objy3mi.webp",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>O Maracanã foi construído para a Copa do Mundo de 1950. Projetado para ser o maior do mundo, seu nome oficial homenageia o jornalista Mário Filho, mas é mundialmente conhecido como Maracanã.</p>"
+        },
+        {
+            "title": "Grandes Eventos",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Copa do Mundo FIFA 1950",
+                    "years": "Final: Uruguai 2x1 Brasil (Maracanaço)"
+                },
+                {
+                    "name": "Copa do Mundo FIFA 2014",
+                    "years": "Final: Alemanha 1x0 Argentina"
+                },
+                {
+                    "name": "Jogos Olímpicos Rio 2016",
+                    "years": "Cerimônias de abertura e encerramento"
+                }
+            ]
+        },
+        {
+            "title": "Momentos Históricos",
+            "type": "custom",
+            "html": "<h3>O Maracanaço (1950)</h3><p>A final da Copa do Mundo de 1950 entre Brasil e Uruguai ficou conhecida como 'Maracanaço' e é considerada uma das maiores tragédias do futebol brasileiro.</p><h3>Milésimo Gol de Pelé (1969)</h3><p>Em 19 de novembro de 1969, Pelé marcou seu milésimo gol no Maracanã, em partida entre Santos e Vasco.</p>"
+        }
+    ]
+}

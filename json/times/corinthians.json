@@ -1,0 +1,70 @@
+{
+    "id": "corinthians",
+    "name": "Corinthians",
+    "fullName": "Sport Club Corinthians Paulista",
+    "nickname": "Timão / Alvinegro do Parque São Jorge",
+    "founded": "1º de setembro de 1910",
+    "stadium": "Neo Química Arena (47.605 lugares)",
+    "mascot": "Mosqueteiro",
+    "logoUrl": "https://logodetimes.com/times/corinthians/logo-corinthians-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (7x)",
+                "years": "1990, 1998, 1999, 2005, 2011, 2015, 2017"
+            },
+            {
+                "name": "Copa do Brasil (3x)",
+                "years": "1995, 2002, 2009"
+            },
+            {
+                "name": "Supercopa do Brasil (1x)",
+                "years": "1991"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série B (1x)",
+                "years": "2008"
+            }
+        ],
+        "international": [
+            {
+                "name": "Mundial de Clubes da FIFA (2x)",
+                "years": "2000, 2012"
+            },
+            {
+                "name": "Copa Libertadores (1x)",
+                "years": "2012"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Paulista (30x)",
+                "years": "1914, 1916, 1922, 1923, 1924, 1928, 1929, 1930, 1937, 1938, 1939, 1941, 1951, 1952, 1954, 1977, 1979, 1982, 1983, 1988, 1995, 1997, 1999, 2001, 2003, 2009, 2013, 2017, 2018, 2019"
+            },
+            {
+                "name": "Torneio Rio-São Paulo (5x)",
+                "years": "1950, 1953, 1954, 1966, 2002"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Sócrates",
+            "description": "Meia elegante e inteligente, líder da Democracia Corinthiana e um dos maiores jogadores da história do clube."
+        },
+        {
+            "name": "Marcelinho Carioca",
+            "description": "Pé de anjo, especialista em bolas paradas e autor de muitos gols importantes, multicampeão pelo clube."
+        },
+        {
+            "name": "Neto",
+            "description": "Meia ofensivo com visão de jogo e chutes venenosos, fundamental na conquista do primeiro Brasileirão em 1990."
+        }
+    ],
+    "curiosities": [
+        "É um dos clubes com a maior torcida do Brasil.",
+        "A Neo Química Arena foi palco de jogos da Copa do Mundo de 2014 e dos Jogos Olímpicos de 2016.",
+        "A 'Invasão Corintiana' no Maracanã em 1976 é um dos momentos mais marcantes da história do futebol brasileiro.",
+        "A Democracia Corinthiana, nos anos 80, foi um movimento que marcou época pela participação dos jogadores nas decisões do clube."
+    ]
+}

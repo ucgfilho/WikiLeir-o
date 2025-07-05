@@ -1,0 +1,48 @@
+{
+    "id": "volta-redonda",
+    "name": "Volta Redonda",
+    "fullName": "Volta Redonda Futebol Clube",
+    "nickname": "Voltaço / Tricolor de Aço",
+    "founded": "9 de fevereiro de 1976",
+    "stadium": "Raulino de Oliveira (20.255 lugares)",
+    "mascot": "Aço",
+    "logoUrl": "https://logodetimes.com/times/volta-redonda/logo-volta-redonda-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série D (1x)",
+                "years": "2016"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Carioca - Série A2 (3x)",
+                "years": "1999, 2004, 2022"
+            },
+            {
+                "name": "Taça Guanabara (1x)",
+                "years": "2005"
+            },
+            {
+                "name": "Taça Rio (1x)",
+                "years": "2005"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Juninho",
+            "description": "Atacante com grande identificação e muitos gols, fundamental em conquistas do clube."
+        },
+        {
+            "name": "Túlio Maravilha",
+            "description": "Centroavante folclórico que também teve passagem pelo Volta Redonda, deixando sua marca de gols."
+        }
+    ],
+    "curiosities": [
+        "O Estádio Raulino de Oliveira é conhecido como 'Estádio da Cidadania'.",
+        "O apelido 'Tricolor de Aço' faz referência à vocação industrial da cidade de Volta Redonda.",
+        "O clube tem se destacado por suas campanhas nas divisões nacionais do Campeonato Brasileiro."
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": "arena-gremio",
+    "name": "Arena do Grêmio",
+    "fullName": "Arena do Grêmio",
+    "nickname": "Casa Tricolor",
+    "inauguration": "8 de dezembro de 2012",
+    "capacity": "55.662 lugares",
+    "location": "Porto Alegre - RS",
+    "imageUrl": "https://imgmd.net/images/v1/guia/1713733/arena-do-gremio.jpg",
+    "sections": [
+        {
+            "title": "História",
+            "type": "custom",
+            "html": "<p>A Arena do Grêmio foi inaugurada em 2012 para substituir o antigo Estádio Olímpico Monumental. Com um design arrojado e infraestrutura de ponta, o estádio marcou uma nova era para o clube.</p>"
+        },
+        {
+            "title": "Características Técnicas",
+            "type": "list",
+            "items": [
+                "<strong>Capacidade oficial:</strong> 55.662 lugares",
+                "<strong>Recorde de público:</strong> 55.338 (Grêmio x Atlético-MG, 2016)",
+                "<strong>Distância do campo:</strong> A primeira fileira de cadeiras fica a apenas 10 metros do campo."
+            ]
+        },
+        {
+            "title": "Grandes Eventos",
+            "type": "trophies",
+            "items": [
+                {
+                    "name": "Copa América 2019",
+                    "years": "Sediou 5 jogos, incluindo uma semifinal"
+                },
+                {
+                    "name": "Final da Copa do Brasil 2016",
+                    "years": "Grêmio 1 x 1 Atlético-MG (Grêmio campeão)"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": "ferroviaria",
+    "name": "Ferroviária",
+    "fullName": "Associação Ferroviária de Esportes",
+    "nickname": "AFE / Grená",
+    "founded": "12 de abril de 1950",
+    "stadium": "Arena da Fonte Luminosa (21.449 lugares)",
+    "mascot": "Locomotiva",
+    "logoUrl": "https://logodetimes.com/times/ferroviaria/logo-ferroviaria-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro - Série D (1x)",
+                "years": "2018"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Paulista do Interior (5x)",
+                "years": "1967, 1968, 1969, 2015, 2017"
+            },
+            {
+                "name": "Campeonato Paulista - Série A2 (2x)",
+                "years": "1955, 1966"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Bazani",
+            "description": "Atacante artilheiro que marcou época com seus gols e identificação com a torcida grená."
+        },
+        {
+            "name": "Soares",
+            "description": "Meio-campista com técnica e visão de jogo, fundamental em conquistas importantes do clube."
+        }
+    ],
+    "curiosities": [
+        "A Ferroviária tem uma forte ligação com a cidade de Araraquara e sua história ferroviária.",
+        "A Arena da Fonte Luminosa é um estádio tradicional do interior paulista.",
+        "O título da Série D em 2018 foi um marco importante na história recente do clube."
+    ]
+}

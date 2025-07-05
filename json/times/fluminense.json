@@ -1,0 +1,61 @@
+{
+    "id": "fluminense",
+    "name": "Fluminense",
+    "fullName": "Fluminense Football Club",
+    "nickname": "Tricolor Carioca / Time de Guerreiros",
+    "founded": "21 de julho de 1902",
+    "stadium": "Maracanã (78.838 lugares)",
+    "mascot": "Cartola",
+    "logoUrl": "https://logodetimes.com/times/fluminense/logo-fluminense-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (4x)",
+                "years": "1970 (Robertão), 1984, 2010, 2012"
+            },
+            {
+                "name": "Copa do Brasil (1x)",
+                "years": "2007"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série C (1x)",
+                "years": "1999"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Libertadores (1x)",
+                "years": "2023"
+            },
+            {
+                "name": "Recopa Sul-Americana (1x)",
+                "years": "2024"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Carioca (33x)",
+                "years": "1906, 1907, 1908, 1909, 1911, 1917, 1918, 1919, 1924, 1936, 1937, 1938, 1940, 1941, 1946, 1951, 1959, 1964, 1969, 1971, 1973, 1975, 1976, 1980, 1985, 1995, 2002, 2005, 2012, 2022, 2023"
+            },
+            {
+                "name": "Torneio Rio-São Paulo (2x)",
+                "years": "1957, 1960"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Rivellino",
+            "description": "Um dos maiores meias da história do futebol brasileiro, com passagens marcantes pelo Fluminense."
+        },
+        {
+            "name": "Fred",
+            "description": "Artilheiro histórico do clube na era moderna, com muitos gols e identificação com a torcida."
+        }
+    ],
+    "curiosities": [
+        "É um dos clubes mais tradicionais do futebol carioca.",
+        "O clássico contra o Flamengo é conhecido como 'Fla-Flu', um dos maiores do mundo.",
+        "O apelido 'Time de Guerreiros' surgiu pela garra e superação demonstradas em campo."
+    ]
+}

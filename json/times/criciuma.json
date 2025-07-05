@@ -1,0 +1,44 @@
+{
+    "id": "criciuma",
+    "name": "Criciúma EC",
+    "fullName": "Criciúma Esporte Clube",
+    "nickname": "Tigre do Sul",
+    "founded": "13 de maio de 1947",
+    "stadium": "Heriberto Hülse (19.225 lugares)",
+    "mascot": "Tigre",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/EscudoCriciumaEC.svg",
+    "titles": {
+        "national": [
+            {
+                "name": "Copa do Brasil (1x)",
+                "years": "1991"
+            },
+            {
+                "name": "Campeonato Brasileiro - Série B (1x)",
+                "years": "2002"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Catarinense (12x)",
+                "years": "1968, 1976, 1986, 1989, 1990, 1991, 1993, 1995, 1998, 2005, 2013, 2023"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Paulo Baier",
+            "description": "Meia com passagens marcantes e muitos gols pelo clube, sendo um dos jogadores mais identificados com a torcida."
+        },
+        {
+            "name": "Grizzo",
+            "description": "Volante raçudo e líder, fundamental nas conquistas da Copa do Brasil de 1991 e do Campeonato Brasileiro Série B de 2002."
+        }
+    ],
+    "curiosities": [
+        "O Criciúma é o único clube de Santa Catarina a ter conquistado a Copa do Brasil.",
+        "O Estádio Heriberto Hülse é conhecido como 'Majestoso'.",
+        "A década de 90 foi a mais vitoriosa da história do clube."
+    ]
+}

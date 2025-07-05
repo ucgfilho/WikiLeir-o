@@ -1,0 +1,57 @@
+{
+    "id": "athletico-pr",
+    "name": "Athletico-PR",
+    "fullName": "Athletico Paranaense",
+    "nickname": "Furacão / Rubro-Negro",
+    "founded": "26 de março de 1924",
+    "stadium": "Ligga Arena (42.372 lugares)",
+    "mascot": "Furacão",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Athletico_Paranaense_%28Logo_2019%29.svg/1200px-Athletico_Paranaense_%28Logo_2019%29.svg.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (1x)",
+                "years": "2001"
+            },
+            {
+                "name": "Copa do Brasil (1x)",
+                "years": "2019"
+            },
+            {
+                "name": "Série B (1x)",
+                "years": "1995"
+            }
+        ],
+        "international": [
+            {
+                "name": "Copa Sul-Americana (2x)",
+                "years": "2018, 2021"
+            },
+            {
+                "name": "Recopa Sul-Americana (1x)",
+                "years": "2019"
+            }
+        ],
+        "state": [
+            {
+                "name": "Campeonato Paranaense (27x)",
+                "years": "Último: 2023"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Kléber Pereira",
+            "description": "Maior artilheiro da história do clube, ídolo dos anos 90 e símbolo do time no título brasileiro de 2001."
+        },
+        {
+            "name": "Fernandinho",
+            "description": "Revelado no clube, tornou-se ídolo antes de se transferir para o Shakhtar Donetsk e depois Manchester City."
+        }
+    ],
+    "curiosities": [
+        "Primeiro clube paranaense campeão brasileiro (2001).",
+        "Maior vencedor da Copa Sul-Americana (2 títulos).",
+        "Possui um dos melhores centros de treinamento do Brasil (CT do Caju)."
+    ]
+}

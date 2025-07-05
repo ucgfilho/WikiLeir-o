@@ -1,0 +1,49 @@
+{
+    "id": "bahia",
+    "name": "Bahia",
+    "fullName": "Esporte Clube Bahia",
+    "nickname": "Tricolor / Esquadrão de Aço",
+    "founded": "1º de janeiro de 1931",
+    "stadium": "Arena Fonte Nova (47.907 lugares)",
+    "mascot": "Super-Homem",
+    "logoUrl": "https://logodetimes.com/times/bahia/logo-bahia-256.png",
+    "titles": {
+        "national": [
+            {
+                "name": "Campeonato Brasileiro (2x)",
+                "years": "1959, 1988"
+            },
+            {
+                "name": "Copa do Nordeste (1x)",
+                "years": "2002"
+            },
+            {
+                "name": "Série B (2x)",
+                "years": "1982, 2022"
+            }
+        ],
+        "international": [],
+        "state": [
+            {
+                "name": "Campeonato Baiano (50x)",
+                "years": "Recordista"
+            }
+        ]
+    },
+    "idols": [
+        {
+            "name": "Bobô",
+            "description": "Maior artilheiro da história do clube, com mais de 200 gols, ídolo dos anos 2000."
+        },
+        {
+            "name": "Douglas",
+            "description": "Lateral que se destacou no time antes de ir para a Europa, tornando-se um símbolo do clube."
+        }
+    ],
+    "curiosities": [
+        "Primeiro clube nordestino campeão brasileiro (1959).",
+        "Maior campeão baiano (50 títulos).",
+        "Mantém a maior torcida do Nordeste.",
+        "Foi comprado pelo Grupo City Football em 2023."
+    ]
+}
