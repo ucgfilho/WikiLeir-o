@@ -1,6 +1,7 @@
 .container-tabela {
     overflow-x: auto;
-    margin: 1.5rem 0;
+    /* Mantém scroll horizontal em telas muito pequenas */
+    margin: 2rem 0;
     border-radius: 8px;
     box-shadow: var(--sombra);
     background-color: var(--fundo-card);
@@ -9,8 +10,9 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: var(--fundo-card);
     color: var(--texto-escuro);
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    /* Fonte fluida */
 }
 
 thead tr {
@@ -18,36 +20,47 @@ thead tr {
     color: var(--texto-claro);
 }
 
-th {
-    padding: 15px;
+th,
+td {
+    padding: 1rem clamp(0.5rem, 2vw, 1rem);
+    /* Espaçamento fluido */
     text-align: left;
-    font-weight: 600;
+    white-space: nowrap;
+    /* Evita quebra de conteúdo nas células */
+}
+
+/* Coluna do time pode quebrar */
+th:first-child,
+td:first-child {
+    white-space: normal;
 }
 
 td {
-    padding: 12px 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid #eee;
 }
 
-tr:last-child td {
+tbody tr:last-child td {
     border-bottom: none;
 }
 
 tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: #f9f9f9;
 }
 
-td img {
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.link-time {
-    color: var(--cor-primaria-escura);
-    text-decoration: none;
+td a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--texto-escuro);
     font-weight: 500;
 }
 
-.link-time:hover {
-    color: var(--cor-acento);
+td a:hover {
+    color: var(--cor-primaria-escura);
+}
+
+td img {
+    width: clamp(25px, 5vw, 30px);
+    height: clamp(25px, 5vw, 30px);
+    object-fit: contain;
 }

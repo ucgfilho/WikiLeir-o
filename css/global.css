@@ -1,50 +1,87 @@
 :root {
-    --cor-primaria-escura: #121122;
-    --cor-destaque-escura: #262448;
-    --cor-primaria-clara: #3a375e;
-    --cor-acento: #c7ff00;
-    --texto-claro: #ffffff;
-    --texto-escuro: #121122;
-    --fundo-card: #ffffff;
-    --sucesso: #4caf50;
-    --alerta: #ff9800;
-    --erro: #f44336;
-    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transicao: all 0.3s ease;
+  --cor-primaria-escura: #121122;
+  --cor-destaque-escura: #262448;
+  --cor-primaria-clara: #3a375e;
+  --cor-acento: #c7ff00;
+  --texto-claro: #f0f0f0;
+  --texto-escuro: #121122;
+  --fundo-card: #ffffff;
+  --borda-suave: rgba(255, 255, 255, 0.1);
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --transicao: all 0.3s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  /* Base para unidades rem */
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--cor-primaria-escura);
-    color: var(--texto-claro);
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cor-primaria-escura);
+  color: var(--texto-claro);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  flex: 1;
+  /* Garante que o main ocupe o espaço disponível */
+  width: 100%;
 }
 
 .container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 2rem);
+  /* Espaçamento lateral fluido */
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--cor-acento);
+  text-decoration: none;
+  transition: var(--transicao);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Scrollbar customizada para um visual mais integrado */
 ::-webkit-scrollbar {
-  width: 12px; 
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--cor-primaria-escura); 
+  background: var(--cor-primaria-escura);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--cor-acento); 
-  border-radius: 20px; 
-  border: 3px solid var(--cor-primaria-escura); 
+  background-color: var(--cor-destaque-escura);
+  border-radius: 20px;
+  border: 2px solid var(--cor-primaria-escura);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #a1cc00; 
+  background-color: var(--cor-acento);
 }

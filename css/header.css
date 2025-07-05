@@ -1,45 +1,64 @@
 header {
     width: 100%;
     background-color: var(--cor-primaria-escura);
-    box-shadow: var(--sombra);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
+    padding: 1rem clamp(1rem, 5vw, 2rem);
 }
 
 .container-cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    flex-wrap: wrap;
+    /* Permite que o menu quebre em telas pequenas */
+    gap: 1rem;
 }
 
-.container-logo {
-    display: flex;
-    align-items: center;
+.container-logo img {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    /* Impede que a logo encolha */
 }
 
 nav {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    /* Espaçamento fluido entre os links */
+    flex-wrap: wrap;
+    /* Permite que os links quebrem a linha se necessário */
+    justify-content: center;
 }
 
 nav a {
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 1rem;
     color: var(--texto-claro);
-    text-decoration: none;
-    border-radius: 4px;
     font-weight: 500;
-    position: relative;
+    border-radius: 6px;
+    white-space: nowrap;
+    /* Impede que o texto do link quebre */
+    transition: var(--transicao);
 }
 
-nav a:hover {
-    background-color: var(--cor-destaque-escura);
-}
-
+nav a:hover,
 nav a.ativo {
     background-color: var(--cor-destaque-escura);
+    color: var(--cor-acento);
+    transform: translateY(-2px);
+}
+
+/* Media query para centralizar o menu em telas menores onde ele quebra */
+@media (max-width: 768px) {
+    .container-cabecalho {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
 }
