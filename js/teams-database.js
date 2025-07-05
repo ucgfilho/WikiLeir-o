@@ -8,11 +8,10 @@ const teamsDatabase = [
         city: 'Belo Horizonte',
         state: 'MG',
         serie: 'A',
-        url: 'times/Série A/atletico-mg.html',
+        url: 'modelo-time.html?id=atletico-mg',
         founded: 1908,
         stadium: 'Arena MRV',
-        mascot: 'Galo',
-        keywords: ['atletico', 'mineiro', 'galo', 'alvinegro', 'belo horizonte', 'mg', 'minas']
+        mascot: 'Galo'
     },
     {
         id: 'bahia',
@@ -22,11 +21,10 @@ const teamsDatabase = [
         city: 'Salvador',
         state: 'BA',
         serie: 'A',
-        url: 'times/Série A/bahia.html',
+        url: 'modelo-time.html?id=bahia',
         founded: 1931,
         stadium: 'Arena Fonte Nova',
-        mascot: 'Super-Homem',
-        keywords: ['bahia', 'tricolor', 'esquadrao', 'aço', 'salvador', 'ba', 'nordeste']
+        mascot: 'Super-Homem'
     },
     {
         id: 'botafogo',
@@ -36,165 +34,10 @@ const teamsDatabase = [
         city: 'Rio de Janeiro',
         state: 'RJ',
         serie: 'A',
-        url: 'times/Série A/botafogo.html',
+        url: 'modelo-time.html?id=botafogo',
         founded: 1904,
         stadium: 'Nilton Santos',
-        mascot: 'Manequinho',
-        keywords: ['botafogo', 'fogao', 'estrela', 'solitaria', 'rio', 'janeiro', 'rj']
-    },
-    {
-        id: 'ceara',
-        name: 'Ceará',
-        fullName: 'Ceará Sporting Club',
-        nickname: ['Vozão', 'Alvinegro Cearense'],
-        city: 'Fortaleza',
-        state: 'CE',
-        serie: 'A',
-        url: 'times/Série A/ceara.html',
-        founded: 1914,
-        stadium: 'Castelão',
-        mascot: 'Vozão',
-        keywords: ['ceara', 'vozao', 'alvinegro', 'cearense', 'fortaleza', 'ce', 'nordeste']
-    },
-    {
-        id: 'corinthians',
-        name: 'Corinthians',
-        fullName: 'Sport Club Corinthians Paulista',
-        nickname: ['Timão', 'Alvinegro do Parque São Jorge'],
-        city: 'São Paulo',
-        state: 'SP',
-        serie: 'A',
-        url: 'times/Série A/corinthians.html',
-        founded: 1910,
-        stadium: 'Neo Química Arena',
-        mascot: 'Mosqueteiro',
-        keywords: ['corinthians', 'timao', 'alvinegro', 'sao paulo', 'sp', 'mosqueteiro']
-    },
-    {
-        id: 'cruzeiro',
-        name: 'Cruzeiro',
-        fullName: 'Cruzeiro Esporte Clube',
-        nickname: ['Celeste', 'A Raposa'],
-        city: 'Belo Horizonte',
-        state: 'MG',
-        serie: 'A',
-        url: 'times/Série A/cruzeiro.html',
-        founded: 1921,
-        stadium: 'Mineirão',
-        mascot: 'Raposa',
-        keywords: ['cruzeiro', 'celeste', 'raposa', 'belo horizonte', 'mg', 'minas']
-    },
-    {
-        id: 'flamengo',
-        name: 'Flamengo',
-        fullName: 'Clube de Regatas do Flamengo',
-        nickname: ['Mengão', 'Rubro-Negro'],
-        city: 'Rio de Janeiro',
-        state: 'RJ',
-        serie: 'A',
-        url: 'times/Série A/flamengo.html',
-        founded: 1895,
-        stadium: 'Maracanã',
-        mascot: 'Urubu',
-        keywords: ['flamengo', 'mengao', 'rubro', 'negro', 'rio', 'janeiro', 'rj', 'urubu']
-    },
-    {
-        id: 'fluminense',
-        name: 'Fluminense',
-        fullName: 'Fluminense Football Club',
-        nickname: ['Tricolor Carioca', 'Time de Guerreiros'],
-        city: 'Rio de Janeiro',
-        state: 'RJ',
-        serie: 'A',
-        url: 'times/Série A/fluminense.html',
-        founded: 1902,
-        stadium: 'Maracanã',
-        mascot: 'Cartola',
-        keywords: ['fluminense', 'tricolor', 'carioca', 'guerreiros', 'rio', 'janeiro', 'rj', 'flu']
-    },
-    {
-        id: 'fortaleza',
-        name: 'Fortaleza',
-        fullName: 'Fortaleza Esporte Clube',
-        nickname: ['Leão do Pici'],
-        city: 'Fortaleza',
-        state: 'CE',
-        serie: 'A',
-        url: 'times/Série A/fortaleza.html',
-        founded: 1918,
-        stadium: 'Arena Castelão',
-        mascot: 'Leão',
-        keywords: ['fortaleza', 'leao', 'pici', 'ce', 'nordeste']
-    },
-    {
-        id: 'gremio',
-        name: 'Grêmio',
-        fullName: 'Grêmio Foot-Ball Porto Alegrense',
-        nickname: ['Imortal Tricolor', 'Tricolor Gaúcho'],
-        city: 'Porto Alegre',
-        state: 'RS',
-        serie: 'A',
-        url: 'times/Série A/gremio.html',
-        founded: 1903,
-        stadium: 'Arena do Grêmio',
-        mascot: 'Mosqueteiro',
-        keywords: ['gremio', 'imortal', 'tricolor', 'gaucho', 'porto alegre', 'rs', 'sul']
-    },
-    {
-        id: 'internacional',
-        name: 'Internacional',
-        fullName: 'Sport Club Internacional',
-        nickname: ['Colorado', 'Campeão de Tudo'],
-        city: 'Porto Alegre',
-        state: 'RS',
-        serie: 'A',
-        url: 'times/Série A/internacional.html',
-        founded: 1909,
-        stadium: 'Beira-Rio',
-        mascot: 'Saci',
-        keywords: ['internacional', 'colorado', 'campeao', 'tudo', 'porto alegre', 'rs', 'sul', 'inter']
-    },
-    {
-        id: 'juventude',
-        name: 'Juventude',
-        fullName: 'Esporte Clube Juventude',
-        nickname: ['Ju', 'Papo'],
-        city: 'Caxias do Sul',
-        state: 'RS',
-        serie: 'A',
-        url: 'times/Série A/juventude.html',
-        founded: 1913,
-        stadium: 'Alfredo Jaconi',
-        mascot: 'Papagaio',
-        keywords: ['juventude', 'ju', 'papo', 'caxias', 'sul', 'rs', 'papagaio']
-    },
-    {
-        id: 'mirassol',
-        name: 'Mirassol',
-        fullName: 'Mirassol Futebol Clube',
-        nickname: ['Leão da Araraquarense'],
-        city: 'Mirassol',
-        state: 'SP',
-        serie: 'A',
-        url: 'times/Série A/mirassol.html',
-        founded: 1924,
-        stadium: 'José Maria de Campos Maia',
-        mascot: 'Leão',
-        keywords: ['mirassol', 'leao', 'araraquarense', 'sp', 'sao paulo']
-    },
-    {
-        id: 'palmeiras',
-        name: 'Palmeiras',
-        fullName: 'Sociedade Esportiva Palmeiras',
-        nickname: ['Verdão', 'Alviverde Imponente'],
-        city: 'São Paulo',
-        state: 'SP',
-        serie: 'A',
-        url: 'times/Série A/palmeiras.html',
-        founded: 1914,
-        stadium: 'Allianz Parque',
-        mascot: 'Periquito',
-        keywords: ['palmeiras', 'verdao', 'alviverde', 'imponente', 'sao paulo', 'sp', 'porco']
+        mascot: 'Manequinho'
     },
     {
         id: 'bragantino',
@@ -204,11 +47,140 @@ const teamsDatabase = [
         city: 'Bragança Paulista',
         state: 'SP',
         serie: 'A',
-        url: 'times/Série A/bragantino.html',
+        url: 'modelo-time.html?id=bragantino',
         founded: 1928,
         stadium: 'Nabi Abi Chedid',
-        mascot: 'Touro',
-        keywords: ['bragantino', 'red bull', 'braga', 'massa', 'bruta', 'braganca', 'paulista', 'sp']
+        mascot: 'Touro'
+    },
+    {
+        id: 'ceara',
+        name: 'Ceará',
+        fullName: 'Ceará Sporting Club',
+        nickname: ['Vozão', 'Alvinegro Cearense'],
+        city: 'Fortaleza',
+        state: 'CE',
+        serie: 'A',
+        url: 'modelo-time.html?id=ceara',
+        founded: 1914,
+        stadium: 'Castelão',
+        mascot: 'Vozão'
+    },
+    {
+        id: 'corinthians',
+        name: 'Corinthians',
+        fullName: 'Sport Club Corinthians Paulista',
+        nickname: ['Timão', 'Alvinegro'],
+        city: 'São Paulo',
+        state: 'SP',
+        serie: 'A',
+        url: 'modelo-time.html?id=corinthians',
+        founded: 1910,
+        stadium: 'Neo Química Arena',
+        mascot: 'Mosqueteiro'
+    },
+    {
+        id: 'cruzeiro',
+        name: 'Cruzeiro',
+        fullName: 'Cruzeiro Esporte Clube',
+        nickname: ['Celeste', 'A Raposa'],
+        city: 'Belo Horizonte',
+        state: 'MG',
+        serie: 'A',
+        url: 'modelo-time.html?id=cruzeiro',
+        founded: 1921,
+        stadium: 'Mineirão',
+        mascot: 'Raposa'
+    },
+    {
+        id: 'flamengo',
+        name: 'Flamengo',
+        fullName: 'Clube de Regatas do Flamengo',
+        nickname: ['Mengão', 'Rubro-Negro'],
+        city: 'Rio de Janeiro',
+        state: 'RJ',
+        serie: 'A',
+        url: 'modelo-time.html?id=flamengo',
+        founded: 1895,
+        stadium: 'Maracanã',
+        mascot: 'Urubu'
+    },
+    {
+        id: 'fluminense',
+        name: 'Fluminense',
+        fullName: 'Fluminense Football Club',
+        nickname: ['Tricolor', 'Time de Guerreiros'],
+        city: 'Rio de Janeiro',
+        state: 'RJ',
+        serie: 'A',
+        url: 'modelo-time.html?id=fluminense',
+        founded: 1902,
+        stadium: 'Maracanã',
+        mascot: 'Cartola'
+    },
+    {
+        id: 'fortaleza',
+        name: 'Fortaleza',
+        fullName: 'Fortaleza Esporte Clube',
+        nickname: ['Leão do Pici'],
+        city: 'Fortaleza',
+        state: 'CE',
+        serie: 'A',
+        url: 'modelo-time.html?id=fortaleza',
+        founded: 1918,
+        stadium: 'Arena Castelão',
+        mascot: 'Leão'
+    },
+    {
+        id: 'gremio',
+        name: 'Grêmio',
+        fullName: 'Grêmio Foot-Ball Porto Alegrense',
+        nickname: ['Imortal Tricolor'],
+        city: 'Porto Alegre',
+        state: 'RS',
+        serie: 'A',
+        url: 'modelo-time.html?id=gremio',
+        founded: 1903,
+        stadium: 'Arena do Grêmio',
+        mascot: 'Mosqueteiro'
+    },
+    {
+        id: 'internacional',
+        name: 'Internacional',
+        fullName: 'Sport Club Internacional',
+        nickname: ['Colorado', 'Campeão de Tudo'],
+        city: 'Porto Alegre',
+        state: 'RS',
+        serie: 'A',
+        url: 'modelo-time.html?id=internacional',
+        founded: 1909,
+        stadium: 'Beira-Rio',
+        mascot: 'Saci'
+    },
+    {
+        id: 'juventude',
+        name: 'Juventude',
+        fullName: 'Esporte Clube Juventude',
+        nickname: ['Ju', 'Papo'],
+        city: 'Caxias do Sul',
+        state: 'RS',
+        serie: 'A',
+        url: 'modelo-time.html?id=juventude',
+        founded: 1913,
+        stadium: 'Alfredo Jaconi',
+        mascot: 'Papagaio'
+    },
+    {
+        id: 'palmeiras',
+        name: 'Palmeiras',
+        fullName: 'Sociedade Esportiva Palmeiras',
+        nickname: ['Verdão', 'Alviverde'],
+        city: 'São Paulo',
+        state: 'SP',
+        serie: 'A',
+        url: 'modelo-time.html?id=palmeiras',
+        founded: 1914,
+        stadium: 'Allianz Parque',
+        mascot: 'Periquito'
     },
     {
         id: 'santos',
@@ -218,11 +190,10 @@ const teamsDatabase = [
         city: 'Santos',
         state: 'SP',
         serie: 'A',
-        url: 'times/Série A/santos.html',
+        url: 'modelo-time.html?id=santos',
         founded: 1912,
         stadium: 'Vila Belmiro',
-        mascot: 'Baleia',
-        keywords: ['santos', 'peixe', 'alvinegro', 'praiano', 'sp', 'vila', 'belmiro']
+        mascot: 'Baleia'
     },
     {
         id: 'sao-paulo',
@@ -232,25 +203,23 @@ const teamsDatabase = [
         city: 'São Paulo',
         state: 'SP',
         serie: 'A',
-        url: 'times/Série A/sao-paulo.html',
+        url: 'modelo-time.html?id=sao-paulo',
         founded: 1930,
         stadium: 'MorumBIS',
-        mascot: 'Santo Paulo',
-        keywords: ['sao paulo', 'tricolor', 'paulista', 'soberano', 'sp', 'morumbi']
+        mascot: 'Santo Paulo'
     },
     {
         id: 'sport',
         name: 'Sport',
         fullName: 'Sport Club do Recife',
-        nickname: ['Leão da Ilha', 'Rubro-Negro'],
+        nickname: ['Leão da Ilha'],
         city: 'Recife',
         state: 'PE',
         serie: 'A',
-        url: 'times/Série A/sport.html',
+        url: 'modelo-time.html?id=sport',
         founded: 1905,
         stadium: 'Ilha do Retiro',
-        mascot: 'Leão',
-        keywords: ['sport', 'leao', 'ilha', 'retiro', 'rubro', 'negro', 'recife', 'pe', 'nordeste']
+        mascot: 'Leão'
     },
     {
         id: 'vasco',
@@ -260,11 +229,10 @@ const teamsDatabase = [
         city: 'Rio de Janeiro',
         state: 'RJ',
         serie: 'A',
-        url: 'times/Série A/vasco.html',
+        url: 'modelo-time.html?id=vasco',
         founded: 1898,
         stadium: 'São Januário',
-        mascot: 'Almirante',
-        keywords: ['vasco', 'gama', 'gigante', 'colina', 'cruzmaltino', 'rio', 'janeiro', 'rj']
+        mascot: 'Almirante'
     },
     {
         id: 'vitoria',
@@ -274,11 +242,10 @@ const teamsDatabase = [
         city: 'Salvador',
         state: 'BA',
         serie: 'A',
-        url: 'times/Série A/vitoria.html',
+        url: 'modelo-time.html?id=vitoria',
         founded: 1899,
         stadium: 'Barradão',
-        mascot: 'Leão',
-        keywords: ['vitoria', 'leao', 'barra', 'rubro', 'negro', 'salvador', 'ba', 'nordeste']
+        mascot: 'Leão'
     },
 
     // Série B
@@ -286,99 +253,92 @@ const teamsDatabase = [
         id: 'amazonas',
         name: 'Amazonas FC',
         fullName: 'Amazonas Futebol Clube',
-        nickname: ['Onça-Pintada', 'Aurinegro'],
+        nickname: ['Onça-Pintada'],
         city: 'Manaus',
         state: 'AM',
         serie: 'B',
-        url: 'times/Série B/amazonas.html',
+        url: 'modelo-time.html?id=amazonas',
         founded: 2019,
         stadium: 'Arena da Amazônia',
-        mascot: 'Onça-pintada',
-        keywords: ['amazonas', 'onca', 'pintada', 'aurinegro', 'manaus', 'am', 'norte']
+        mascot: 'Onça-pintada'
     },
     {
         id: 'america-mg',
         name: 'América-MG',
         fullName: 'América Futebol Clube',
-        nickname: ['Coelho', 'O Mais Querido'],
+        nickname: ['Coelho'],
         city: 'Belo Horizonte',
         state: 'MG',
         serie: 'B',
-        url: 'times/Série B/america-mg.html',
+        url: 'modelo-time.html?id=america-mg',
         founded: 1912,
         stadium: 'Independência',
-        mascot: 'Coelho',
-        keywords: ['america', 'mineiro', 'coelho', 'mais', 'querido', 'belo horizonte', 'mg', 'minas']
+        mascot: 'Coelho'
     },
     {
         id: 'athletic',
         name: 'Athletic Club',
         fullName: 'Athletic Club',
-        nickname: ['O Mais Querido', 'Clube da Raça'],
-        city: 'Sabará',
+        nickname: ['Esquadrão de Aço'],
+        city: 'São João del-Rei',
         state: 'MG',
         serie: 'B',
-        url: 'times/Série B/athletic.html',
+        url: 'modelo-time.html?id=athletic',
         founded: 1909,
-        stadium: 'Joaquim Henrique Nogueira',
-        mascot: 'Touro',
-        keywords: ['athletic', 'club', 'mais', 'querido', 'raca', 'sabara', 'mg', 'minas']
+        stadium: 'Joaquim Portugal',
+        mascot: 'Esquadrão de Aço'
     },
     {
         id: 'atletico-go',
         name: 'Atlético-GO',
         fullName: 'Atlético Clube Goianiense',
-        nickname: ['Dragão', 'Alvinegro'],
+        nickname: ['Dragão'],
         city: 'Goiânia',
         state: 'GO',
         serie: 'B',
-        url: 'times/Série B/atletico-go.html',
+        url: 'modelo-time.html?id=atletico-go',
         founded: 1937,
         stadium: 'Antônio Accioly',
-        mascot: 'Dragão',
-        keywords: ['atletico', 'goianiense', 'dragao', 'alvinegro', 'goiania', 'go', 'centro oeste']
+        mascot: 'Dragão'
     },
     {
         id: 'athletico-pr',
         name: 'Athletico-PR',
-        fullName: 'Athletico Paranaense',
-        nickname: ['Furacão', 'Rubro-Negro'],
+        fullName: 'Club Athletico Paranaense',
+        nickname: ['Furacão'],
         city: 'Curitiba',
         state: 'PR',
         serie: 'B',
-        url: 'times/Série B/athletico-pr.html',
+        url: 'modelo-time.html?id=athletico-pr',
         founded: 1924,
         stadium: 'Ligga Arena',
-        mascot: 'Furacão',
-        keywords: ['athletico', 'paranaense', 'furacao', 'rubro', 'negro', 'curitiba', 'pr', 'sul']
+        mascot: 'Furacão'
     },
     {
         id: 'avai',
-        name: 'Avaí FC',
+        name: 'Avaí',
         fullName: 'Avaí Futebol Clube',
-        nickname: ['Leão da Ilha', 'Time da Raça'],
+        nickname: ['Leão da Ilha'],
         city: 'Florianópolis',
         state: 'SC',
         serie: 'B',
-        url: 'times/Série B/avai.html',
+        url: 'modelo-time.html?id=avai',
         founded: 1923,
         stadium: 'Ressacada',
-        mascot: 'Leão',
-        keywords: ['avai', 'leao', 'ilha', 'raca', 'florianopolis', 'sc', 'sul']
+        mascot: 'Leão'
     },
     {
         id: 'botafogo-sp',
         name: 'Botafogo-SP',
         fullName: 'Botafogo Futebol Clube',
-        nickname: ['Pantera da Mogiana'],
+        nickname: ['Pantera'],
         city: 'Ribeirão Preto',
         state: 'SP',
         serie: 'B',
-        url: 'times/Série B/botafogo-sp.html',
+        url: 'modelo-time.html?id=botafogo-sp',
         founded: 1918,
         stadium: 'Santa Cruz',
-        mascot: 'Pantera',
-        keywords: ['botafogo', 'sp', 'pantera', 'mogiana', 'ribeirao', 'preto', 'sao paulo']
+        mascot: 'Pantera'
     },
     {
         id: 'chapecoense',
@@ -388,39 +348,10 @@ const teamsDatabase = [
         city: 'Chapecó',
         state: 'SC',
         serie: 'B',
-        url: 'times/Série B/chapecoense.html',
+        url: 'modelo-time.html?id=chapecoense',
         founded: 1973,
         stadium: 'Arena Condá',
-        mascot: 'Índio Condá',
-        keywords: ['chapecoense', 'verdao', 'oeste', 'chapeco', 'sc', 'sul', 'conda']
-    },
-    {
-        id: 'crb',
-        name: 'CRB',
-        fullName: 'Clube de Regatas Brasil',
-        nickname: ['Galo de Campina'],
-        city: 'Maceió',
-        state: 'AL',
-        serie: 'B',
-        url: 'times/Série B/crb.html',
-        founded: 1912,
-        stadium: 'Rei Pelé',
-        mascot: 'Galo',
-        keywords: ['crb', 'galo', 'campina', 'maceio', 'al', 'nordeste']
-    },
-    {
-        id: 'criciuma',
-        name: 'Criciúma EC',
-        fullName: 'Criciúma Esporte Clube',
-        nickname: ['Tigre do Sul'],
-        city: 'Criciúma',
-        state: 'SC',
-        serie: 'B',
-        url: 'times/Série B/criciuma.html',
-        founded: 1947,
-        stadium: 'Heriberto Hülse',
-        mascot: 'Tigre',
-        keywords: ['criciuma', 'tigre', 'sul', 'sc']
+        mascot: 'Índio Condá'
     },
     {
         id: 'coritiba',
@@ -430,25 +361,49 @@ const teamsDatabase = [
         city: 'Curitiba',
         state: 'PR',
         serie: 'B',
-        url: 'times/Série B/coritiba.html',
+        url: 'modelo-time.html?id=coritiba',
         founded: 1909,
         stadium: 'Couto Pereira',
-        mascot: 'Vovô Coxa',
-        keywords: ['coritiba', 'coxa', 'alviverde', 'curitiba', 'pr', 'sul']
+        mascot: 'Vovô Coxa'
+    },
+    {
+        id: 'crb',
+        name: 'CRB',
+        fullName: 'Clube de Regatas Brasil',
+        nickname: ['Galo de Campina'],
+        city: 'Maceió',
+        state: 'AL',
+        serie: 'B',
+        url: 'modelo-time.html?id=crb',
+        founded: 1912,
+        stadium: 'Rei Pelé',
+        mascot: 'Galo'
+    },
+    {
+        id: 'criciuma',
+        name: 'Criciúma',
+        fullName: 'Criciúma Esporte Clube',
+        nickname: ['Tigre'],
+        city: 'Criciúma',
+        state: 'SC',
+        serie: 'B',
+        url: 'modelo-time.html?id=criciuma',
+        founded: 1947,
+        stadium: 'Heriberto Hülse',
+        mascot: 'Tigre'
     },
     {
         id: 'cuiaba',
         name: 'Cuiabá',
         fullName: 'Cuiabá Esporte Clube',
-        nickname: ['Dourado da Capital'],
+        nickname: ['Dourado'],
         city: 'Cuiabá',
         state: 'MT',
         serie: 'B',
-        url: 'times/Série B/cuiaba.html',
+        url: 'modelo-time.html?id=cuiaba',
         founded: 2001,
         stadium: 'Arena Pantanal',
-        mascot: 'Dourado',
-        keywords: ['cuiaba', 'dourado', 'capital', 'mt', 'centro oeste']
+        mascot: 'Dourado'
     },
     {
         id: 'ferroviaria',
@@ -458,11 +413,10 @@ const teamsDatabase = [
         city: 'Araraquara',
         state: 'SP',
         serie: 'B',
-        url: 'times/Série B/ferroviaria.html',
+        url: 'modelo-time.html?id=ferroviaria',
         founded: 1950,
         stadium: 'Arena da Fonte Luminosa',
-        mascot: 'Locomotiva',
-        keywords: ['ferroviaria', 'afe', 'grena', 'araraquara', 'sp', 'locomotiva']
+        mascot: 'Locomotiva'
     },
     {
         id: 'goias',
@@ -472,11 +426,23 @@ const teamsDatabase = [
         city: 'Goiânia',
         state: 'GO',
         serie: 'B',
-        url: 'times/Série B/goias.html',
+        url: 'modelo-time.html?id=goias',
         founded: 1943,
         stadium: 'Hailé Pinheiro',
-        mascot: 'Periquito',
-        keywords: ['goias', 'esmeraldino', 'verdao', 'goiania', 'go', 'centro oeste']
+        mascot: 'Periquito'
+    },
+    {
+        id: 'mirassol',
+        name: 'Mirassol',
+        fullName: 'Mirassol Futebol Clube',
+        nickname: ['Leão'],
+        city: 'Mirassol',
+        state: 'SP',
+        serie: 'B',
+        url: 'modelo-time.html?id=mirassol',
+        founded: 1925,
+        stadium: 'José Maria de Campos Maia',
+        mascot: 'Leão'
     },
     {
         id: 'novorizontino',
@@ -486,25 +452,23 @@ const teamsDatabase = [
         city: 'Novo Horizonte',
         state: 'SP',
         serie: 'B',
-        url: 'times/Série B/novorizontino.html',
+        url: 'modelo-time.html?id=novorizontino',
         founded: 2010,
-        stadium: 'Doutor Jorge Ismael de Biasi',
-        mascot: 'Tigre',
-        keywords: ['novorizontino', 'tigre', 'vale', 'novo', 'horizonte', 'sp']
+        stadium: 'Dr. Jorge Ismael de Biasi',
+        mascot: 'Tigre'
     },
     {
         id: 'operario',
         name: 'Operário-PR',
         fullName: 'Operário Ferroviário Esporte Clube',
-        nickname: ['Fantasma de Vila Oficinas'],
+        nickname: ['Fantasma'],
         city: 'Ponta Grossa',
         state: 'PR',
         serie: 'B',
-        url: 'times/Série B/operario.html',
+        url: 'modelo-time.html?id=operario',
         founded: 1912,
         stadium: 'Germano Krüger',
-        mascot: 'Fantasma',
-        keywords: ['operario', 'fantasma', 'vila', 'oficinas', 'ponta', 'grossa', 'pr', 'sul']
+        mascot: 'Fantasma'
     },
     {
         id: 'paysandu',
@@ -514,25 +478,23 @@ const teamsDatabase = [
         city: 'Belém',
         state: 'PA',
         serie: 'B',
-        url: 'times/Série B/paysandu.html',
+        url: 'modelo-time.html?id=paysandu',
         founded: 1914,
         stadium: 'Curuzu',
-        mascot: 'Papão da Curuzu',
-        keywords: ['paysandu', 'papao', 'bicolor', 'belem', 'pa', 'norte', 'curuzu']
+        mascot: 'Lobo'
     },
     {
         id: 'remo',
         name: 'Remo',
         fullName: 'Clube do Remo',
-        nickname: ['Leão Azul', 'Azulino'],
+        nickname: ['Leão Azul'],
         city: 'Belém',
         state: 'PA',
         serie: 'B',
-        url: 'times/Série B/remo.html',
+        url: 'modelo-time.html?id=remo',
         founded: 1905,
-        stadium: 'Evandro Almeida',
-        mascot: 'Leão',
-        keywords: ['remo', 'leao', 'azul', 'azulino', 'belem', 'pa', 'norte']
+        stadium: 'Baenão',
+        mascot: 'Leão'
     },
     {
         id: 'vila-nova',
@@ -542,11 +504,10 @@ const teamsDatabase = [
         city: 'Goiânia',
         state: 'GO',
         serie: 'B',
-        url: 'times/Série B/vila-nova.html',
+        url: 'modelo-time.html?id=vila-nova',
         founded: 1943,
         stadium: 'Onésio Brasileiro Alvarenga',
-        mascot: 'Tigre',
-        keywords: ['vila', 'nova', 'tigrao', 'colorado', 'goiania', 'go', 'centro oeste']
+        mascot: 'Tigre'
     },
     {
         id: 'volta-redonda',
@@ -556,19 +517,9 @@ const teamsDatabase = [
         city: 'Volta Redonda',
         state: 'RJ',
         serie: 'B',
-        url: 'times/Série B/volta-redonda.html',
+        url: 'modelo-time.html?id=volta-redonda',
         founded: 1976,
         stadium: 'Raulino de Oliveira',
-        mascot: 'Aço',
-        keywords: ['volta', 'redonda', 'voltaco', 'tricolor', 'aco', 'rj']
+        mascot: 'Aço'
     }
 ];
-
-// Exportar para uso global
-if (typeof window !== 'undefined') {
-    window.teamsDatabase = teamsDatabase;
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = teamsDatabase;
-}
