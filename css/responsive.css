@@ -67,7 +67,8 @@ nav a {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-td, th {
+td,
+th {
     padding: clamp(0.4rem, 1.5vw, 8px) clamp(0.6rem, 2vw, 12px);
     font-size: clamp(0.8rem, 2.5vw, 0.9rem);
 }
@@ -128,7 +129,8 @@ td img {
         font-size: clamp(1rem, 2.8vw, 1.1rem);
     }
 
-    td, th {
+    td,
+    th {
         padding: clamp(0.8rem, 2.5vw, 12px) clamp(1rem, 3vw, 15px);
         font-size: clamp(0.9rem, 2.5vw, 1rem);
     }
@@ -218,7 +220,9 @@ td img {
 }
 
 /* HIGH DPI DISPLAYS ---------------------------------------------------------------------------------------------------------------------------*/
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
     .logo-time,
     td img {
         image-rendering: -webkit-optimize-contrast;
@@ -249,6 +253,7 @@ td img {
 
 /* PRINT STYLES ---------------------------------------------------------------------------------------------------------------------------*/
 @media print {
+
     header,
     footer,
     nav {
@@ -319,7 +324,8 @@ td img {
         margin: clamp(0.25rem, 1vw, 0.5rem) 0;
     }
 
-    td, th {
+    td,
+    th {
         padding: clamp(0.3rem, 1.2vw, 0.4rem) clamp(0.4rem, 1.5vw, 0.6rem);
         font-size: clamp(0.7rem, 2vw, 0.8rem);
     }
@@ -416,7 +422,8 @@ td img {
         min-width: clamp(150px, 50vw, 250px);
     }
 
-    td, th {
+    td,
+    th {
         padding: clamp(0.1rem, 0.5vw, 0.2rem) clamp(0.15rem, 0.6vw, 0.3rem);
         font-size: clamp(0.4rem, 1.5vw, 0.6rem);
     }
@@ -475,5 +482,197 @@ td img {
 
     footer p {
         font-size: clamp(0.5rem, 1.8vw, 0.7rem);
+    }
+}
+
+/* RESPONSIVIDADE EXTREMA PARA WIKILEIRÃO.HTML ENTRE 53PX E 148PX */
+@media (max-width: 148px) and (min-width: 53px) {
+
+    body,
+    html {
+        font-size: 7px !important;
+        overflow-x: hidden !important;
+    }
+
+    header .container-cabecalho,
+    .container,
+    .hero-content,
+    .features-grid,
+    .stats-grid,
+    .footer-content {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 1px !important;
+        padding: 0 1px !important;
+        min-width: 0 !important;
+        width: 100vw !important;
+        box-sizing: border-box !important;
+    }
+
+    nav[role="navigation"] {
+        flex-direction: column !important;
+        gap: 1px !important;
+        font-size: 0.7em !important;
+    }
+
+    .container-logo img {
+        width: 16px !important;
+        height: auto !important;
+    }
+
+    .hero-title,
+    .section-title,
+    .cta-content h2 {
+        font-size: 0.9em !important;
+    }
+
+    .hero-description,
+    .feature-card h3,
+    .feature-card p,
+    .stat-label,
+    .cta-content p,
+    .footer-section h3,
+    .footer-section h4,
+    .footer-bottom p {
+        font-size: 0.7em !important;
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+        flex-direction: column !important;
+        gap: 1px !important;
+    }
+
+    .features-grid,
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .feature-card,
+    .stat-item {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* RESPONSIVIDADE EXTREMA PARA WIKILEIRÃO.HTML ENTRE 50PX E 52PX */
+@media (max-width: 52px) and (min-width: 50px) {
+
+    html,
+    body {
+        font-size: 2vw !important;
+        overflow-x: hidden !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        min-height: 100vh !important;
+        height: 100vh !important;
+    }
+
+    body {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: 100vh !important;
+        height: 100vh !important;
+    }
+
+    main,
+    .container,
+    .hero-section,
+    .features-section,
+    .stats-section,
+    .cta-section,
+    footer,
+    .footer-content {
+        min-height: 0 !important;
+        height: auto !important;
+        flex: 1 1 auto !important;
+        display: block !important;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100vw !important;
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    header .container-cabecalho,
+    .container,
+    .hero-content,
+    .features-grid,
+    .stats-grid,
+    .footer-content {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        min-width: 0 !important;
+        width: 100vw !important;
+        box-sizing: border-box !important;
+    }
+
+    nav[role="navigation"] {
+        flex-direction: column !important;
+        gap: 0 !important;
+        font-size: 2vw !important;
+        width: 100vw !important;
+    }
+
+    .container-logo img {
+        width: 8vw !important;
+        height: auto !important;
+        max-width: 100vw !important;
+    }
+
+    .hero-title,
+    .section-title,
+    .cta-content h2 {
+        font-size: 3vw !important;
+    }
+
+    .hero-description,
+    .feature-card h3,
+    .feature-card p,
+    .stat-label,
+    .cta-content p,
+    .footer-section h3,
+    .footer-section h4,
+    .footer-bottom p {
+        font-size: 2vw !important;
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+        flex-direction: column !important;
+        gap: 0 !important;
+        width: 100vw !important;
+    }
+
+    .features-grid,
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+        width: 100vw !important;
+    }
+
+    .feature-card,
+    .stat-item {
+        min-width: 0 !important;
+        width: 100vw !important;
+    }
+
+    img {
+        max-width: 100vw !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+    * {
+        box-sizing: border-box !important;
     }
 }
