@@ -7,7 +7,6 @@ class IdolosPage {
         this.setupImageLoading();
     }
 
-    // Garante que as imagens 'lazy' carreguem e apareçam
     setupImageLoading() {
         const images = document.querySelectorAll('.idolo-image img');
 
@@ -16,8 +15,8 @@ class IdolosPage {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const img = entry.target;
-                        img.classList.add('loaded'); // Adiciona a classe para tornar a imagem visível
-                        observer.unobserve(img); // Para de observar a imagem após carregar
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
                     }
                 });
             }, { threshold: 0.1 });
@@ -26,7 +25,6 @@ class IdolosPage {
                 imageObserver.observe(img);
             });
         } else {
-            // Fallback para navegadores antigos: carrega todas as imagens imediatamente
             images.forEach(img => img.classList.add('loaded'));
         }
     }

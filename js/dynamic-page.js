@@ -13,18 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const jsonPath = `json/${pageType}s/${id}.json`;
+    // CORREÇÃO: Adicionado ../ para subir um nível de diretório
+    const jsonPath = `../json/${pageType}s/${id}.json`;
 
     fetch(jsonPath)
         .then(response => {
             if (!response.ok) {
-                // Se o arquivo não for encontrado, lança um erro específico.
                 throw new Error(`Arquivo não encontrado: ${response.status} ${response.statusText}`);
             }
             return response.json();
         })
         .then(data => {
-            // Tenta popular a página e captura erros que possam ocorrer durante o processo
             try {
                 switch (pageType) {
                     case 'time':
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
         .catch(fetchError => {
-            // Captura erros de rede ou de arquivo não encontrado
             console.error('Erro de fetch:', fetchError.message);
             handleError('O conteúdo que você procura não foi encontrado. Verifique o endereço e tente novamente.');
         });
@@ -191,10 +189,10 @@ function handleError(message) {
     const container = document.querySelector('main.container');
     if (container) {
         container.innerHTML = `
-            <div style="text-align: center; padding: 4rem 1rem; color: white;">
-                <h1 class="titulo-pagina" style="font-size: 3rem;">Erro 404</h1>
+            <div style="text-align: center; padding: 4rem 1rem; color: var(--texto-claro);">
+                <h1 class="titulo-pagina" style="font-size: 3rem; color: var(--texto-claro);">Erro 404</h1>
                 <p style="font-size: 1.2rem; opacity: 0.8;">${message}</p>
-                <a href="WikiLeirão.html" style="display: inline-block; margin-top: 2rem; padding: 0.8rem 1.5rem; background-color: var(--cor-acento); color: var(--texto-escuro); text-decoration: none; border-radius: 5px; font-weight: 600;">Voltar para a Home</a>
+                <a href="../WikiLeirão.html" style="display: inline-block; margin-top: 2rem; padding: 0.8rem 1.5rem; background-color: var(--cor-acento); color: var(--texto-escuro); text-decoration: none; border-radius: 5px; font-weight: 600;">Voltar para a Home</a>
             </div>
         `;
     }

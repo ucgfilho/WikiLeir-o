@@ -7,7 +7,6 @@ class EstadiosPage {
         this.setupImageLoading();
     }
 
-    // Garante que as imagens 'lazy' carreguem e apareçam
     setupImageLoading() {
         const images = document.querySelectorAll('.estadio-image img');
 
@@ -26,7 +25,6 @@ class EstadiosPage {
                 imageObserver.observe(img);
             });
         } else {
-            // Fallback para navegadores antigos: carrega todas as imagens imediatamente
             images.forEach(img => img.classList.add('loaded'));
         }
     }

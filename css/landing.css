@@ -1,4 +1,4 @@
-/* Hero Section */
+/* Seção Hero (Principal) */
 .hero-section {
     background: linear-gradient(135deg, var(--cor-primaria-escura) 0%, var(--cor-destaque-escura) 100%);
     padding: clamp(2rem, 6vw, 4rem) 0;
@@ -79,7 +79,6 @@
     display: inline-block;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: var(--transicao);
     text-align: center;
     min-width: clamp(100px, 25vw, 150px);
 }
@@ -130,7 +129,7 @@
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
-/* Features Section */
+/* Seção de Destaques (Features) */
 .features-section {
     padding: clamp(2.5rem, 6vw, 5rem) 0;
     background: var(--fundo-card);
@@ -175,12 +174,6 @@
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
-.feature-icon {
-    font-size: clamp(2rem, 6vw, 3rem);
-    margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
-    display: block;
-}
-
 .feature-card h3 {
     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
     font-weight: 600;
@@ -206,7 +199,7 @@
     color: var(--cor-acento);
 }
 
-/* Stats Section */
+/* Seção de Estatísticas */
 .stats-section {
     padding: clamp(2rem, 5vw, 4rem) 0;
     background: linear-gradient(135deg, var(--cor-destaque-escura), var(--cor-primaria-clara));
@@ -238,7 +231,7 @@
     font-weight: 500;
 }
 
-/* CTA Section */
+/* Seção de Chamada para Ação (CTA) */
 .cta-section {
     padding: clamp(2.5rem, 6vw, 5rem) 0;
     background: var(--cor-primaria-escura);
@@ -269,7 +262,7 @@
     flex-wrap: wrap;
 }
 
-/* Footer Enhancements */
+/* Melhorias no Rodapé */
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 50vw, 250px), 1fr));
@@ -314,7 +307,7 @@
     font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
-/* Responsive Design */
+/* Design Responsivo */
 @media (min-width: 768px) {
     .hero-content {
         grid-template-columns: 1fr 1fr;
@@ -375,149 +368,5 @@
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
-    }
-}
-
-/* Para telas extremamente pequenas (53px) */
-@media (max-width: 100px) {
-    .hero-section {
-        padding: clamp(0.5rem, 2vw, 1rem) 0;
-        min-height: clamp(40vh, 60vw, 50vh);
-    }
-
-    .hero-content {
-        gap: clamp(0.75rem, 2vw, 1.5rem);
-    }
-
-    .hero-subtitle {
-        font-size: clamp(0.6rem, 2vw, 0.9rem);
-        margin-bottom: clamp(0.1rem, 0.5vw, 0.25rem);
-    }
-
-    .hero-title {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
-    }
-
-    .hero-description {
-        font-size: clamp(0.7rem, 2.5vw, 1rem);
-        margin-bottom: clamp(0.5rem, 2vw, 1rem);
-        line-height: 1.4;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: clamp(0.25rem, 1vw, 0.5rem);
-    }
-
-    .btn {
-        padding: clamp(0.4rem, 1.5vw, 0.6rem) clamp(0.8rem, 2vw, 1.2rem);
-        font-size: clamp(0.6rem, 2vw, 0.8rem);
-        min-width: clamp(60px, 15vw, 100px);
-        border-radius: 25px;
-    }
-
-    .features-section {
-        padding: clamp(1rem, 3vw, 2.5rem) 0;
-    }
-
-    .section-title {
-        font-size: clamp(1.2rem, 3.5vw, 1.8rem);
-        margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
-    }
-
-    .section-title::after {
-        width: clamp(20px, 5vw, 40px);
-        height: clamp(1px, 0.4vw, 2px);
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: clamp(0.5rem, 2vw, 1rem);
-        margin-top: clamp(0.75rem, 2vw, 1.5rem);
-    }
-
-    .feature-card {
-        padding: clamp(0.75rem, 2vw, 1.5rem) clamp(0.5rem, 1.5vw, 1rem);
-        border-radius: 8px;
-    }
-
-    .feature-card h3 {
-        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-        margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
-    }
-
-    .feature-card p {
-        font-size: clamp(0.6rem, 2vw, 0.8rem);
-        margin-bottom: clamp(0.4rem, 1.5vw, 0.75rem);
-        line-height: 1.4;
-    }
-
-    .feature-link {
-        font-size: clamp(0.6rem, 2vw, 0.8rem);
-    }
-
-    .stats-section {
-        padding: clamp(1rem, 3vw, 2rem) 0;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: clamp(0.5rem, 2vw, 1rem);
-    }
-
-    .stat-item {
-        padding: clamp(0.5rem, 2vw, 1rem) clamp(0.25rem, 1vw, 0.5rem);
-    }
-
-    .stat-number {
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
-        margin-bottom: clamp(0.1rem, 0.5vw, 0.25rem);
-    }
-
-    .stat-label {
-        font-size: clamp(0.6rem, 2vw, 0.9rem);
-    }
-
-    .cta-section {
-        padding: clamp(1.25rem, 3vw, 2.5rem) 0;
-    }
-
-    .cta-content h2 {
-        font-size: clamp(1.2rem, 3.5vw, 1.8rem);
-        margin-bottom: clamp(0.4rem, 1.5vw, 0.75rem);
-    }
-
-    .cta-content p {
-        font-size: clamp(0.7rem, 2.5vw, 1rem);
-        margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
-        line-height: 1.4;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: clamp(0.5rem, 2vw, 1rem);
-        padding: clamp(0.75rem, 2vw, 1.5rem) 0 clamp(0.5rem, 2vw, 1rem);
-        text-align: center;
-    }
-
-    .footer-section h3,
-    .footer-section h4 {
-        font-size: clamp(0.8rem, 2.5vw, 1rem);
-        margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
-    }
-
-    .footer-section ul li {
-        margin-bottom: clamp(0.1rem, 0.5vw, 0.25rem);
-    }
-
-    .footer-section ul li a {
-        font-size: clamp(0.6rem, 2vw, 0.8rem);
-    }
-
-    .footer-bottom {
-        padding: clamp(0.5rem, 2vw, 1rem) 0;
-        font-size: clamp(0.6rem, 2vw, 0.8rem);
     }
 }

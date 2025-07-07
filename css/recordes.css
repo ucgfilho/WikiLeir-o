@@ -58,28 +58,22 @@
     padding: clamp(1.5rem, 4vw, 2rem);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: var(--transicao);
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.recorde-card:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-}
-
 .recorde-card.destaque {
+    background: linear-gradient(145deg, #444, #333);
     border: 2px solid var(--cor-acento);
-    background: linear-gradient(135deg, var(--fundo-card), rgba(199, 255, 0, 0.05));
+    color: var(--texto-claro);
 }
 
-.recorde-card.destaque::before {
-    content: '⭐';
-    position: absolute;
-    top: clamp(0.5rem, 2vw, 1rem);
-    right: clamp(0.5rem, 2vw, 1rem);
-    font-size: clamp(1rem, 3vw, 1.5rem);
+.recorde-card.destaque .recorde-titulo,
+.recorde-card.destaque .recorde-subtitulo,
+.recorde-card.destaque .recorde-descricao {
+    color: var(--texto-claro);
+    opacity: 0.9;
 }
 
 .recorde-numero {
@@ -108,22 +102,6 @@
     color: #666;
     line-height: 1.6;
     font-size: clamp(0.8rem, 2.5vw, 0.95rem);
-}
-
-/* Animações para números */
-.recorde-numero {
-    animation: countUp 2s ease-out;
-}
-
-@keyframes countUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Responsive Design */

@@ -8,7 +8,8 @@
   --fundo-card: #ffffff;
   --borda-suave: rgba(255, 255, 255, 0.1);
   --sombra: 0 4px 12px rgba(0, 0, 0, 0.2);
-  --transicao: all 0.3s ease-in-out;
+  --transicao: none;
+  /* Animações removidas */
 }
 
 *,
@@ -57,14 +58,13 @@ img {
 a {
   color: var(--cor-acento);
   text-decoration: none;
-  transition: var(--transicao);
 }
 
 a:hover {
   opacity: 0.8;
 }
 
-/* Scrollbar customizada para um visual mais integrado */
+/* Scrollbar customizada */
 ::-webkit-scrollbar {
   width: clamp(6px, 1.5vw, 10px);
 }
