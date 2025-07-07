@@ -1,0 +1,150 @@
+.page-header {
+    text-align: center;
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(1rem, 3vw, 2rem) 0;
+}
+
+.page-description {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: clamp(0.75rem, 2vw, 1.5rem) auto 0;
+    color: var(--texto-claro);
+    opacity: 0.9;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
+}
+
+.recordes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.categoria-section {
+    background: var(--cor-destaque-escura);
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+.categoria-title {
+    color: var(--cor-acento);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 600;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+    position: relative;
+}
+
+.categoria-title::after {
+    content: '';
+    display: block;
+    width: clamp(30px, 8vw, 60px);
+    height: clamp(2px, 0.6vw, 3px);
+    background: var(--cor-acento);
+    margin: clamp(0.25rem, 1vw, 0.5rem) auto 0;
+    border-radius: 2px;
+}
+
+.recordes-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 65vw, 350px), 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
+.recorde-card {
+    background: var(--fundo-card);
+    border-radius: 12px;
+    padding: clamp(1.5rem, 4vw, 2rem);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transicao);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.recorde-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.recorde-card.destaque {
+    border: 2px solid var(--cor-acento);
+    background: linear-gradient(135deg, var(--fundo-card), rgba(199, 255, 0, 0.05));
+}
+
+.recorde-card.destaque::before {
+    content: '⭐';
+    position: absolute;
+    top: clamp(0.5rem, 2vw, 1rem);
+    right: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.recorde-numero {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 700;
+    color: var(--cor-acento);
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+    line-height: 1;
+}
+
+.recorde-titulo {
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    font-weight: 600;
+    color: var(--texto-escuro);
+    margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.recorde-subtitulo {
+    font-size: clamp(0.9rem, 2.8vw, 1.1rem);
+    color: var(--cor-primaria-escura);
+    font-weight: 500;
+    margin-bottom: clamp(0.75rem, 2vw, 1rem);
+}
+
+.recorde-descricao {
+    color: #666;
+    line-height: 1.6;
+    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+}
+
+/* Animações para números */
+.recorde-numero {
+    animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recordes-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+    .categoria-section {
+        padding: clamp(0.5rem, 2vw, 0.75rem);
+        border-radius: 8px;
+    }
+
+    .recorde-card {
+        padding: clamp(1rem, 3vw, 1.5rem);
+        border-radius: 8px;
+    }
+
+    .recorde-numero {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+}

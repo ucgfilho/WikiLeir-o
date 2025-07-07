@@ -1,0 +1,160 @@
+.page-header {
+    text-align: center;
+    margin-bottom: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(1rem, 3vw, 2rem) 0;
+}
+
+.page-description {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: clamp(0.75rem, 2vw, 1.5rem) auto 0;
+    color: var(--texto-claro);
+    opacity: 0.9;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
+}
+
+.competicoes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.categoria-section {
+    background: var(--cor-destaque-escura);
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+.categoria-title {
+    color: var(--cor-acento);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 600;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+    position: relative;
+}
+
+.categoria-title::after {
+    content: '';
+    display: block;
+    width: clamp(30px, 8vw, 60px);
+    height: clamp(2px, 0.6vw, 3px);
+    background: var(--cor-acento);
+    margin: clamp(0.25rem, 1vw, 0.5rem) auto 0;
+    border-radius: 2px;
+}
+
+.competicoes-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 65vw, 350px), 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
+.competicao-card {
+    background: var(--fundo-card);
+    border-radius: 12px;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transicao);
+}
+
+.competicao-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.competicao-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: clamp(0.75rem, 2vw, 1rem);
+    gap: clamp(0.5rem, 2vw, 1rem);
+}
+
+.competicao-header h3 {
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    font-weight: 600;
+    color: var(--texto-escuro);
+    line-height: 1.2;
+}
+
+.competicao-status {
+    padding: clamp(0.2rem, 0.8vw, 0.3rem) clamp(0.6rem, 2vw, 0.8rem);
+    border-radius: 15px;
+    font-size: clamp(0.7rem, 2.2vw, 0.8rem);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.competicao-status.ativa {
+    background: #22c55e;
+    color: white;
+}
+
+.competicao-status.extinta {
+    background: #ef4444;
+    color: white;
+}
+
+.competicao-info {
+    margin-bottom: clamp(0.75rem, 2vw, 1rem);
+}
+
+.competicao-info p {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
+    color: var(--texto-escuro);
+}
+
+.competicao-info strong {
+    color: var(--cor-primaria-escura);
+}
+
+.competicao-descricao {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+}
+
+.competicao-link {
+    color: var(--cor-primaria-escura);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(0.25rem, 1vw, 0.5rem);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    transition: var(--transicao);
+}
+
+.competicao-link:hover {
+    color: var(--cor-acento);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .competicoes-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .competicao-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 320px) {
+    .categoria-section {
+        padding: clamp(0.5rem, 2vw, 0.75rem);
+        border-radius: 8px;
+    }
+
+    .competicao-card {
+        padding: clamp(0.75rem, 2.5vw, 1rem);
+        border-radius: 8px;
+    }
+}
