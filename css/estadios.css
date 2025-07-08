@@ -48,7 +48,7 @@
 
 .estadios-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 65vw, 350px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 60vw, 320px), 1fr));
     gap: clamp(1rem, 3vw, 2rem);
 }
 
@@ -62,7 +62,8 @@
 
 .estadio-image {
     position: relative;
-    height: clamp(150px, 35vw, 200px);
+    height: 220px;
+    /* Altura ajustada */
     overflow: hidden;
     background: #f0f0f0;
 }
@@ -81,9 +82,10 @@
     font-size: clamp(1.2rem, 3.5vw, 1.5rem);
     font-weight: 600;
     color: var(--texto-escuro);
-    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+    margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
 }
 
+/* Detalhes específicos dos estádios */
 .estadio-details {
     display: flex;
     justify-content: space-between;
@@ -124,6 +126,7 @@
     font-weight: 500;
 }
 
+
 .estadio-descricao {
     color: #666;
     line-height: 1.6;
@@ -139,4 +142,45 @@
     align-items: center;
     gap: clamp(0.25rem, 1vw, 0.5rem);
     font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.estadio-link:hover {
+    color: var(--cor-acento);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: clamp(0.75rem, 2.5vw, 1rem) 0;
+    }
+
+    .page-description {
+        font-size: clamp(0.9rem, 2.8vw, 1rem);
+        margin: clamp(0.5rem, 2vw, 1rem) auto 0;
+    }
+
+    .categoria-section {
+        padding: clamp(0.75rem, 2.5vw, 1.5rem);
+    }
+
+    .categoria-title {
+        font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+    }
+
+    .estadios-cards {
+        grid-template-columns: 1fr;
+        gap: clamp(0.75rem, 2.5vw, 1.5rem);
+    }
+
+    .estadio-image {
+        height: 40px;
+    }
+
+    .estadio-info {
+        padding: clamp(0.75rem, 2.5vw, 1rem);
+    }
+
+    .estadio-info h3 {
+        font-size: clamp(1.1rem, 3vw, 1.3rem);
+    }
 }

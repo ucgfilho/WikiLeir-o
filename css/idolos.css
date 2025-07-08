@@ -62,7 +62,7 @@
 
 .idolo-image {
     position: relative;
-    height: clamp(180px, 40vw, 250px);
+    height: 220px; /* ALTURA FIXA AQUI */
     overflow: hidden;
     background: #f0f0f0;
 }
@@ -70,7 +70,7 @@
 .idolo-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* GARANTE QUE A IMAGEM CUBRA O ESPAÇO SEM DISTORCER */
 }
 
 .idolo-info {
@@ -141,7 +141,7 @@
     }
 
     .idolo-image {
-        height: clamp(160px, 35vw, 200px);
+        height: 40px;
     }
 
     .idolo-info {
