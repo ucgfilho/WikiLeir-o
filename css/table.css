@@ -1,6 +1,6 @@
 .container-tabela {
     overflow-x: auto;
-    margin: 3vw 0;
+    margin: 2rem 0;
     border-radius: 8px;
     box-shadow: var(--sombra);
     background-color: var(--fundo-card);
@@ -11,8 +11,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     color: var(--texto-escuro);
-    font-size: 2.5vw;
-    min-width: 80vw;
+    font-size: 1rem;
+    min-width: 600px;
 }
 
 thead tr {
@@ -22,7 +22,7 @@ thead tr {
 
 th,
 td {
-    padding: 2vw 1.5vw;
+    padding: 1rem;
     text-align: left;
     white-space: nowrap;
     vertical-align: middle;
@@ -32,7 +32,7 @@ td {
 th:first-child,
 td:first-child {
     white-space: normal;
-    min-width: 25vw;
+    min-width: 200px;
 }
 
 td {
@@ -50,7 +50,7 @@ tbody tr:hover {
 td a {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 0.75rem;
     color: var(--texto-escuro);
     font-weight: 500;
     flex-wrap: wrap;
@@ -61,8 +61,8 @@ td a:hover {
 }
 
 td img {
-    width: 4vw;
-    height: 4vw;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -70,33 +70,32 @@ td img {
 /* Para telas pequenas */
 @media (max-width: 768px) {
     .container-tabela {
-        margin: 2vw 0;
+        margin: 3vw 0;
         border-radius: 4px;
     }
 
     table {
-        font-size: 2vw;
-        min-width: 70vw;
+        font-size: 2.5vw;
+        min-width: 80vw;
     }
 
     th,
     td {
-        padding: 1vw 0.8vw;
+        padding: 2vw 1.5vw;
     }
 
     th:first-child,
     td:first-child {
-        min-width: 20vw;
+        min-width: 25vw;
     }
 
     td img {
-        width: 3vw;
-        height: 3vw;
+        width: 4vw;
+        height: 4vw;
     }
 
     td a {
-        gap: 0.5vw;
-        font-size: 2vw;
+        gap: 1vw;
     }
 }
 

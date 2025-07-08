@@ -5,7 +5,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 2vw;
+    padding: 1rem 2rem;
 }
 
 .container-cabecalho {
@@ -13,12 +13,12 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2vw;
-    min-height: 8vw;
+    gap: 1rem;
+    min-height: 60px;
 }
 
 .container-logo img {
-    width: 15vw;
+    width: 100px;
     height: auto;
     flex-shrink: 0;
 }
@@ -26,19 +26,19 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 nav a {
-    padding: 1vw 2vw;
+    padding: 0.5rem 1rem;
     color: var(--texto-claro);
     font-weight: 500;
     border-radius: 6px;
     white-space: nowrap;
     transition: var(--transicao);
-    font-size: 2.5vw;
+    font-size: 1rem;
 }
 
 nav a:hover,
@@ -50,20 +50,29 @@ nav a.ativo {
 
 /* Para telas pequenas */
 @media (max-width: 768px) {
+    header {
+        padding: 2vw;
+    }
+    
     .container-cabecalho {
         flex-direction: column;
-        gap: 1vw;
+        gap: 2vw;
+        min-height: 8vw;
+    }
+
+    .container-logo img {
+        width: 15vw;
     }
 
     nav {
         width: 100%;
         justify-content: center;
-        gap: 0.5vw;
+        gap: 1vw;
     }
 
     nav a {
-        padding: 0.8vw 1.2vw;
-        font-size: 2vw;
+        padding: 1vw 2vw;
+        font-size: 2.5vw;
     }
 }
 

@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3vw;
-    margin-bottom: 3vw;
-    padding: 4vw;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
     background: linear-gradient(135deg, var(--cor-destaque-escura), var(--cor-primaria-clara));
     border-radius: 12px;
     text-align: center;
@@ -13,41 +13,41 @@
 
 .logo-time,
 #item-image {
-    width: 15vw;
-    height: 15vw;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 1vw;
+    padding: 0.5rem;
     border: 2px solid var(--borda-suave);
 }
 
 .nome-time,
 #fullName,
 #name {
-    font-size: 4.5vw;
+    font-size: 2.5rem;
     color: var(--texto-claro);
-    margin-bottom: 1vw;
+    margin-bottom: 0.5rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .info-time p {
-    font-size: 2.5vw;
+    font-size: 1.1rem;
     opacity: 0.9;
     line-height: 1.5;
-    margin-bottom: 0.5vw;
+    margin-bottom: 0.25rem;
 }
 
 .detalhes-time {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3vw;
+    gap: 1.5rem;
 }
 
 .secao-time {
     background-color: var(--cor-destaque-escura);
-    padding: 3vw;
+    padding: 1.5rem;
     border-radius: 12px;
     box-shadow: var(--sombra);
     border-left: 4px solid var(--cor-acento);
@@ -55,23 +55,23 @@
 }
 
 .titulo-secao {
-    font-size: 3.5vw;
+    font-size: 1.5rem;
     color: var(--cor-acento);
-    margin-bottom: 2vw;
+    margin-bottom: 1rem;
     font-weight: 600;
-    padding-bottom: 1vw;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--borda-suave);
 }
 
 .lista-trofeus {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 1rem;
 }
 
 .item-trofeu {
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 2vw;
+    padding: 1rem;
     border-radius: 8px;
 }
 
@@ -79,19 +79,19 @@
     font-weight: 600;
     display: block;
     color: var(--cor-acento);
-    font-size: 2.5vw;
+    font-size: 1rem;
 }
 
 .item-trofeu span:last-child {
-    font-size: 2.2vw;
+    font-size: 0.9rem;
     opacity: 0.8;
 }
 
 .secao-idolo h3 {
     color: var(--cor-acento);
-    margin-top: 2.5vw;
-    margin-bottom: 1vw;
-    font-size: 3vw;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .secao-time ul {
@@ -100,10 +100,10 @@
 }
 
 .secao-time ul li {
-    margin-bottom: 1vw;
-    padding-left: 3vw;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
     position: relative;
-    font-size: 2.5vw;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -115,9 +115,9 @@
 }
 
 .secao-time p {
-    font-size: 2.5vw;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 2vw;
+    margin-bottom: 1rem;
 }
 
 /* A partir de 768px, muda o layout */
@@ -135,79 +135,79 @@
 /* Para telas pequenas */
 @media (max-width: 768px) {
     .cabecalho-time {
-        gap: 2vw;
-        margin-bottom: 2vw;
-        padding: 3vw;
+        gap: 3vw;
+        margin-bottom: 3vw;
+        padding: 4vw;
         border-radius: 8px;
     }
 
     .logo-time,
     #item-image {
-        width: 12vw;
-        height: 12vw;
-        padding: 0.8vw;
+        width: 15vw;
+        height: 15vw;
+        padding: 1vw;
     }
 
     .nome-time,
     #fullName,
     #name {
-        font-size: 3.5vw;
-        margin-bottom: 0.8vw;
+        font-size: 4.5vw;
+        margin-bottom: 1vw;
     }
 
     .info-time p {
-        font-size: 2.2vw;
-        margin-bottom: 0.3vw;
+        font-size: 2.5vw;
+        margin-bottom: 0.5vw;
     }
 
     .detalhes-time {
-        gap: 2vw;
+        gap: 3vw;
     }
 
     .secao-time {
-        padding: 2.5vw;
+        padding: 3vw;
         border-radius: 8px;
         border-left-width: 2px;
     }
 
     .titulo-secao {
-        font-size: 3vw;
-        margin-bottom: 1.5vw;
-        padding-bottom: 0.8vw;
+        font-size: 3.5vw;
+        margin-bottom: 2vw;
+        padding-bottom: 1vw;
     }
 
     .lista-trofeus {
-        gap: 1.5vw;
+        gap: 2vw;
     }
 
     .item-trofeu {
-        padding: 1.5vw;
+        padding: 2vw;
         border-radius: 4px;
     }
 
     .item-trofeu span:first-child {
-        font-size: 2.2vw;
+        font-size: 2.5vw;
     }
 
     .item-trofeu span:last-child {
-        font-size: 2vw;
+        font-size: 2.2vw;
     }
 
     .secao-idolo h3 {
-        margin-top: 2vw;
-        margin-bottom: 0.8vw;
-        font-size: 2.8vw;
+        margin-top: 2.5vw;
+        margin-bottom: 1vw;
+        font-size: 3vw;
     }
 
     .secao-time ul li {
-        margin-bottom: 0.8vw;
-        padding-left: 2.5vw;
-        font-size: 2.2vw;
+        margin-bottom: 1vw;
+        padding-left: 3vw;
+        font-size: 2.5vw;
     }
 
     .secao-time p {
-        font-size: 2.2vw;
-        margin-bottom: 1.5vw;
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
         line-height: 1.5;
     }
 }

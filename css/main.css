@@ -2,7 +2,7 @@ main {
     flex: 1;
     width: 100%;
     max-width: 1100px;
-    margin: 3vw auto;
+    margin: 2rem auto;
 }
 
 .video-background {
@@ -11,8 +11,8 @@ main {
 
 .titulo-pagina {
     text-align: center;
-    margin: 3vw 0;
-    font-size: 6vw;
+    margin: 2rem 0;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--texto-claro);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -23,22 +23,22 @@ main {
 .titulo-pagina::after {
     content: '';
     display: block;
-    width: 8vw;
-    height: 0.8vw;
+    width: 60px;
+    height: 4px;
     background-color: var(--cor-acento);
-    margin: 1vw auto 0;
+    margin: 0.5rem auto 0;
     border-radius: 2px;
 }
 
 .texto-boas-vindas {
     text-align: center;
-    margin: 2vw 0 3vw;
-    font-size: 3vw;
+    margin: 1rem 0 2rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 2vw;
+    padding: 0 1rem;
 }
 
 .jogadores {
@@ -47,7 +47,7 @@ main {
     height: auto;
     border-radius: 8px;
     box-shadow: var(--sombra);
-    margin: 3vw auto;
+    margin: 2rem auto;
     display: block;
 }
 
@@ -59,10 +59,10 @@ main {
 .home-page {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2vw;
+    gap: 1.5rem;
     align-items: center;
     justify-items: center;
-    padding: 3vw 0;
+    padding: 2rem 0;
 }
 
 /* Responsive adjustments */
@@ -73,7 +73,7 @@ main {
             "welcome welcome"
             "title title"
             "description image";
-        gap: 3vw;
+        gap: 2rem;
         align-items: start;
     }
 
@@ -88,7 +88,7 @@ main {
     .home-page .texto-boas-vindas:nth-of-type(2) {
         grid-area: description;
         text-align: left;
-        margin-right: 3vw;
+        margin-right: 2rem;
     }
 
     .home-page .jogadores {
@@ -104,17 +104,33 @@ main {
 /* Para telas pequenas */
 @media (max-width: 768px) {
     main {
-        margin: 2vw auto;
+        margin: 3vw auto;
     }
 
     .titulo-pagina {
-        font-size: 5vw;
-        margin: 2vw 0;
+        font-size: 6vw;
+        margin: 3vw 0;
+    }
+    
+    .titulo-pagina::after {
+        width: 8vw;
+        height: 0.8vw;
+        margin: 1vw auto 0;
     }
 
     .texto-boas-vindas {
-        font-size: 2.5vw;
-        margin: 1vw 0 2vw;
+        font-size: 3vw;
+        margin: 2vw 0 3vw;
+        padding: 0 2vw;
+    }
+    
+    .jogadores {
+        margin: 3vw auto;
+    }
+    
+    .home-page {
+        gap: 2vw;
+        padding: 3vw 0;
     }
 }
 

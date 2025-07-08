@@ -1,7 +1,7 @@
 /* Seção Hero (Principal) */
 .hero-section {
     background: linear-gradient(135deg, var(--cor-primaria-escura) 0%, var(--cor-destaque-escura) 100%);
-    padding: 6vw 0;
+    padding: 4rem 0;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -17,13 +17,13 @@
     right: 0;
     bottom: 0;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(199,255,0,0.1)"/></svg>') repeat;
-    background-size: 8vw 8vw;
+    background-size: 50px 50px;
 }
 
 .hero-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4vw;
+    gap: 3rem;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -35,17 +35,17 @@
 }
 
 .hero-subtitle {
-    font-size: 3vw;
+    font-size: 1.2rem;
     color: var(--cor-acento);
     font-weight: 500;
     display: block;
-    margin-bottom: 1vw;
+    margin-bottom: 0.5rem;
 }
 
 .hero-title {
-    font-size: 8vw;
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 2vw;
+    margin-bottom: 1rem;
     background: linear-gradient(45deg, var(--cor-acento), #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -54,9 +54,9 @@
 }
 
 .hero-description {
-    font-size: 3.5vw;
+    font-size: 1.3rem;
     line-height: 1.6;
-    margin-bottom: 3vw;
+    margin-bottom: 2rem;
     opacity: 0.9;
     max-width: 600px;
     margin-left: auto;
@@ -65,22 +65,22 @@
 
 .hero-buttons {
     display: flex;
-    gap: 2vw;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .btn {
-    padding: 2.5vw 4vw;
+    padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 2.8vw;
+    font-size: 1.1rem;
     display: inline-block;
     border: 2px solid transparent;
     cursor: pointer;
     text-align: center;
-    min-width: 25vw;
+    min-width: 150px;
 }
 
 .btn-primary {
@@ -131,39 +131,39 @@
 
 /* Seção de Destaques (Features) */
 .features-section {
-    padding: 6vw 0;
+    padding: 5rem 0;
     background: var(--fundo-card);
 }
 
 .section-title {
     text-align: center;
-    font-size: 5vw;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--texto-escuro);
-    margin-bottom: 4vw;
+    margin-bottom: 3rem;
     position: relative;
 }
 
 .section-title::after {
     content: '';
     display: block;
-    width: 10vw;
-    height: 0.8vw;
+    width: 80px;
+    height: 4px;
     background: var(--cor-acento);
-    margin: 2vw auto 0;
+    margin: 1rem auto 0;
     border-radius: 2px;
 }
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
-    gap: 3vw;
-    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .feature-card {
     background: white;
-    padding: 4vw 3vw;
+    padding: 2.5rem 2rem;
     border-radius: 16px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -175,24 +175,24 @@
 }
 
 .feature-card h3 {
-    font-size: 3.5vw;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--texto-escuro);
-    margin-bottom: 2vw;
+    margin-bottom: 1rem;
 }
 
 .feature-card p {
     color: #666;
     line-height: 1.6;
-    margin-bottom: 2vw;
-    font-size: 2.5vw;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
 .feature-link {
     color: var(--cor-primaria-escura);
     text-decoration: none;
     font-weight: 600;
-    font-size: 2.5vw;
+    font-size: 1rem;
 }
 
 .feature-link:hover {
@@ -201,54 +201,54 @@
 
 /* Seção de Estatísticas */
 .stats-section {
-    padding: 5vw 0;
+    padding: 4rem 0;
     background: linear-gradient(135deg, var(--cor-destaque-escura), var(--cor-primaria-clara));
     color: var(--texto-claro);
 }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
-    gap: 3vw;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
 .stat-item {
     text-align: center;
-    padding: 3vw 2vw;
+    padding: 2rem 1rem;
 }
 
 .stat-number {
-    font-size: 7vw;
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--cor-acento);
     display: block;
-    margin-bottom: 1vw;
+    margin-bottom: 0.5rem;
 }
 
 .stat-label {
-    font-size: 2.8vw;
+    font-size: 1.1rem;
     opacity: 0.9;
     font-weight: 500;
 }
 
 /* Seção de Chamada para Ação (CTA) */
 .cta-section {
-    padding: 6vw 0;
+    padding: 5rem 0;
     background: var(--cor-primaria-escura);
     color: var(--texto-claro);
     text-align: center;
 }
 
 .cta-content h2 {
-    font-size: 5vw;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 2vw;
+    margin-bottom: 1.5rem;
 }
 
 .cta-content p {
-    font-size: 3vw;
+    font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 3vw;
+    margin-bottom: 2.5rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -257,7 +257,7 @@
 
 .cta-buttons {
     display: flex;
-    gap: 2vw;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -265,18 +265,18 @@
 /* Melhorias no Rodapé */
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
-    gap: 3vw;
-    padding: 4vw 0 3vw;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-section h3,
 .footer-section h4 {
     color: var(--cor-acento);
-    margin-bottom: 2vw;
+    margin-bottom: 1rem;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 1.2rem;
 }
 
 .footer-section ul {
@@ -285,14 +285,14 @@
 }
 
 .footer-section ul li {
-    margin-bottom: 1vw;
+    margin-bottom: 0.5rem;
 }
 
 .footer-section ul li a {
     color: var(--texto-claro);
     text-decoration: none;
     opacity: 0.8;
-    font-size: 2.5vw;
+    font-size: 1rem;
 }
 
 .footer-section ul li a:hover {
@@ -301,10 +301,10 @@
 }
 
 .footer-bottom {
-    padding: 3vw 0;
+    padding: 2rem 0;
     text-align: center;
     opacity: 0.7;
-    font-size: 2.5vw;
+    font-size: 1rem;
 }
 
 /* Design Responsivo */
@@ -321,66 +321,173 @@
     .hero-buttons {
         justify-content: flex-start;
     }
-
-    .features-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 /* Para telas pequenas */
 @media (max-width: 768px) {
     .hero-section {
-        padding: 4vw 0;
+        padding: 6vw 0;
         min-height: 60vh;
+    }
+    
+    .hero-section::before {
+        background-size: 8vw 8vw;
+    }
+    
+    .hero-content {
+        gap: 4vw;
+    }
+    
+    .hero-subtitle {
+        font-size: 3vw;
+        margin-bottom: 1vw;
     }
 
     .hero-title {
-        font-size: 6vw;
+        font-size: 8vw;
+        margin-bottom: 2vw;
     }
 
     .hero-description {
-        font-size: 3vw;
+        font-size: 3.5vw;
+        margin-bottom: 3vw;
+    }
+    
+    .hero-buttons {
+        gap: 2vw;
     }
 
     .btn {
-        padding: 2vw 3vw;
-        font-size: 2.5vw;
-        min-width: 20vw;
+        padding: 2.5vw 4vw;
+        font-size: 2.8vw;
+        min-width: 25vw;
+    }
+    
+    .features-section {
+        padding: 6vw 0;
+    }
+    
+    .section-title {
+        font-size: 5vw;
+        margin-bottom: 4vw;
+    }
+    
+    .section-title::after {
+        width: 10vw;
+        height: 0.8vw;
+        margin: 2vw auto 0;
     }
 
     .features-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+        gap: 3vw;
+        margin-top: 4vw;
+    }
+    
+    .feature-card {
+        padding: 4vw 3vw;
+    }
+    
+    .feature-card h3 {
+        font-size: 3.5vw;
+        margin-bottom: 2vw;
+    }
+    
+    .feature-card p {
+        margin-bottom: 2vw;
+        font-size: 2.5vw;
+    }
+    
+    .feature-link {
+        font-size: 2.5vw;
+    }
+    
+    .stats-section {
+        padding: 5vw 0;
     }
 
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        gap: 3vw;
+    }
+    
+    .stat-item {
+        padding: 3vw 2vw;
     }
 
     .stat-number {
-        font-size: 6vw;
+        font-size: 7vw;
+        margin-bottom: 1vw;
+    }
+    
+    .stat-label {
+        font-size: 2.8vw;
+    }
+    
+    .cta-section {
+        padding: 6vw 0;
     }
 
     .cta-content h2 {
-        font-size: 4vw;
+        font-size: 5vw;
+        margin-bottom: 2vw;
+    }
+    
+    .cta-content p {
+        font-size: 3vw;
+        margin-bottom: 3vw;
     }
 
     .cta-buttons {
-        flex-direction: column;
-        align-items: center;
+        gap: 2vw;
     }
 
     .footer-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+        gap: 3vw;
+        padding: 4vw 0 3vw;
         text-align: center;
+    }
+    
+    .footer-section h3,
+    .footer-section h4 {
+        margin-bottom: 2vw;
+        font-size: 3vw;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 1vw;
+    }
+    
+    .footer-section ul li a {
+        font-size: 2.5vw;
+    }
+    
+    .footer-bottom {
+        padding: 3vw 0;
+        font-size: 2.5vw;
     }
 }
 
 /* Para telas extremamente pequenas */
 @media (max-width: 200px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
     .hero-title {
         font-size: 12vw;
     }

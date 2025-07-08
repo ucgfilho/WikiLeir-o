@@ -22,7 +22,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 3vw;
+  font-size: 16px;
 }
 
 body {
@@ -46,7 +46,7 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2vw;
+  padding: 0 2rem;
 }
 
 img {
@@ -66,9 +66,30 @@ a:hover {
 
 /* Scrollbar customizada */
 ::-webkit-scrollbar {
-  width: 1.5vw;
+  width: 10px;
 }
 
+/* Para telas pequenas */
+@media (max-width: 768px) {
+  html {
+    font-size: 3vw;
+  }
+  
+  .container {
+    padding: 0 2vw;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 1.5vw;
+  }
+}
+
+/* Para telas extremamente pequenas */
+@media (max-width: 200px) {
+  html {
+    font-size: 4vw;
+  }
+}
 ::-webkit-scrollbar-track {
   background: var(--cor-primaria-escura);
 }
