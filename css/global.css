@@ -22,7 +22,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: clamp(12px, 3vw, 16px);
+  font-size: 3vw;
 }
 
 body {
@@ -46,7 +46,7 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 clamp(0.5rem, 2vw, 2rem);
+  padding: 0 2vw;
 }
 
 img {
@@ -66,7 +66,7 @@ a:hover {
 
 /* Scrollbar customizada */
 ::-webkit-scrollbar {
-  width: clamp(6px, 1.5vw, 10px);
+  width: 1.5vw;
 }
 
 ::-webkit-scrollbar-track {
