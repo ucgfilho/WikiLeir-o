@@ -1,6 +1,6 @@
 .container-tabela {
     overflow-x: auto;
-    margin: 2rem 0;
+    margin: clamp(1rem, 3vw, 2rem) 0;
     border-radius: 8px;
     box-shadow: var(--sombra);
     background-color: var(--fundo-card);
@@ -11,8 +11,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     color: var(--texto-escuro);
-    font-size: 1rem;
-    min-width: 600px;
+    font-size: clamp(0.7rem, 2.2vw, 1rem);
+    min-width: clamp(250px, 70vw, 600px);
 }
 
 thead tr {
@@ -22,7 +22,7 @@ thead tr {
 
 th,
 td {
-    padding: 1rem;
+    padding: clamp(0.5rem, 2vw, 1rem);
     text-align: left;
     white-space: nowrap;
     vertical-align: middle;
@@ -32,7 +32,7 @@ td {
 th:first-child,
 td:first-child {
     white-space: normal;
-    min-width: 200px;
+    min-width: clamp(120px, 25vw, 200px);
 }
 
 td {
@@ -50,7 +50,7 @@ tbody tr:hover {
 td a {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: clamp(0.25rem, 1.5vw, 0.75rem);
     color: var(--texto-escuro);
     font-weight: 500;
     flex-wrap: wrap;
@@ -61,49 +61,17 @@ td a:hover {
 }
 
 td img {
-    width: 30px;
-    height: 30px;
+    width: clamp(16px, 4vw, 30px);
+    height: clamp(16px, 4vw, 30px);
     object-fit: contain;
     flex-shrink: 0;
 }
 
-/* Para telas pequenas */
-@media (max-width: 768px) {
-    .container-tabela {
-        margin: 3vw 0;
-        border-radius: 4px;
-    }
-
-    table {
-        font-size: 2.5vw;
-        min-width: 80vw;
-    }
-
-    th,
-    td {
-        padding: 2vw 1.5vw;
-    }
-
-    th:first-child,
-    td:first-child {
-        min-width: 25vw;
-    }
-
-    td img {
-        width: 4vw;
-        height: 4vw;
-    }
-
-    td a {
-        gap: 1vw;
-    }
-}
-
-/* Para telas extremamente pequenas */
+/* Responsividade extrema */
 @media (max-width: 200px) {
     .container-tabela {
-        margin: 1vw 0;
-        border-radius: 2px;
+        margin: 2vw 0;
+        border-radius: 4px;
     }
 
     table {
@@ -113,7 +81,7 @@ td img {
 
     th,
     td {
-        padding: 0.5vw 0.4vw;
+        padding: 1vw 0.8vw;
     }
 
     th:first-child,
@@ -127,7 +95,7 @@ td img {
     }
 
     td a {
-        gap: 0.5vw;
+        gap: 1vw;
         font-size: 3vw;
         flex-direction: column;
         align-items: flex-start;
@@ -139,5 +107,64 @@ td img {
     th:nth-child(4),
     td:nth-child(4) {
         display: none;
+    }
+}
+
+@media (max-width: 100px) {
+    table {
+        font-size: 4vw;
+        min-width: 95vw;
+    }
+
+    th,
+    td {
+        padding: 1.5vw 1vw;
+    }
+
+    th:first-child,
+    td:first-child {
+        min-width: 35vw;
+    }
+
+    td img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    td a {
+        font-size: 4vw;
+        gap: 1.5vw;
+    }
+}
+
+@media (max-width: 50px) {
+    .container-tabela {
+        margin: 1vw 0;
+        border-radius: 2px;
+    }
+
+    table {
+        font-size: 5vw;
+        min-width: 98vw;
+    }
+
+    th,
+    td {
+        padding: 2vw 1.5vw;
+    }
+
+    th:first-child,
+    td:first-child {
+        min-width: 40vw;
+    }
+
+    td img {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    td a {
+        font-size: 5vw;
+        gap: 2vw;
     }
 }
