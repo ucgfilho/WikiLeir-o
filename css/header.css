@@ -5,7 +5,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1rem 2rem;
+    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.5rem, 2vw, 2rem);
 }
 
 .container-cabecalho {
@@ -13,12 +13,12 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
-    min-height: 60px;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    min-height: clamp(30px, 8vw, 60px);
 }
 
 .container-logo img {
-    width: 100px;
+    width: clamp(40px, 12vw, 100px);
     height: auto;
     flex-shrink: 0;
 }
@@ -26,19 +26,20 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: clamp(0.25rem, 1.5vw, 1.5rem);
     flex-wrap: wrap;
     justify-content: center;
 }
 
 nav a {
-    padding: 0.5rem 1rem;
+    padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.5rem, 2vw, 1rem);
     color: var(--texto-claro);
     font-weight: 500;
     border-radius: 6px;
     white-space: nowrap;
     transition: var(--transicao);
-    font-size: 1rem;
+    font-size: clamp(0.6rem, 2.2vw, 1rem);
+    text-align: center;
 }
 
 nav a:hover,
@@ -48,43 +49,15 @@ nav a.ativo {
     transform: translateY(-2px);
 }
 
-/* Para telas pequenas */
-@media (max-width: 768px) {
-    header {
-        padding: 2vw;
-    }
-    
-    .container-cabecalho {
-        flex-direction: column;
-        gap: 2vw;
-        min-height: 8vw;
-    }
-
-    .container-logo img {
-        width: 15vw;
-    }
-
-    nav {
-        width: 100%;
-        justify-content: center;
-        gap: 1vw;
-    }
-
-    nav a {
-        padding: 1vw 2vw;
-        font-size: 2.5vw;
-    }
-}
-
-/* Para telas extremamente pequenas */
+/* Responsividade extrema */
 @media (max-width: 200px) {
     header {
         padding: 1vw;
     }
-
+    
     .container-cabecalho {
         flex-direction: column;
-        gap: 0.5vw;
+        gap: 1vw;
         min-height: auto;
     }
 
@@ -94,14 +67,48 @@ nav a.ativo {
 
     nav {
         flex-direction: column;
-        gap: 0.25vw;
+        gap: 0.5vw;
         width: 100%;
     }
 
     nav a {
-        padding: 0.5vw 0.8vw;
+        padding: 1vw 2vw;
         font-size: 3vw;
-        text-align: center;
         width: 100%;
+    }
+}
+
+@media (max-width: 100px) {
+    header {
+        padding: 0.5vw;
+    }
+    
+    .container-cabecalho {
+        gap: 0.5vw;
+    }
+
+    .container-logo img {
+        width: 25vw;
+    }
+
+    nav a {
+        padding: 1.5vw 2.5vw;
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 50px) {
+    header {
+        padding: 0.25vw;
+    }
+    
+    .container-logo img {
+        width: 30vw;
+    }
+
+    nav a {
+        padding: 2vw 3vw;
+        font-size: 5vw;
+        border-radius: 2px;
     }
 }

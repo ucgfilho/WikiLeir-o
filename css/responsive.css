@@ -1,8 +1,6 @@
-/* RESPONSIVIDADE MOBILE FIRST ---------------------------------------------------------------------------------------------------------------------------*/
-
-/* Melhorias base (mobile first) */
+/* MOBILE FIRST */
 .container {
-    padding: 0 clamp(0.5rem, 2vw, 1rem);
+    padding: 0 clamp(0.25rem, 1.5vw, 1rem);
 }
 
 .container-tabela {
@@ -11,74 +9,74 @@
 }
 
 table {
-    min-width: clamp(300px, 80vw, 600px);
+    min-width: clamp(200px, 60vw, 600px);
 }
 
 .cabecalho-time {
     flex-direction: column;
     text-align: center;
-    gap: clamp(0.5rem, 2vw, 1rem);
+    gap: clamp(0.25rem, 1.5vw, 1rem);
 }
 
 .logo-time {
-    width: clamp(60px, 15vw, 80px);
-    height: clamp(60px, 15vw, 80px);
+    width: clamp(40px, 12vw, 80px);
+    height: clamp(40px, 12vw, 80px);
 }
 
 .nome-time {
-    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    font-size: clamp(1rem, 4vw, 1.8rem);
 }
 
 .detalhes-time {
     grid-template-columns: 1fr;
-    gap: clamp(0.5rem, 2vw, 1rem);
+    gap: clamp(0.25rem, 1.5vw, 1rem);
 }
 
 .container-cabecalho {
     flex-direction: column;
-    gap: clamp(0.5rem, 2vw, 1rem);
-    padding: clamp(0.5rem, 2vw, 1rem);
+    gap: clamp(0.25rem, 1.5vw, 1rem);
+    padding: clamp(0.25rem, 1.5vw, 1rem);
 }
 
 nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(0.25rem, 1vw, 0.5rem);
+    gap: clamp(0.125rem, 0.8vw, 0.5rem);
 }
 
 nav a {
-    padding: clamp(0.4rem, 1.5vw, 0.6rem) clamp(0.8rem, 2.5vw, 1rem);
-    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    padding: clamp(0.2rem, 1.2vw, 0.6rem) clamp(0.4rem, 2vw, 1rem);
+    font-size: clamp(0.6rem, 2vw, 0.9rem);
 }
 
 .titulo-pagina {
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .texto-boas-vindas {
-    font-size: clamp(0.9rem, 2.8vw, 1rem);
-    margin: clamp(0.5rem, 2vw, 1rem) 0;
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    margin: clamp(0.25rem, 1.5vw, 1rem) 0;
 }
 
 /* Melhorias para tabelas em mobile */
 .container-tabela {
-    margin: clamp(0.5rem, 2vw, 1rem) 0;
+    margin: clamp(0.25rem, 1.5vw, 1rem) 0;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 td,
 th {
-    padding: clamp(0.4rem, 1.5vw, 8px) clamp(0.6rem, 2vw, 12px);
-    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    padding: clamp(0.2rem, 1.2vw, 8px) clamp(0.3rem, 1.5vw, 12px);
+    font-size: clamp(0.6rem, 2vw, 0.9rem);
 }
 
 td img {
-    width: clamp(20px, 4vw, 24px);
-    height: clamp(20px, 4vw, 24px);
+    width: clamp(12px, 3vw, 24px);
+    height: clamp(12px, 3vw, 24px);
 }
 
-/* TABLET ---------------------------------------------------------------------------------------------------------------------------*/
+/* TABLET */
 @media (min-width: 768px) {
     .container {
         padding: 0 clamp(1rem, 3vw, 1.5rem);
@@ -145,7 +143,7 @@ td img {
     }
 }
 
-/* DESKTOP ---------------------------------------------------------------------------------------------------------------------------*/
+/* DESKTOP */
 @media (min-width: 1024px) {
     .container {
         padding: 0 clamp(1.5rem, 3vw, 2rem);
@@ -183,7 +181,7 @@ td img {
     }
 }
 
-/* LARGE DESKTOP ---------------------------------------------------------------------------------------------------------------------------*/
+/* LARGE DESKTOP */
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
@@ -195,31 +193,31 @@ td img {
     }
 }
 
-/* EXTRA LARGE SCREENS ---------------------------------------------------------------------------------------------------------------------------*/
+/* EXTRA LARGE SCREENS */
 @media (min-width: 1400px) {
     .container {
         max-width: 1400px;
     }
 }
 
-/* LANDSCAPE ORIENTATION ---------------------------------------------------------------------------------------------------------------------------*/
+/* LANDSCAPE ORIENTATION */
 @media (orientation: landscape) and (max-height: 600px) {
     .cabecalho-time {
         flex-direction: row;
-        gap: clamp(0.5rem, 2vw, 1rem);
+        gap: clamp(0.25rem, 1.5vw, 1rem);
     }
 
     .logo-time {
-        width: clamp(50px, 8vw, 60px);
-        height: clamp(50px, 8vw, 60px);
+        width: clamp(30px, 6vw, 60px);
+        height: clamp(30px, 6vw, 60px);
     }
 
     .nome-time {
-        font-size: clamp(1.2rem, 3vw, 1.5rem);
+        font-size: clamp(0.9rem, 2.5vw, 1.5rem);
     }
 }
 
-/* HIGH DPI DISPLAYS ---------------------------------------------------------------------------------------------------------------------------*/
+/* HIGH DPI DISPLAYS */
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 
@@ -230,7 +228,7 @@ td img {
     }
 }
 
-/* REDUCED MOTION ---------------------------------------------------------------------------------------------------------------------------*/
+/* REDUCED MOTION */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -239,7 +237,7 @@ td img {
     }
 }
 
-/* DARK MODE SUPPORT ---------------------------------------------------------------------------------------------------------------------------*/
+/* DARK MODE SUPPORT */
 @media (prefers-color-scheme: dark) {
     :root {
         --cor-primaria-escura: #0a0a0f;
@@ -251,7 +249,7 @@ td img {
     }
 }
 
-/* PRINT STYLES ---------------------------------------------------------------------------------------------------------------------------*/
+/* PRINT STYLES */
 @media print {
 
     header,
@@ -272,170 +270,169 @@ td img {
 
     .detalhes-time {
         grid-template-columns: 1fr;
-        gap: clamp(0.5rem, 2vw, 1rem);
+        gap: clamp(0.25rem, 1.5vw, 1rem);
     }
 }
 
-/* TELAS ULTRA PEQUENAS ---------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width: 320px) {
+/* RESPONSIVIDADE EXTREMA PARA TELAS MUITO PEQUENAS */
+@media (max-width: 200px) {
     .container {
-        padding: 0 clamp(0.25rem, 1vw, 0.5rem);
+        padding: 0 clamp(0.125rem, 0.8vw, 0.5rem);
     }
 
     .cabecalho-time {
-        gap: clamp(0.25rem, 1vw, 0.5rem);
-        padding: clamp(0.5rem, 2vw, 1rem);
+        gap: clamp(0.125rem, 0.8vw, 0.5rem);
+        padding: clamp(0.25rem, 1.5vw, 1rem);
     }
 
     .logo-time {
-        width: clamp(50px, 12vw, 60px);
-        height: clamp(50px, 12vw, 60px);
+        width: clamp(30px, 10vw, 60px);
+        height: clamp(30px, 10vw, 60px);
     }
 
     .nome-time {
-        font-size: clamp(1.2rem, 3.5vw, 1.4rem);
+        font-size: clamp(0.9rem, 3vw, 1.4rem);
     }
 
     .detalhes-time {
-        gap: clamp(0.25rem, 1vw, 0.5rem);
+        gap: clamp(0.125rem, 0.8vw, 0.5rem);
     }
 
     .container-cabecalho {
-        padding: clamp(0.25rem, 1vw, 0.5rem);
-        gap: clamp(0.25rem, 1vw, 0.5rem);
+        padding: clamp(0.125rem, 0.8vw, 0.5rem);
+        gap: clamp(0.125rem, 0.8vw, 0.5rem);
     }
 
     nav {
-        gap: clamp(0.125rem, 0.5vw, 0.25rem);
+        gap: clamp(0.0625rem, 0.4vw, 0.25rem);
     }
 
     nav a {
-        padding: clamp(0.3rem, 1.2vw, 0.4rem) clamp(0.6rem, 2vw, 0.8rem);
-        font-size: clamp(0.7rem, 2vw, 0.8rem);
+        padding: clamp(0.15rem, 1vw, 0.4rem) clamp(0.3rem, 1.5vw, 0.8rem);
+        font-size: clamp(0.5rem, 1.8vw, 0.8rem);
     }
 
     .titulo-pagina {
-        font-size: clamp(1.2rem, 4vw, 1.5rem);
-        margin: clamp(0.5rem, 2vw, 1rem) 0;
+        font-size: clamp(0.9rem, 3.5vw, 1.5rem);
+        margin: clamp(0.25rem, 1.5vw, 1rem) 0;
     }
 
     .texto-boas-vindas {
-        font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-        margin: clamp(0.25rem, 1vw, 0.5rem) 0;
+        font-size: clamp(0.6rem, 2.2vw, 0.9rem);
+        margin: clamp(0.125rem, 0.8vw, 0.5rem) 0;
     }
 
     td,
     th {
-        padding: clamp(0.3rem, 1.2vw, 0.4rem) clamp(0.4rem, 1.5vw, 0.6rem);
-        font-size: clamp(0.7rem, 2vw, 0.8rem);
+        padding: clamp(0.15rem, 1vw, 0.4rem) clamp(0.2rem, 1.2vw, 0.6rem);
+        font-size: clamp(0.5rem, 1.8vw, 0.8rem);
     }
 
     td img {
-        width: clamp(16px, 3vw, 20px);
-        height: clamp(16px, 3vw, 20px);
+        width: clamp(10px, 2.5vw, 20px);
+        height: clamp(10px, 2.5vw, 20px);
     }
 }
 
-/* TELAS EXTREMAMENTE PEQUENAS (53px) ---------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 100px) {
     .container {
-        padding: 0 clamp(0.1rem, 0.5vw, 0.25rem);
+        padding: 0 clamp(0.0625rem, 0.4vw, 0.25rem);
     }
 
     .cabecalho-time {
         flex-direction: column;
-        gap: clamp(0.1rem, 0.5vw, 0.25rem);
-        padding: clamp(0.2rem, 1vw, 0.5rem);
+        gap: clamp(0.0625rem, 0.4vw, 0.25rem);
+        padding: clamp(0.125rem, 0.8vw, 0.5rem);
         text-align: center;
     }
 
     .logo-time {
-        width: clamp(30px, 8vw, 40px);
-        height: clamp(30px, 8vw, 40px);
+        width: clamp(20px, 6vw, 40px);
+        height: clamp(20px, 6vw, 40px);
     }
 
     .nome-time {
-        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+        font-size: clamp(0.6rem, 2.2vw, 1.2rem);
         line-height: 1.2;
     }
 
     .detalhes-time {
         grid-template-columns: 1fr;
-        gap: clamp(0.1rem, 0.5vw, 0.25rem);
+        gap: clamp(0.0625rem, 0.4vw, 0.25rem);
     }
 
     .secao-time {
-        padding: clamp(0.3rem, 1.2vw, 0.5rem);
+        padding: clamp(0.15rem, 1vw, 0.5rem);
         border-radius: 4px;
     }
 
     .titulo-secao {
-        font-size: clamp(0.7rem, 2vw, 1rem);
-        margin-bottom: clamp(0.2rem, 0.8vw, 0.5rem);
+        font-size: clamp(0.5rem, 1.8vw, 1rem);
+        margin-bottom: clamp(0.1rem, 0.6vw, 0.5rem);
     }
 
     .container-cabecalho {
         flex-direction: column;
-        padding: clamp(0.1rem, 0.5vw, 0.25rem);
-        gap: clamp(0.05rem, 0.25vw, 0.1rem);
+        padding: clamp(0.0625rem, 0.4vw, 0.25rem);
+        gap: clamp(0.03125rem, 0.2vw, 0.1rem);
     }
 
     nav {
         flex-direction: column;
-        gap: clamp(0.05rem, 0.25vw, 0.1rem);
+        gap: clamp(0.03125rem, 0.2vw, 0.1rem);
         width: 100%;
     }
 
     nav a {
-        padding: clamp(0.15rem, 0.6vw, 0.3rem) clamp(0.3rem, 1.2vw, 0.6rem);
-        font-size: clamp(0.5rem, 1.5vw, 0.7rem);
+        padding: clamp(0.1rem, 0.6vw, 0.3rem) clamp(0.2rem, 1vw, 0.6rem);
+        font-size: clamp(0.4rem, 1.4vw, 0.7rem);
         text-align: center;
         width: 100%;
         border-radius: 2px;
     }
 
     .titulo-pagina {
-        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-        margin: clamp(0.2rem, 1vw, 0.5rem) 0;
+        font-size: clamp(0.6rem, 2.2vw, 1.2rem);
+        margin: clamp(0.125rem, 0.8vw, 0.5rem) 0;
     }
 
     .titulo-pagina::after {
-        width: clamp(15px, 4vw, 30px);
-        height: clamp(1px, 0.4vw, 2px);
-        margin: clamp(0.1rem, 0.5vw, 0.25rem) auto 0;
+        width: clamp(10px, 3vw, 30px);
+        height: clamp(0.5px, 0.3vw, 2px);
+        margin: clamp(0.0625rem, 0.4vw, 0.25rem) auto 0;
     }
 
     .texto-boas-vindas {
-        font-size: clamp(0.6rem, 2vw, 0.8rem);
-        margin: clamp(0.1rem, 0.5vw, 0.25rem) 0;
+        font-size: clamp(0.4rem, 1.6vw, 0.8rem);
+        margin: clamp(0.0625rem, 0.4vw, 0.25rem) 0;
         line-height: 1.4;
-        padding: 0 clamp(0.1rem, 0.5vw, 0.25rem);
+        padding: 0 clamp(0.0625rem, 0.4vw, 0.25rem);
     }
 
     .container-tabela {
-        margin: clamp(0.2rem, 1vw, 0.5rem) 0;
+        margin: clamp(0.125rem, 0.8vw, 0.5rem) 0;
         border-radius: 2px;
     }
 
     table {
-        font-size: clamp(0.4rem, 1.5vw, 0.6rem);
-        min-width: clamp(150px, 50vw, 250px);
+        font-size: clamp(0.3rem, 1.2vw, 0.6rem);
+        min-width: clamp(100px, 40vw, 250px);
     }
 
     td,
     th {
-        padding: clamp(0.1rem, 0.5vw, 0.2rem) clamp(0.15rem, 0.6vw, 0.3rem);
-        font-size: clamp(0.4rem, 1.5vw, 0.6rem);
+        padding: clamp(0.0625rem, 0.4vw, 0.2rem) clamp(0.1rem, 0.5vw, 0.3rem);
+        font-size: clamp(0.3rem, 1.2vw, 0.6rem);
     }
 
     td img {
-        width: clamp(12px, 2.5vw, 16px);
-        height: clamp(12px, 2.5vw, 16px);
+        width: clamp(8px, 2vw, 16px);
+        height: clamp(8px, 2vw, 16px);
     }
 
     td a {
-        gap: clamp(0.05rem, 0.25vw, 0.1rem);
-        font-size: clamp(0.4rem, 1.5vw, 0.6rem);
+        gap: clamp(0.03125rem, 0.2vw, 0.1rem);
+        font-size: clamp(0.3rem, 1.2vw, 0.6rem);
         flex-direction: column;
         align-items: flex-start;
     }
@@ -450,229 +447,173 @@ td img {
 
     /* Ajustes específicos para elementos de texto */
     .info-time p {
-        font-size: clamp(0.5rem, 1.8vw, 0.7rem);
-        margin-bottom: clamp(0.05rem, 0.25vw, 0.1rem);
+        font-size: clamp(0.4rem, 1.5vw, 0.7rem);
+        margin-bottom: clamp(0.03125rem, 0.2vw, 0.1rem);
     }
 
     .lista-trofeus {
-        gap: clamp(0.2rem, 0.8vw, 0.5rem);
+        gap: clamp(0.125rem, 0.6vw, 0.5rem);
     }
 
     .item-trofeu {
-        padding: clamp(0.2rem, 0.8vw, 0.5rem);
+        padding: clamp(0.125rem, 0.6vw, 0.5rem);
         border-radius: 2px;
     }
 
     .item-trofeu span {
-        font-size: clamp(0.5rem, 1.8vw, 0.7rem);
+        font-size: clamp(0.4rem, 1.5vw, 0.7rem);
         line-height: 1.2;
     }
 
     /* Ajustes para listas */
     .secao-time ul li {
-        margin-bottom: clamp(0.1rem, 0.4vw, 0.25rem);
-        padding-left: clamp(0.5rem, 2vw, 1rem);
-        font-size: clamp(0.5rem, 1.8vw, 0.7rem);
+        margin-bottom: clamp(0.0625rem, 0.3vw, 0.25rem);
+        padding-left: clamp(0.25rem, 1.5vw, 1rem);
+        font-size: clamp(0.4rem, 1.5vw, 0.7rem);
     }
 
     /* Footer ajustes */
     footer {
-        padding: clamp(0.5rem, 2vw, 1rem) 0;
+        padding: clamp(0.25rem, 1.5vw, 1rem) 0;
     }
 
     footer p {
-        font-size: clamp(0.5rem, 1.8vw, 0.7rem);
+        font-size: clamp(0.4rem, 1.5vw, 0.7rem);
     }
 }
 
-/* RESPONSIVIDADE EXTREMA PARA WIKILEIRÃO.HTML ENTRE 53PX E 148PX */
-@media (max-width: 148px) and (min-width: 53px) {
-
-    body,
-    html {
-        font-size: 7px !important;
-        overflow-x: hidden !important;
+@media (max-width: 50px) {
+    .container {
+        padding: 0 clamp(0.03125rem, 0.2vw, 0.125rem);
     }
 
-    header .container-cabecalho,
-    .container,
-    .hero-content,
-    .features-grid,
-    .stats-grid,
-    .footer-content {
-        flex-direction: column !important;
-        align-items: stretch !important;
-        gap: 1px !important;
-        padding: 0 1px !important;
-        min-width: 0 !important;
-        width: 100vw !important;
-        box-sizing: border-box !important;
+    .cabecalho-time {
+        gap: clamp(0.03125rem, 0.2vw, 0.125rem);
+        padding: clamp(0.0625rem, 0.4vw, 0.25rem);
+        border-radius: 2px;
     }
 
-    nav[role="navigation"] {
-        flex-direction: column !important;
-        gap: 1px !important;
-        font-size: 0.7em !important;
+    .logo-time {
+        width: clamp(15px, 4vw, 30px);
+        height: clamp(15px, 4vw, 30px);
     }
 
-    .container-logo img {
-        width: 16px !important;
-        height: auto !important;
+    .nome-time {
+        font-size: clamp(0.4rem, 1.6vw, 1rem);
+        line-height: 1.1;
     }
 
-    .hero-title,
-    .section-title,
-    .cta-content h2 {
-        font-size: 0.9em !important;
+    .detalhes-time {
+        gap: clamp(0.03125rem, 0.2vw, 0.125rem);
     }
 
-    .hero-description,
-    .feature-card h3,
-    .feature-card p,
-    .stat-label,
-    .cta-content p,
-    .footer-section h3,
-    .footer-section h4,
-    .footer-bottom p {
-        font-size: 0.7em !important;
+    .secao-time {
+        padding: clamp(0.0625rem, 0.4vw, 0.25rem);
+        border-radius: 2px;
+        border-left-width: 1px;
     }
 
-    .hero-buttons,
-    .cta-buttons {
-        flex-direction: column !important;
-        gap: 1px !important;
+    .titulo-secao {
+        font-size: clamp(0.3rem, 1.2vw, 0.8rem);
+        margin-bottom: clamp(0.0625rem, 0.4vw, 0.25rem);
     }
 
-    .features-grid,
-    .stats-grid {
-        grid-template-columns: 1fr !important;
+    .container-cabecalho {
+        padding: clamp(0.03125rem, 0.2vw, 0.125rem);
+        gap: clamp(0.015625rem, 0.1vw, 0.0625rem);
     }
 
-    .feature-card,
-    .stat-item {
-        min-width: 0 !important;
-        width: 100% !important;
+    nav a {
+        padding: clamp(0.0625rem, 0.4vw, 0.2rem) clamp(0.125rem, 0.6vw, 0.4rem);
+        font-size: clamp(0.25rem, 1vw, 0.5rem);
+        border-radius: 1px;
     }
 
-    img {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-}
-
-/* RESPONSIVIDADE EXTREMA PARA WIKILEIRÃO.HTML ENTRE 50PX E 52PX */
-@media (max-width: 52px) and (min-width: 50px) {
-
-    html,
-    body {
-        font-size: 2vw !important;
-        overflow-x: hidden !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        min-height: 100vh !important;
-        height: 100vh !important;
+    .titulo-pagina {
+        font-size: clamp(0.4rem, 1.6vw, 1rem);
+        margin: clamp(0.0625rem, 0.4vw, 0.25rem) 0;
     }
 
-    body {
-        display: flex !important;
-        flex-direction: column !important;
-        min-height: 100vh !important;
-        height: 100vh !important;
+    .titulo-pagina::after {
+        width: clamp(6px, 2vw, 20px);
+        height: clamp(0.25px, 0.2vw, 1px);
+        margin: clamp(0.03125rem, 0.2vw, 0.125rem) auto 0;
     }
 
-    main,
-    .container,
-    .hero-section,
-    .features-section,
-    .stats-section,
-    .cta-section,
-    footer,
-    .footer-content {
-        min-height: 0 !important;
-        height: auto !important;
-        flex: 1 1 auto !important;
-        display: block !important;
+    .texto-boas-vindas {
+        font-size: clamp(0.25rem, 1.2vw, 0.6rem);
+        margin: clamp(0.03125rem, 0.2vw, 0.125rem) 0;
+        line-height: 1.3;
+        padding: 0 clamp(0.03125rem, 0.2vw, 0.125rem);
     }
 
-    header,
-    main,
+    .container-tabela {
+        margin: clamp(0.0625rem, 0.4vw, 0.25rem) 0;
+        border-radius: 1px;
+    }
+
+    table {
+        font-size: clamp(0.2rem, 0.8vw, 0.4rem);
+        min-width: clamp(80px, 30vw, 200px);
+    }
+
+    td,
+    th {
+        padding: clamp(0.03125rem, 0.2vw, 0.1rem) clamp(0.0625rem, 0.3vw, 0.2rem);
+        font-size: clamp(0.2rem, 0.8vw, 0.4rem);
+    }
+
+    td img {
+        width: clamp(6px, 1.5vw, 12px);
+        height: clamp(6px, 1.5vw, 12px);
+    }
+
+    td a {
+        gap: clamp(0.015625rem, 0.1vw, 0.0625rem);
+        font-size: clamp(0.2rem, 0.8vw, 0.4rem);
+    }
+
+    /* Ajustes específicos para elementos de texto */
+    .info-time p {
+        font-size: clamp(0.25rem, 1vw, 0.5rem);
+        margin-bottom: clamp(0.015625rem, 0.1vw, 0.0625rem);
+    }
+
+    .lista-trofeus {
+        gap: clamp(0.0625rem, 0.4vw, 0.25rem);
+    }
+
+    .item-trofeu {
+        padding: clamp(0.0625rem, 0.4vw, 0.25rem);
+        border-radius: 1px;
+    }
+
+    .item-trofeu span {
+        font-size: clamp(0.25rem, 1vw, 0.5rem);
+        line-height: 1.1;
+    }
+
+    .secao-time ul li {
+        margin-bottom: clamp(0.03125rem, 0.2vw, 0.125rem);
+        padding-left: clamp(0.125rem, 0.8vw, 0.5rem);
+        font-size: clamp(0.25rem, 1vw, 0.5rem);
+    }
+
+    .secao-time ul li::before {
+        font-size: clamp(0.2rem, 0.8vw, 0.4rem);
+    }
+
+    .secao-time p {
+        font-size: clamp(0.25rem, 1vw, 0.5rem);
+        margin-bottom: clamp(0.0625rem, 0.4vw, 0.25rem);
+        line-height: 1.2;
+    }
+
     footer {
-        width: 100vw !important;
-        min-height: 0 !important;
-        height: auto !important;
+        padding: clamp(0.125rem, 0.8vw, 0.5rem) 0;
     }
 
-    header .container-cabecalho,
-    .container,
-    .hero-content,
-    .features-grid,
-    .stats-grid,
-    .footer-content {
-        flex-direction: column !important;
-        align-items: stretch !important;
-        gap: 0 !important;
-        padding: 0 !important;
-        min-width: 0 !important;
-        width: 100vw !important;
-        box-sizing: border-box !important;
-    }
-
-    nav[role="navigation"] {
-        flex-direction: column !important;
-        gap: 0 !important;
-        font-size: 2vw !important;
-        width: 100vw !important;
-    }
-
-    .container-logo img {
-        width: 8vw !important;
-        height: auto !important;
-        max-width: 100vw !important;
-    }
-
-    .hero-title,
-    .section-title,
-    .cta-content h2 {
-        font-size: 3vw !important;
-    }
-
-    .hero-description,
-    .feature-card h3,
-    .feature-card p,
-    .stat-label,
-    .cta-content p,
-    .footer-section h3,
-    .footer-section h4,
-    .footer-bottom p {
-        font-size: 2vw !important;
-    }
-
-    .hero-buttons,
-    .cta-buttons {
-        flex-direction: column !important;
-        gap: 0 !important;
-        width: 100vw !important;
-    }
-
-    .features-grid,
-    .stats-grid {
-        grid-template-columns: 1fr !important;
-        width: 100vw !important;
-    }
-
-    .feature-card,
-    .stat-item {
-        min-width: 0 !important;
-        width: 100vw !important;
-    }
-
-    img {
-        max-width: 100vw !important;
-        height: auto !important;
-        display: block !important;
-    }
-
-    * {
-        box-sizing: border-box !important;
+    footer p {
+        font-size: clamp(0.25rem, 1vw, 0.5rem);
     }
 }

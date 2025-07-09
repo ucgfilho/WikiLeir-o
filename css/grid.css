@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-/* Home page grid */
+/* Grid da home */
 .home-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -34,26 +34,26 @@
     height: auto;
 }
 
-/* Club details grid */
+/* Grid de detalhes do clube */
 .detalhes-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-/* Table responsive grid */
+/* Grid da tabela */
 .table-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-/* Cards grid for future features */
+/* Grid de cards para futuras funcionalidades */
 .cards-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
-/* Responsive breakpoints */
+/* Responsividade */
 @media (min-width: 768px) {
     .home-grid {
         grid-template-columns: 1fr 1fr;
