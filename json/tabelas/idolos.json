@@ -1,0 +1,58 @@
+[
+    {
+        "id": "pele",
+        "imageUrl": "https://assets.goal.com/images/v3/bltaf5993a2bddfe395/Pel%C3%A9_1970.jpg?auto=webp&format=pjpg&width=3840&quality=60",
+        "name": "Pelé",
+        "club": "Santos",
+        "description": "O \"Rei do Futebol\", considerado o maior jogador de todos os tempos."
+    },
+    {
+        "id": "zico",
+        "imageUrl": "https://img.cmswebsg.com.br/diariodigitalcapixaba.com.br/image?src=https://diariodigitalcapixaba.com.br/images/noticias/1109/28082020071407_A_Vida_De_.jpg&w=800&h=600&output=webp",
+        "name": "Zico",
+        "club": "Flamengo",
+        "description": "O \"Galinho de Quintino\", maior ídolo da história do clube rubro-negro."
+    },
+    {
+        "id": "socrates",
+        "imageUrl": "https://conteudo.imguol.com.br/c/esporte/0d/2021/02/19/socrates-comemorando-gol-pelo-corinthians-1613756247465_v2_3x4.jpg",
+        "name": "Sócrates",
+        "club": "Corinthians",
+        "description": "Meia elegante e líder da Democracia Corinthiana."
+    },
+    {
+        "id": "ademir-da-guia",
+        "imageUrl": "https://i.ytimg.com/vi/_9e_9EcHmQA/maxresdefault.jpg",
+        "name": "Ademir da Guia",
+        "club": "Palmeiras",
+        "description": "O \"Divino\", maestro da Academia de Futebol do Palmeiras."
+    },
+    {
+        "id": "rogerio-ceni",
+        "imageUrl": "https://cdn.espn.com.br/image/wide/622_9c5b5dcf-b9a8-3ce4-bade-1ebffb9cbca0.png",
+        "name": "Rogério Ceni",
+        "club": "São Paulo",
+        "description": "O \"Mito\", goleiro-artilheiro e recordista de jogos pelo clube."
+    },
+    {
+        "id": "garrincha",
+        "imageUrl": "https://geraldomayrink.com.br/wp-content/uploads/2020/11/garrincha_Destaque.jpg",
+        "name": "Garrincha",
+        "club": "Botafogo",
+        "description": "A \"Alegria do Povo\", um dos maiores dribladores da história."
+    },
+    {
+        "id": "dirceu-kruger",
+        "imageUrl": "https://s2-ge.glbimg.com/WngtKPifrQc5EsX-J0WfuvTXVpM=/0x0:623x470/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/u/5/fsipsCSMatcnW5KYQMLg/196xkruger-1-.jpg",
+        "name": "Dirceu Krüger",
+        "club": "Coritiba",
+        "description": "O \"Flecha Loira\", com uma vida inteira dedicada ao Coritiba."
+    },
+    {
+        "id": "bene",
+        "imageUrl": "https://www2.paysandu.com.br/data/noticia/grande/WhatsApp-Image-2024-08-05-at-13(3).jpeg",
+        "name": "Bené",
+        "club": "Paysandu",
+        "description": "\"O Canhão da Curuzu\", maior artilheiro da história do Paysandu."
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "category": "Recordes de Gols",
+        "items": [
+            {
+                "number": "1.281",
+                "title": "Gols de Pelé",
+                "subtitle": "Maior artilheiro da história",
+                "description": "Pelé marcou 1.281 gols em 1.363 jogos, um recorde que permanece imbatível até hoje.",
+                "highlight": true
+            },
+            {
+                "number": "131",
+                "title": "Gols de Rogério Ceni",
+                "subtitle": "Goleiro artilheiro",
+                "description": "Maior artilheiro entre goleiros na história do futebol mundial.",
+                "highlight": false
+            },
+            {
+                "number": "190",
+                "title": "Gols de Roberto Dinamite",
+                "subtitle": "Artilheiro do Brasileirão",
+                "description": "Maior artilheiro da história do Campeonato Brasileiro.",
+                "highlight": false
+            }
+        ]
+    },
+    {
+        "category": "Recordes de Público",
+        "items": [
+            {
+                "number": "199.854",
+                "title": "Fla x Flu (1963)",
+                "subtitle": "Maior público do Maracanã",
+                "description": "Final do Campeonato Carioca de 1963, maior público da história do futebol brasileiro.",
+                "highlight": true
+            }
+        ]
+    },
+    {
+        "category": "Recordes de Títulos",
+        "items": [
+            {
+                "number": "12",
+                "title": "Brasileirões do Palmeiras",
+                "subtitle": "Maior campeão nacional",
+                "description": "Palmeiras é o clube com mais títulos brasileiros na história.",
+                "highlight": true
+            }
+        ]
+    }
+]

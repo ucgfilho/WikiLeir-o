@@ -1,0 +1,178 @@
+[
+    {
+        "id": "amazonas",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/pt/7/74/AmazonasFC.png?20250628052014",
+        "name": "Amazonas FC",
+        "stadium": "Arena da Amazônia",
+        "capacity": "44.300",
+        "mascot": "Onça-pintada"
+    },
+    {
+        "id": "america-mg",
+        "logoUrl": "https://logodetimes.com/times/america-mineiro/logo-america-mineiro-256.png",
+        "name": "América-MG",
+        "stadium": "Independência",
+        "capacity": "23.018",
+        "mascot": "Coelho"
+    },
+    {
+        "id": "athletic",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Athletic_Club_%28Minas_Gerais%29.svg/1200px-Athletic_Club_%28Minas_Gerais%29.svg.png",
+        "name": "Athletic Club",
+        "stadium": "Joaquim Henrique Nogueira",
+        "capacity": "5.000",
+        "mascot": "Touro"
+    },
+    {
+        "id": "atletico-go",
+        "logoUrl": "https://logodetimes.com/times/atletico-goianiense/logo-atletico-goianiense-256.png",
+        "name": "Atlético-GO",
+        "stadium": "Antônio Accioly",
+        "capacity": "12.500",
+        "mascot": "Dragão"
+    },
+    {
+        "id": "athletico-pr",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Athletico_Paranaense_%28Logo_2019%29.svg/1200px-Athletico_Paranaense_%28Logo_2019%29.svg.png",
+        "name": "Athletico-PR",
+        "stadium": "Ligga Arena",
+        "capacity": "42.372",
+        "mascot": "Furacão"
+    },
+    {
+        "id": "avai",
+        "logoUrl": "https://logodetimes.com/times/avai/logo-avai-256.png",
+        "name": "Avaí FC",
+        "stadium": "Ressacada",
+        "capacity": "17.800",
+        "mascot": "Leão"
+    },
+    {
+        "id": "botafogo-sp",
+        "logoUrl": "https://logodetimes.com/times/botafogo-sp/logo-botafogo-sp-256.png",
+        "name": "Botafogo-SP",
+        "stadium": "Santa Cruz",
+        "capacity": "29.292",
+        "mascot": "Pantera"
+    },
+    {
+        "id": "ceara",
+        "logoUrl": "https://logodetimes.com/times/ceara/logo-ceara-256.png",
+        "name": "Ceará",
+        "stadium": "Castelão",
+        "capacity": "63.903",
+        "mascot": "Vozão"
+    },
+    {
+        "id": "chapecoense",
+        "logoUrl": "https://logodetimes.com/times/chapecoense/logo-chapecoense-256.png",
+        "name": "Chapecoense",
+        "stadium": "Arena Condá",
+        "capacity": "20.089",
+        "mascot": "Índio Condá"
+    },
+    {
+        "id": "coritiba",
+        "logoUrl": "https://logodetimes.com/times/coritiba/logo-coritiba-256.png",
+        "name": "Coritiba",
+        "stadium": "Couto Pereira",
+        "capacity": "40.502",
+        "mascot": "Vovô Coxa"
+    },
+    {
+        "id": "crb",
+        "logoUrl": "https://logodetimes.com/times/crb/logo-crb-256.png",
+        "name": "CRB",
+        "stadium": "Rei Pelé",
+        "capacity": "17.600",
+        "mascot": "Galo"
+    },
+    {
+        "id": "criciuma",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/EscudoCriciumaEC.svg",
+        "name": "Criciúma EC",
+        "stadium": "Heriberto Hülse",
+        "capacity": "19.225",
+        "mascot": "Tigre"
+    },
+    {
+        "id": "cuiaba",
+        "logoUrl": "https://logodetimes.com/times/cuiaba/logo-cuiaba-256.png",
+        "name": "Cuiabá",
+        "stadium": "Arena Pantanal",
+        "capacity": "44.097",
+        "mascot": "Dourado"
+    },
+    {
+        "id": "ferroviaria",
+        "logoUrl": "https://logodetimes.com/times/ferroviaria/logo-ferroviaria-256.png",
+        "name": "Ferroviária",
+        "stadium": "Arena da Fonte Luminosa",
+        "capacity": "21.449",
+        "mascot": "Locomotiva"
+    },
+    {
+        "id": "goias",
+        "logoUrl": "https://www.goiasec.com.br/wp-content/uploads/2021/03/ESCUDO-OFICIAL-PANTONE-3537C.png",
+        "name": "Goiás",
+        "stadium": "Hailé Pinheiro",
+        "capacity": "14.450",
+        "mascot": "Periquito"
+    },
+    {
+        "id": "mirassol",
+        "logoUrl": "https://logodetimes.com/times/mirassol/logo-mirassol-256.png",
+        "name": "Mirassol",
+        "stadium": "José Maria de Campos Maia",
+        "capacity": "15.000",
+        "mascot": "Leão"
+    },
+    {
+        "id": "novorizontino",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/pt/9/9e/Gr%C3%AAmio_Esportivo_Novorizontino_logo.png",
+        "name": "Novorizontino",
+        "stadium": "Dr. Jorge Ismael de Biasi",
+        "capacity": "16.000",
+        "mascot": "Tigre"
+    },
+    {
+        "id": "operario",
+        "logoUrl": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/18187.png",
+        "name": "Operário-PR",
+        "stadium": "Germano Krüger",
+        "capacity": "10.632",
+        "mascot": "Fantasma"
+    },
+    {
+        "id": "paysandu",
+        "logoUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijkF4Y2X0ZQcc8pt7X37QeHc7oauNNW8V8PVPvV4DaIkg2f70Ifb4OMqU5VDB-7HSOuXhVnAh3sWWY_gyJbusidBiPZdtJRxDWtfegCI2BvkFBnLimcviQKuzoyZSOKJAzeNfpiAfznYfC/s1600/PAYSSANDU+SPORT+CLUBE.png",
+        "name": "Paysandu",
+        "stadium": "Curuzu",
+        "capacity": "16.200",
+        "mascot": "Papão"
+    },
+    {
+        "id": "remo",
+        "logoUrl": "https://logodetimes.com/times/remo/logo-remo-256.png",
+        "name": "Remo",
+        "stadium": "Evandro Almeida",
+        "capacity": "13.792",
+        "mascot": "Leão"
+    },
+    {
+        "id": "vila-nova",
+        "logoUrl": "https://logodetimes.com/wp-content/uploads/vila-nova.png",
+        "name": "Vila Nova",
+        "stadium": "Onésio Brasileiro Alvarenga",
+        "capacity": "11.788",
+        "mascot": "Tigre"
+    },
+    {
+        "id": "volta-redonda",
+        "logoUrl": "https://logodetimes.com/times/volta-redonda/logo-volta-redonda-256.png",
+        "name": "Volta Redonda",
+        "stadium": "Raulino de Oliveira",
+        "capacity": "20.255",
+        "mascot": "Aço"
+    }
+]

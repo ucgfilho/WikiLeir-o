@@ -1,0 +1,37 @@
+[
+    {
+        "year": "1894",
+        "title": "Chegada do Futebol ao Brasil",
+        "description": "Charles Miller retorna da Inglaterra trazendo as primeiras bolas e regras do futebol para o Brasil. O esporte chega oficialmente ao país."
+    },
+    {
+        "year": "1895",
+        "title": "Primeiro Jogo Oficial",
+        "description": "Realizado no dia 15 de abril, entre funcionários de empresas inglesas em São Paulo. Marco inicial do futebol organizado no Brasil."
+    },
+    {
+        "year": "1950",
+        "title": "Copa do Mundo no Brasil",
+        "description": "Brasil sedia sua primeira Copa do Mundo. O Maracanã é inaugurado, mas o país perde a final para o Uruguai no famoso \"Maracanaço\"."
+    },
+    {
+        "year": "1958",
+        "title": "Primeira Copa do Mundo",
+        "description": "Brasil conquista sua primeira Copa do Mundo na Suécia, com Pelé de apenas 17 anos brilhando no cenário mundial."
+    },
+    {
+        "year": "1970",
+        "title": "Tricampeonato Mundial",
+        "description": "Brasil conquista a Copa do Mundo no México com o que muitos consideram a melhor seleção de todos os tempos."
+    },
+    {
+        "year": "2003",
+        "title": "Era dos Pontos Corridos",
+        "description": "Campeonato Brasileiro adota definitivamente o sistema de pontos corridos, tornando-se mais justo e competitivo."
+    },
+    {
+        "year": "2014",
+        "title": "Copa do Mundo no Brasil",
+        "description": "Brasil sedia novamente uma Copa do Mundo, desta vez com estádios modernizados e grande expectativa nacional."
+    }
+]

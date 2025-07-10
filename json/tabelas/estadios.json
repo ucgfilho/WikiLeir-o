@@ -1,0 +1,71 @@
+[
+    {
+        "id": "maracana",
+        "imageUrl": "https://itograss.com.br/media/upload/ckeditor/2025/04/08/maracana-3_objy3mi.webp",
+        "name": "Maracanã",
+        "capacity": "78.838 lugares",
+        "location": "Rio de Janeiro - RJ",
+        "teams": [
+            "Flamengo",
+            "Fluminense"
+        ],
+        "description": "O maior estádio do Brasil e um dos mais icônicos do mundo."
+    },
+    {
+        "id": "morumbi",
+        "imageUrl": "https://esportes.r7.com/resizer/F5dAkYCDuzsSZNypzRVWpQ6cDXo=/arc-photo-newr7/arc2-prod/public/F3T2HOCWF5LY7BWJVJ562B32TQ.jpg",
+        "name": "Morumbis",
+        "capacity": "72.039 lugares",
+        "location": "São Paulo - SP",
+        "teams": [
+            "São Paulo"
+        ],
+        "description": "Um dos maiores estádios particulares do mundo, casa do tricolor paulista."
+    },
+    {
+        "id": "castelao",
+        "imageUrl": "https://www.ceara.gov.br/wp-content/uploads/2023/02/230228_GOV-VISITA-CASTELAO_CG1935_1_2.jpg",
+        "name": "Arena Castelão",
+        "capacity": "63.903 lugares",
+        "location": "Fortaleza - CE",
+        "teams": [
+            "Fortaleza",
+            "Ceará"
+        ],
+        "description": "Maior estádio do Nordeste e palco da Copa do Mundo de 2014."
+    },
+    {
+        "id": "mineirao",
+        "imageUrl": "https://otempo.scene7.com/is/image/sempreeditora/futebol%20nacional-mineirao-pampulha-belo-horizonte-1725487196",
+        "name": "Mineirão",
+        "capacity": "61.846 lugares",
+        "location": "Belo Horizonte - MG",
+        "teams": [
+            "Atlético-MG",
+            "Cruzeiro"
+        ],
+        "description": "Palco do 7x1 e casa dos grandes clubes de Minas Gerais."
+    },
+    {
+        "id": "allianz-parque",
+        "imageUrl": "https://www.palmeiras.com.br/wp-content/uploads/2019/08/allianz-parque-1.jpg",
+        "name": "Allianz Parque",
+        "capacity": "43.713 lugares",
+        "location": "São Paulo - SP",
+        "teams": [
+            "Palmeiras"
+        ],
+        "description": "Arena multiuso moderna, referência em tecnologia e shows."
+    },
+    {
+        "id": "vila-belmiro",
+        "imageUrl": "https://mapamnt.procomum.org/wp-content/uploads/2021/06/93492k21.png",
+        "name": "Vila Belmiro",
+        "capacity": "16.068 lugares",
+        "location": "Santos - SP",
+        "teams": [
+            "Santos"
+        ],
+        "description": "Casa histórica do Santos e de Pelé, um dos mais tradicionais do país."
+    }
+]

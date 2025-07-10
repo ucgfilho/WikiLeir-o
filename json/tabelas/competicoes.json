@@ -1,0 +1,88 @@
+[
+    {
+        "category": "Competições Nacionais",
+        "items": [
+            {
+                "name": "Campeonato Brasileiro Série A",
+                "status": "ativa",
+                "info": {
+                    "Criação": "1959",
+                    "Formato": "Pontos corridos",
+                    "Participantes": "20 times",
+                    "Atual Campeão": "Botafogo"
+                },
+                "description": "A principal competição do futebol brasileiro, reunindo os 20 melhores clubes do país."
+            },
+            {
+                "name": "Copa do Brasil",
+                "status": "ativa",
+                "info": {
+                    "Criação": "1989",
+                    "Formato": "Eliminatório",
+                    "Participantes": "92 times",
+                    "Atual Campeão": "Flamengo"
+                },
+                "description": "Torneio eliminatório que reúne clubes de todo o Brasil, do amador ao profissional."
+            },
+            {
+                "name": "Campeonato Brasileiro Série B",
+                "status": "ativa",
+                "info": {
+                    "Criação": "1971",
+                    "Formato": "Pontos corridos",
+                    "Participantes": "20 times",
+                    "Atual Campeão": "Santos"
+                },
+                "description": "Segunda divisão nacional, com acesso direto para a Série A."
+            }
+        ]
+    },
+    {
+        "category": "Competições Regionais",
+        "items": [
+            {
+                "name": "Copa do Nordeste",
+                "status": "ativa",
+                "info": {
+                    "Criação": "1994",
+                    "Participantes": "16 times",
+                    "Atual Campeão": "Fortaleza"
+                },
+                "description": "Principal competição regional do Brasil, reunindo os melhores clubes nordestinos."
+            },
+            {
+                "name": "Copa Verde",
+                "status": "ativa",
+                "info": {
+                    "Criação": "2014",
+                    "Participantes": "24 times",
+                    "Atual Campeão": "Paysandu"
+                },
+                "description": "Competição que reúne clubes das regiões Norte, Centro-Oeste e Espírito Santo."
+            }
+        ]
+    },
+    {
+        "category": "Competições Históricas",
+        "items": [
+            {
+                "name": "Taça Brasil",
+                "status": "extinta",
+                "info": {
+                    "Período": "1959-1968",
+                    "Último Campeão": "Botafogo"
+                },
+                "description": "Primeira competição nacional do Brasil, precursora do atual Brasileirão."
+            },
+            {
+                "name": "Copa União",
+                "status": "extinta",
+                "info": {
+                    "Período": "1987-1988",
+                    "Último Campeão": "Bahia"
+                },
+                "description": "Competição criada pelos clubes durante crise com a CBF."
+            }
+        ]
+    }
+]
