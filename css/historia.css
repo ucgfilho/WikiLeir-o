@@ -74,75 +74,66 @@
     font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
-.historia-sections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 65vw, 350px), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
-    margin-top: clamp(2rem, 5vw, 4rem);
-}
-
-.historia-card {
-    background: var(--cor-destaque-escura);
-    padding: clamp(1.5rem, 4vw, 2rem);
-    border-radius: 12px;
-    box-shadow: var(--sombra);
-    border-left: 4px solid var(--cor-acento);
-    transition: var(--transicao);
-}
-
-.historia-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-.historia-card h3 {
-    color: var(--cor-acento);
-    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
-    font-weight: 600;
-    margin-bottom: clamp(0.75rem, 2vw, 1rem);
-}
-
-.historia-card p {
-    color: var(--texto-claro);
-    line-height: 1.6;
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .timeline-container::before {
         left: clamp(0.75rem, 2vw, 1rem);
     }
-    
     .timeline-item {
         padding-left: clamp(2.5rem, 5vw, 3.5rem);
     }
-    
+}
+
+@media (max-width: 200px) {
+    .timeline-item {
+        padding-left: 6vw;
+    }
     .timeline-year {
-        width: clamp(1.5rem, 3vw, 2rem);
-        height: clamp(1.5rem, 3vw, 2rem);
-        font-size: clamp(0.6rem, 1.8vw, 0.8rem);
+        width: 6vw;
+        height: 6vw;
+        font-size: 3vw;
+        box-shadow: 0 0 0 2px var(--cor-primaria-escura);
+    }
+    .timeline-content {
+        padding: 2vw;
+    }
+    .timeline-content h3 {
+        font-size: 5vw;
+    }
+    .timeline-content p {
+        font-size: 3.5vw;
     }
 }
 
-@media (max-width: 320px) {
-    .timeline-container {
-        margin: clamp(1rem, 3vw, 2rem) 0;
-    }
-    
+@media (max-width: 100px) {
     .timeline-item {
-        margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        padding-left: 8vw;
     }
-    
-    .timeline-content {
-        padding: clamp(0.75rem, 2.5vw, 1rem);
-        border-radius: 8px;
-        border-left-width: 2px;
+    .timeline-year {
+        width: 8vw;
+        height: 8vw;
+        font-size: 4vw;
     }
-    
-    .historia-card {
-        padding: clamp(1rem, 3vw, 1.5rem);
-        border-radius: 8px;
-        border-left-width: 2px;
+    .timeline-content h3 {
+        font-size: 6vw;
+    }
+    .timeline-content p {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 50px) {
+    .timeline-item {
+        padding-left: 10vw;
+    }
+    .timeline-year {
+        width: 10vw;
+        height: 10vw;
+        font-size: 5vw;
+    }
+    .timeline-content h3 {
+        font-size: 8vw;
+    }
+    .timeline-content p {
+        font-size: 6vw;
     }
 }

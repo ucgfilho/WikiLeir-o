@@ -5,7 +5,7 @@
 }
 
 .page-description {
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     line-height: 1.6;
     max-width: 800px;
     margin: clamp(0.75rem, 2vw, 1.5rem) auto 0;
@@ -48,7 +48,7 @@
 
 .competicoes-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 65vw, 350px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 60vw, 320px), 1fr));
     gap: clamp(1rem, 3vw, 2rem);
 }
 
@@ -58,12 +58,6 @@
     padding: clamp(1rem, 3vw, 1.5rem);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: var(--transicao);
-}
-
-.competicao-card:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
 }
 
 .competicao-header {
@@ -82,11 +76,12 @@
 }
 
 .competicao-status {
-    padding: clamp(0.2rem, 0.8vw, 0.3rem) clamp(0.6rem, 2vw, 0.8rem);
-    border-radius: 15px;
+    padding: clamp(0.2rem, 1vw, 0.4rem) clamp(0.6rem, 2vw, 0.8rem);
+    border-radius: 50px;
     font-size: clamp(0.7rem, 2.2vw, 0.8rem);
     font-weight: 600;
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .competicao-status.ativa {
@@ -101,12 +96,14 @@
 
 .competicao-info {
     margin-bottom: clamp(0.75rem, 2vw, 1rem);
+    border-left: 3px solid var(--cor-acento);
+    padding-left: clamp(0.5rem, 2vw, 1rem);
 }
 
 .competicao-info p {
-    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
     margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
-    color: var(--texto-escuro);
+    color: #333;
 }
 
 .competicao-info strong {
@@ -116,23 +113,8 @@
 .competicao-descricao {
     color: #666;
     line-height: 1.6;
-    margin-bottom: clamp(0.75rem, 2.5vw, 1.5rem);
-    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
-}
-
-.competicao-link {
-    color: var(--cor-primaria-escura);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: clamp(0.25rem, 1vw, 0.5rem);
     font-size: clamp(0.8rem, 2.5vw, 1rem);
-    transition: var(--transicao);
-}
-
-.competicao-link:hover {
-    color: var(--cor-acento);
+    margin-top: clamp(0.75rem, 2.5vw, 1.5rem);
 }
 
 /* Responsive Design */
@@ -140,21 +122,59 @@
     .competicoes-cards {
         grid-template-columns: 1fr;
     }
-    
-    .competicao-header {
-        flex-direction: column;
-        align-items: flex-start;
+}
+
+/* APRIMORAMENTO PARA TELAS MUITO ESTREITAS */
+@media (max-width: 320px) {
+    .categoria-section {
+        padding: clamp(0.5rem, 5vw, 1rem);
+    }
+    .competicao-card {
+        padding: clamp(0.75rem, 4vw, 1rem);
+    }
+    .page-description,
+    .competicao-descricao {
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 200px) {
     .categoria-section {
-        padding: clamp(0.5rem, 2vw, 0.75rem);
+        padding: 2.5vw;
         border-radius: 8px;
     }
-
     .competicao-card {
-        padding: clamp(0.75rem, 2.5vw, 1rem);
-        border-radius: 8px;
+        padding: 3vw;
+    }
+}
+
+@media (max-width: 150px) {
+    .categoria-section {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .competicao-card {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .competicao-info {
+        padding-left: 1.5vw;
+    }
+    .competicao-header h3 { font-size: 6.5vw; }
+    .competicao-status { font-size: 4.5vw; }
+    .competicao-info p { font-size: 4.5vw; }
+    .competicao-descricao { font-size: 4.5vw; }
+}
+
+@media (max-width: 80px) {
+    .categoria-section {
+        /* Remove o fundo e padding pra ele se ajustar ao card */
+        padding: 1vw 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    .competicao-card {
+        padding: 2vw;
+        border-radius: 4px;
     }
 }

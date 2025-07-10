@@ -62,15 +62,19 @@
 
 .idolo-image {
     position: relative;
-    height: 220px; /* ALTURA FIXA AQUI */
+    width: 100%;
+    padding-top: 65%; /* Proporção da imagem (altura/largura) */
     overflow: hidden;
     background: #f0f0f0;
 }
 
 .idolo-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* GARANTE QUE A IMAGEM CUBRA O ESPAÇO SEM DISTORCER */
+    object-fit: cover;
 }
 
 .idolo-info {
@@ -118,37 +122,47 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .page-header {
-        padding: clamp(0.75rem, 2.5vw, 1rem) 0;
-    }
-
-    .page-description {
-        font-size: clamp(0.9rem, 2.8vw, 1rem);
-        margin: clamp(0.5rem, 2vw, 1rem) auto 0;
-    }
-
-    .serie-section {
-        padding: clamp(0.75rem, 2.5vw, 1.5rem);
-    }
-
-    .serie-title {
-        font-size: clamp(1.3rem, 3.5vw, 1.5rem);
-    }
-
     .idolos-cards {
         grid-template-columns: 1fr;
-        gap: clamp(0.75rem, 2.5vw, 1.5rem);
     }
+}
 
-    .idolo-image {
-        height: 40px;
-    }
-
+@media (max-width: 200px) {
     .idolo-info {
-        padding: clamp(0.75rem, 2.5vw, 1rem);
+        padding: 2vw;
     }
-
     .idolo-info h3 {
-        font-size: clamp(1.1rem, 3vw, 1.3rem);
+        font-size: 5vw;
+    }
+    .idolo-clube {
+        font-size: 3.5vw;
+        padding: 1vw 2vw;
+    }
+    .idolo-descricao, .idolo-link {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 100px) {
+    .idolo-info h3 {
+        font-size: 6vw;
+    }
+    .idolo-clube {
+        font-size: 4.5vw;
+    }
+    .idolo-descricao, .idolo-link {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 50px) {
+    .idolo-info h3 {
+        font-size: 8vw;
+    }
+    .idolo-clube {
+        font-size: 6vw;
+    }
+    .idolo-descricao, .idolo-link {
+        font-size: 6vw;
     }
 }

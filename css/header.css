@@ -5,7 +5,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.5rem, 2vw, 2rem);
+    padding: clamp(0.5rem, 1.5vw, 1rem) 0; /* Ajustado para usar o container */
 }
 
 .container-cabecalho {
@@ -15,6 +15,7 @@ header {
     flex-wrap: wrap;
     gap: clamp(0.5rem, 2vw, 1rem);
     min-height: clamp(30px, 8vw, 60px);
+    padding: 0 clamp(0.5rem, 2vw, 2rem); /* Padding movido para o container */
 }
 
 .container-logo img {
@@ -37,7 +38,7 @@ nav a {
     font-weight: 500;
     border-radius: 6px;
     white-space: nowrap;
-    transition: var(--transicao);
+    transition: background-color 0.2s, color 0.2s, transform 0.2s; /* Removido --transicao */
     font-size: clamp(0.6rem, 2.2vw, 1rem);
     text-align: center;
 }
@@ -50,15 +51,26 @@ nav a.ativo {
 }
 
 /* Responsividade extrema */
-@media (max-width: 200px) {
-    header {
-        padding: 1vw;
-    }
-    
+@media (max-width: 768px) {
     .container-cabecalho {
-        flex-direction: column;
+        justify-content: space-between; /* Garante que logo e nav fiquem nas pontas */
+    }
+
+    /* Adicione um botão de menu (hambúrguer) no seu HTML se for fazer um menu off-canvas */
+    /* Ex: nav { display: none; } nav.open { display: flex; } */
+    /* Por enquanto, vamos garantir que o wrap funcione bem. */
+}
+
+@media (max-width: 480px) {
+    .container-cabecalho {
+        flex-direction: column; /* Coloca logo e nav um sobre o outro */
+        gap: clamp(0.5rem, 2.5vw, 1rem);
+    }
+}
+
+@media (max-width: 200px) {
+    .container-cabecalho {
         gap: 1vw;
-        min-height: auto;
     }
 
     .container-logo img {
@@ -73,42 +85,30 @@ nav a.ativo {
 
     nav a {
         padding: 1vw 2vw;
-        font-size: 3vw;
+        font-size: 3.5vw;
         width: 100%;
     }
 }
 
 @media (max-width: 100px) {
-    header {
-        padding: 0.5vw;
-    }
-    
-    .container-cabecalho {
-        gap: 0.5vw;
-    }
-
     .container-logo img {
         width: 25vw;
     }
 
     nav a {
         padding: 1.5vw 2.5vw;
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 }
 
 @media (max-width: 50px) {
-    header {
-        padding: 0.25vw;
-    }
-    
     .container-logo img {
         width: 30vw;
     }
 
     nav a {
         padding: 2vw 3vw;
-        font-size: 5vw;
+        font-size: 6vw;
         border-radius: 2px;
     }
 }

@@ -1,6 +1,6 @@
 [
     {
-        "category": "Competições Nacionais",
+        "category": "Nacionais",
         "items": [
             {
                 "name": "Campeonato Brasileiro Série A",
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "category": "Competições Regionais",
+        "category": "Regionais",
         "items": [
             {
                 "name": "Copa do Nordeste",
@@ -63,7 +63,7 @@
         ]
     },
     {
-        "category": "Competições Históricas",
+        "category": "Históricas",
         "items": [
             {
                 "name": "Taça Brasil",

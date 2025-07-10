@@ -5,7 +5,7 @@
 }
 
 .page-description {
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     line-height: 1.6;
     max-width: 800px;
     margin: clamp(0.75rem, 2vw, 1.5rem) auto 0;
@@ -48,7 +48,7 @@
 
 .recordes-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 65vw, 350px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 60vw, 320px), 1fr));
     gap: clamp(1rem, 3vw, 2rem);
 }
 
@@ -64,7 +64,7 @@
 }
 
 .recorde-card.destaque {
-    background: linear-gradient(145deg, #444, #333);
+    background: linear-gradient(145deg, var(--cor-destaque-escura), var(--cor-primaria-clara));
     border: 2px solid var(--cor-acento);
     color: var(--texto-claro);
 }
@@ -76,8 +76,12 @@
     opacity: 0.9;
 }
 
+.recorde-card.destaque .recorde-numero {
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
 .recorde-numero {
-    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
     font-weight: 700;
     color: var(--cor-acento);
     margin-bottom: clamp(0.5rem, 2vw, 1rem);
@@ -85,7 +89,7 @@
 }
 
 .recorde-titulo {
-    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
     font-weight: 600;
     color: var(--texto-escuro);
     margin-bottom: clamp(0.25rem, 1vw, 0.5rem);
@@ -96,12 +100,13 @@
     color: var(--cor-primaria-escura);
     font-weight: 500;
     margin-bottom: clamp(0.75rem, 2vw, 1rem);
+    opacity: 0.8;
 }
 
 .recorde-descricao {
     color: #666;
     line-height: 1.6;
-    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
 /* Responsive Design */
@@ -111,18 +116,56 @@
     }
 }
 
+/* APRIMORAMENTO PARA TELAS MUITO ESTREITAS */
 @media (max-width: 320px) {
     .categoria-section {
-        padding: clamp(0.5rem, 2vw, 0.75rem);
-        border-radius: 8px;
+        padding: clamp(0.5rem, 5vw, 1rem);
     }
-
     .recorde-card {
-        padding: clamp(1rem, 3vw, 1.5rem);
+        padding: clamp(1rem, 5vw, 1.5rem);
+    }
+    .page-description,
+    .recorde-descricao {
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
+    }
+}
+
+@media (max-width: 200px) {
+    .categoria-section {
+        padding: 2.5vw;
         border-radius: 8px;
     }
+    .recorde-card {
+        padding: 3vw;
+    }
+    .recorde-numero { font-size: 12vw; }
+    .recorde-titulo { font-size: 5vw; }
+    .recorde-subtitulo { font-size: 4vw; }
+    .recorde-descricao { font-size: 3.5vw; }
+}
 
-    .recorde-numero {
-        font-size: clamp(2rem, 6vw, 3rem);
+@media (max-width: 150px) {
+    .categoria-section {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .recorde-card {
+        padding: 3vw;
+    }
+    .recorde-numero { font-size: 15vw; }
+    .recorde-titulo { font-size: 6.5vw; }
+    .recorde-subtitulo { font-size: 5vw; }
+    .recorde-descricao { font-size: 4.5vw; }
+}
+
+@media (max-width: 80px) {
+    .categoria-section {
+        padding: 1vw 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    .recorde-card {
+        padding: 2vw;
+        border-radius: 4px;
     }
 }
