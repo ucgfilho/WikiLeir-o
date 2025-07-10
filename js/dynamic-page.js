@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         handleError(`ID do item não encontrado na URL para a página do tipo '${pageType}'.`);
         return;
     }
-
-    // CORREÇÃO: Adicionado ../ para subir um nível de diretório
     const jsonPath = `../json/${pageType}s/${id}.json`;
 
     fetch(jsonPath)
@@ -49,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /**
  * Preenche a página de um TIME com os dados do JSON.
- * @param {object} data - Os dados do time.
  */
 function populateTeamPage(data) {
     document.title = `${data.name} | WikiLeirão`;
@@ -103,7 +100,6 @@ function populateTeamPage(data) {
 
 /**
  * Preenche a página de um ÍDOLO com os dados do JSON.
- * @param {object} data - Os dados do ídolo.
  */
 function populateIdolPage(data) {
     document.title = `${data.name} | WikiLeirão`;
@@ -143,7 +139,6 @@ function populateIdolPage(data) {
 
 /**
  * Preenche a página de um ESTÁDIO com os dados do JSON.
- * @param {object} data - Os dados do estádio.
  */
 function populateStadiumPage(data) {
     document.title = `${data.name} | WikiLeirão`;
@@ -183,7 +178,6 @@ function populateStadiumPage(data) {
 
 /**
  * Exibe uma mensagem de erro na página.
- * @param {string} message - A mensagem de erro a ser exibida.
  */
 function handleError(message) {
     const container = document.querySelector('main.container');
