@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const jsonPath = `../json/${pageType}s/${id}.json`;
 
+    // Busca o JSON específico (usando o ID da URL) e chama a função para montar a página.
     fetch(jsonPath)
         .then(response => {
             if (!response.ok) {
@@ -45,9 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
-/**
- * Preenche a página de um TIME com os dados do JSON.
- */
+// Preenche a página de um TIME com os dados do JSON.
 function populateTeamPage(data) {
     document.title = `${data.name} | WikiLeirão`;
     document.getElementById('logo').src = data.logoUrl;
@@ -98,9 +97,7 @@ function populateTeamPage(data) {
     }
 }
 
-/**
- * Preenche a página de um ÍDOLO com os dados do JSON.
- */
+// Preenche a página de um ÍDOLO com os dados do JSON.
 function populateIdolPage(data) {
     document.title = `${data.name} | WikiLeirão`;
     document.getElementById('item-image').src = data.imageUrl;
@@ -137,9 +134,7 @@ function populateIdolPage(data) {
     });
 }
 
-/**
- * Preenche a página de um ESTÁDIO com os dados do JSON.
- */
+// Preenche a página de um ESTÁDIO com os dados do JSON.
 function populateStadiumPage(data) {
     document.title = `${data.name} | WikiLeirão`;
     document.getElementById('item-image').src = data.imageUrl;
@@ -176,9 +171,7 @@ function populateStadiumPage(data) {
     });
 }
 
-/**
- * Exibe uma mensagem de erro na página.
- */
+// Exibe uma mensagem de erro na página.
 function handleError(message) {
     const container = document.querySelector('main.container');
     if (container) {

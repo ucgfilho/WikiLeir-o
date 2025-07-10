@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('competitions-grid-container');
     if (!container) return;
 
+    // Busca o JSON de competições e cria os cards na página.
     fetch('json/tabelas/competicoes.json')
         .then(response => response.json())
         .then(data => {

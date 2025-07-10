@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('stadium-list-container');
     if (!container) return;
 
+    // Busca o JSON de estádios e cria os cards na página.
     fetch('json/tabelas/estadios.json')
         .then(response => response.json())
         .then(data => {

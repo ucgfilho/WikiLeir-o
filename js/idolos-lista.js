@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('idols-list-container');
     if (!container) return;
 
+    // Busca o JSON de ídolos e cria os cards na página.
     fetch('json/tabelas/idolos.json')
         .then(response => response.json())
         .then(data => {

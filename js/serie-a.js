@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('team-list-container');
     if (!container) return;
 
+    // Busca o JSON da Série A e preenche a tabela de times.
     fetch('json/tabelas/a.json')
         .then(response => response.json())
         .then(data => {

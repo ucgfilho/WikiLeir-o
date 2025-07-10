@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('timeline-container');
     if (!container) return;
 
+    // Busca o JSON da história e cria a linha do tempo na página.
     fetch('json/tabelas/historia.json')
         .then(response => response.json())
         .then(data => {

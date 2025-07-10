@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('records-grid-container');
     if (!container) return;
 
+    // Busca o JSON de recordes e cria os cards na página.
     fetch('json/tabelas/recordes.json')
         .then(response => response.json())
         .then(data => {
